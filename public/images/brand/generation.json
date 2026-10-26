@@ -1,0 +1,65 @@
+{
+  "tool": "Built-in image_gen",
+  "purpose": "Generated conceptual furniture interiors for the hero and footer, matching the original transparent architectural CGI assets. These are brand visuals, not photographs of completed GNG projects.",
+  "assets": [
+    {
+      "role": "hero",
+      "original": "/images/brand/hero-furniture.png",
+      "src": "/images/brand/hero-furniture.webp",
+      "srcSet": "/images/brand/hero-furniture-480.webp 480w, /images/brand/hero-furniture-960.webp 960w, /images/brand/hero-furniture.webp 1374w",
+      "width": 1374,
+      "height": 1145,
+      "alt": "ავეჯიანი ინტერიერის 3D ვიზუალიზაცია რბილი დივნით, ხის პანელებითა და ჩაშენებული თაროებით",
+      "altEn": "A 3D furniture interior with an upholstered sofa, wood panels and built-in shelving",
+      "alpha": true,
+      "bytes": 243722,
+      "variants": [
+        {
+          "src": "/images/brand/hero-furniture-480.webp",
+          "width": 480,
+          "height": 400,
+          "bytes": 39602
+        },
+        {
+          "src": "/images/brand/hero-furniture-960.webp",
+          "width": 960,
+          "height": 800,
+          "bytes": 129704
+        }
+      ],
+      "prompt": "Use case: style-transfer.\nAsset type: transparent hero asset, coordinated with the existing generated footer asset.\nInput images: Image 1 is the edit target and the definitive identity/material reference: the recently generated GNG interior diorama. Image 2 is ONLY the original website hero composition reference (an isolated architectural CGI cutout); do NOT include its exterior house.\nTask: Create a tighter HERO framing of the SAME furniture/interior diorama shown in Image 1. Preserve the exact cream sectional sofa, ivory curved lounge chair, charcoal geometric coffee table, walnut slatted wall, dark built-in display shelving, warm integrated shelf lighting, tall flush walnut door and small indoor tree. Same photorealistic premium architectural-render finish, same walnut/charcoal/ivory materials, same realistic scale and single integrated room. This is the companion close view, not a new interior design.\nComposition: landscape canvas approximately 6:5 (close to1536x1280), like the original hero reference. Move the camera closer to the front-left corner of the room, with a slightly elevated architectural three-quarter angle. Fill most of the canvas height. Emphasize the upholstered sofa, crafted table and the substantial walnut panel wall on the right. Preserve clean upper silhouette and a little transparent breathing room at top and left. The whole room does not need to fit: cropping the far-right outer plinth and wall at the right edge is acceptable and intentional, as in the original hero. Keep the lower-middle/right seating and table area darker enough for white website heading text overlay; achieve this through realistic material/shadow, not a painted gradient. Floor is thin pale stone plinth with subtle contact shadow.\nBackground must remain genuinely transparent outside the object silhouette; no white/black rectangle, no sky, no landscape, no background room, no checkerboard. Use fine antialiased alpha edges.\nNo text or logo, no watermark, no people. Only the tighter companion view requested; preserve the design identity and furniture geometry from Image 1.",
+      "refinements": [
+        "Use case: precise-object-edit.\nImage 1 is the edit target: the transparent CGI furniture hero asset. Image 2 is a layout-only reference showing how the existing website overlays its large heading; it is NOT content to reproduce.\nCreate a corrected clean asset only. Preserve the walnut panel walls, shelving, lighting, cream sectional sofa, dark geometric coffee table, plant, photoreal architectural CGI quality and 6:5 camera/framing. Keep a transparent alpha background outside the architectural object.\nChange only the lower foreground of the asset to improve white headline contrast: make the left sculptural lounge chair upholstered in deep charcoal fabric (same shape); replace the pale floor and pale rug across the lower foreground with refined dark smoked walnut flooring / dark charcoal woven rug, and use a thin dark graphite plinth edge. Extend that low floor plinth toward the viewer so its left edge reaches the bottom-left corner of the image and there is NO large transparent diagonal triangular void under the left foreground. The room's foreground should occupy the complete bottom edge of the canvas, like the solid ground edge of the original architectural hero. Keep the dark floor surface physically realistic and understated; do not add a painted gradient, rectangle or arbitrary dark panel.\nThe sofa stays ivory, the walls stay walnut, and the overall lighting stays warm and natural. Keep the foreground camera geometry straight, furniture realistic, and scene identity consistent. No text, no logo, no watermark, no UI elements, no black opaque background. Return ONLY the isolated furniture scene on genuine transparency.",
+        "Edit this image with ONE precise framing change: remove the diagonal foreground plinth edge and replace the entire transparent triangular area beneath it, at the bottom-left, with a continuous extension of the existing dark smoked-walnut floor. The floor must extend out of frame through BOTH the left edge and bottom edge. The camera is so close that the front boundary of the floor is no longer visible anywhere. The entire bottom edge of the output must be opaque floor/rug, including the bottom-left corner. This is a close crop into the same diorama, not a complete object presentation.\nKeep every piece of furniture, wall, shelving, lighting and color exactly as in the input. Retain the dark charcoal armchair and dark rug. Do not shift or rescale them. Preserve the existing aspect ratio. Retain genuine transparent alpha ONLY around the upper and upper-left exterior silhouette, where there is empty space above/beside the walls. Output no text, no logos, no people, no watermarks, no background rectangle.\nKey invariant: NO transparent triangle at bottom-left, NO visible diagonal front plinth edge, the dark floor continues all the way to the bottom-left canvas corner."
+      ]
+    },
+    {
+      "role": "footer",
+      "original": "/images/brand/footer-furniture.png",
+      "src": "/images/brand/footer-furniture.webp",
+      "srcSet": "/images/brand/footer-furniture-480.webp 480w, /images/brand/footer-furniture-960.webp 960w, /images/brand/footer-furniture.webp 1672w",
+      "width": 1672,
+      "height": 941,
+      "alt": "ავეჯიანი ინტერიერის სრული 3D კომპოზიცია დივნით, მაგიდით, ხის პანელებითა და კარით",
+      "altEn": "A complete 3D furniture composition with a sofa, table, wood panels and an interior door",
+      "alpha": true,
+      "bytes": 206720,
+      "variants": [
+        {
+          "src": "/images/brand/footer-furniture-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 25308
+        },
+        {
+          "src": "/images/brand/footer-furniture-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 75234
+        }
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: transparent isolated 3D furniture/interior vignette for the footer of GNG, a bespoke furniture maker.\nInput images: Image 1 (original-footer.png) is ONLY a reference for the polished architectural CGI style, warm walnut/charcoal palette, three-quarter perspective, clean object cutout and small plinth presentation. Image 2 (furniture.webp) is ONLY a reference for the company's actual furniture/material vocabulary: light upholstered sectional sofa, low geometric coffee table, integrated cabinetry, wall panels and flush interior doors. Do not reproduce either photograph.\nPrimary request: Create a NEW high-end photorealistic architectural 3D render of one furnished interior as an isolated open-front room diorama, with the same elegance and precision as the original architectural cutout. Show the furniture as the focus rather than an exterior house.\nScene: a coherent custom-designed living room on a very thin rectangular pale stone floor slab, two partial-height architectural walls forming a shallow corner at the rear, no front wall and no roof so all furniture can be read. Warm vertical walnut wall panels behind a cream upholstered sectional sofa; one integrated walnut display/bookcase with a small area of charcoal cabinetry; one tall flush walnut interior door clearly visible on the right; low dark geometric rectangular coffee table, one sculptural lounge chair and restrained indoor greenery. Minimal curated accessories. Realistic materials and construction, accurate joins, subtly textured cream upholstery, natural walnut grain, dark brushed metal details.\nComposition: wide landscape approximately 16:9, complete diorama fully in frame with breathing space around the silhouette, elevated three-quarter architectural product view, sophisticated precise perspective with straight verticals. Walnut wall/door and cabinetry across upper half, sofa and table in middle; keep lower 20 percent relatively quiet pale floor/plinth because the website overlays a large logo there. One integrated single composition, not a collage or a catalog of separate objects. No surrounding world, no sky, no photography backdrop, no room extending outside the diorama.\nLighting: soft neutral daylight from upper left, delicate physically accurate contact shadows, refined warm neutral palette as original. Product-scale polished archviz realism, NOT toy-like, NOT cartoon, NOT low-poly, no exaggerated tilt-shift.\nBackground: genuinely transparent alpha everywhere outside the room silhouette, no baked checkerboard and no opaque white/black/gray rectangle. Subtle contact shadow may remain close to the plinth only.\nAbsolutely no text, no logo, no watermarks, no people.",
+      "refinements": []
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+/* Preserve the reference's h2 appearance with a semantic page-level h1. */
+.optik-site .optik-inner-title {
+  font-family: var(--_size---h2--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h2--font-size);
+  line-height: var(--_size---h2--line-height);
+  font-weight: var(--_size---h2--font-weight);
+  letter-spacing: var(--_size---h2--letter-spacing);
+  margin: 0;
+}
+
+/* Replace the reference's JavaScript-driven hover preview. */
+.optik-site .service-collection-item-img-wrap {
+  pointer-events: none;
+}
+.optik-site .service-collection-item-img {
+  transition: opacity .25s ease;
+}
+.optik-site .service-collection-item:hover .service-collection-item-img,
+.optik-site .service-collection-item:focus-within .service-collection-item-img {
+  opacity: 1;
+}

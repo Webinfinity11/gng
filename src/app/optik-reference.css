@@ -1,0 +1,8079 @@
+/* Source: user-supplied Optik reference. Regenerate with node scripts/scope-optik-css.mjs. */
+.optik-site {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: sans-serif;
+}
+
+.optik-site {
+  margin: 0;
+}
+
+.optik-site article, .optik-site aside, .optik-site details, .optik-site figcaption, .optik-site figure, .optik-site footer, .optik-site header, .optik-site hgroup, .optik-site main, .optik-site menu, .optik-site nav, .optik-site section, .optik-site summary {
+  display: block;
+}
+
+.optik-site audio, .optik-site canvas, .optik-site progress, .optik-site video {
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+.optik-site audio:not([controls]) {
+  height: 0;
+  display: none;
+}
+
+.optik-site [hidden], .optik-site template {
+  display: none;
+}
+
+.optik-site a {
+  background-color: #0000;
+}
+
+.optik-site a:active, .optik-site a:hover {
+  outline: 0;
+}
+
+.optik-site abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+.optik-site b, .optik-site strong {
+  font-weight: bold;
+}
+
+.optik-site dfn {
+  font-style: italic;
+}
+
+.optik-site h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+.optik-site mark {
+  color: #000;
+  background: #ff0;
+}
+
+.optik-site small {
+  font-size: 80%;
+}
+
+.optik-site sub, .optik-site sup {
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+.optik-site sup {
+  top: -.5em;
+}
+
+.optik-site sub {
+  bottom: -.25em;
+}
+
+.optik-site img {
+  border: 0;
+}
+
+.optik-site svg:not(.optik-site) {
+  overflow: hidden;
+}
+
+.optik-site hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.optik-site pre {
+  overflow: auto;
+}
+
+.optik-site code, .optik-site kbd, .optik-site pre, .optik-site samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+.optik-site button, .optik-site input, .optik-site optgroup, .optik-site select, .optik-site textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.optik-site button {
+  overflow: visible;
+}
+
+.optik-site button, .optik-site select {
+  text-transform: none;
+}
+
+.optik-site button, .optik-site input[type="button"], .optik-site input[type="reset"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+.optik-site button[disabled], .optik-site input[disabled] {
+  cursor: default;
+}
+
+.optik-site button::-moz-focus-inner, .optik-site input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.optik-site input {
+  line-height: normal;
+}
+
+.optik-site input[type="checkbox"], .optik-site input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.optik-site input[type="number"]::-webkit-inner-spin-button, .optik-site input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.optik-site input[type="search"] {
+  -webkit-appearance: none;
+}
+
+.optik-site input[type="search"]::-webkit-search-cancel-button, .optik-site input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.optik-site legend {
+  border: 0;
+  padding: 0;
+}
+
+.optik-site textarea {
+  overflow: auto;
+}
+
+.optik-site optgroup {
+  font-weight: bold;
+}
+
+.optik-site table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.optik-site td, .optik-site th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: webflow-icons;
+  src: url("data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg8SBiUAAAC8AAAAYGNtYXDpP+a4AAABHAAAAFxnYXNwAAAAEAAAAXgAAAAIZ2x5ZmhS2XEAAAGAAAADHGhlYWQTFw3HAAAEnAAAADZoaGVhCXYFgQAABNQAAAAkaG10eCe4A1oAAAT4AAAAMGxvY2EDtALGAAAFKAAAABptYXhwABAAPgAABUQAAAAgbmFtZSoCsMsAAAVkAAABznBvc3QAAwAAAAAHNAAAACAAAwP4AZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADpAwPA/8AAQAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAADAAAAAwAAABwAAQADAAAAHAADAAEAAAAcAAQAQAAAAAwACAACAAQAAQAg5gPpA//9//8AAAAAACDmAOkA//3//wAB/+MaBBcIAAMAAQAAAAAAAAAAAAAAAAABAAH//wAPAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEBIAAAAyADgAAFAAAJAQcJARcDIP5AQAGA/oBAAcABwED+gP6AQAABAOAAAALgA4AABQAAEwEXCQEH4AHAQP6AAYBAAcABwED+gP6AQAAAAwDAAOADQALAAA8AHwAvAAABISIGHQEUFjMhMjY9ATQmByEiBh0BFBYzITI2PQE0JgchIgYdARQWMyEyNj0BNCYDIP3ADRMTDQJADRMTDf3ADRMTDQJADRMTDf3ADRMTDQJADRMTAsATDSANExMNIA0TwBMNIA0TEw0gDRPAEw0gDRMTDSANEwAAAAABAJ0AtAOBApUABQAACQIHCQEDJP7r/upcAXEBcgKU/usBFVz+fAGEAAAAAAL//f+9BAMDwwAEAAkAABcBJwEXAwE3AQdpA5ps/GZsbAOabPxmbEMDmmz8ZmwDmvxmbAOabAAAAgAA/8AEAAPAAB0AOwAABSInLgEnJjU0Nz4BNzYzMTIXHgEXFhUUBw4BBwYjNTI3PgE3NjU0Jy4BJyYjMSIHDgEHBhUUFx4BFxYzAgBqXV6LKCgoKIteXWpqXV6LKCgoKIteXWpVSktvICEhIG9LSlVVSktvICEhIG9LSlVAKCiLXl1qal1eiygoKCiLXl1qal1eiygoZiEgb0tKVVVKS28gISEgb0tKVVVKS28gIQABAAABwAIAA8AAEgAAEzQ3PgE3NjMxFSIHDgEHBhUxIwAoKIteXWpVSktvICFmAcBqXV6LKChmISBvS0pVAAAAAgAA/8AFtgPAADIAOgAAARYXHgEXFhUUBw4BBwYHIxUhIicuAScmNTQ3PgE3NjMxOAExNDc+ATc2MzIXHgEXFhcVATMJATMVMzUEjD83NlAXFxYXTjU1PQL8kz01Nk8XFxcXTzY1PSIjd1BQWlJJSXInJw3+mdv+2/7c25MCUQYcHFg5OUA/ODlXHBwIAhcXTzY1PTw1Nk8XF1tQUHcjIhwcYUNDTgL+3QFt/pOTkwABAAAAAQAAmM7nP18PPPUACwQAAAAAANciZKUAAAAA1yJkpf/9/70FtgPDAAAACAACAAAAAAAAAAEAAAPA/8AAAAW3//3//QW2AAEAAAAAAAAAAAAAAAAAAAAMBAAAAAAAAAAAAAAAAgAAAAQAASAEAADgBAAAwAQAAJ0EAP/9BAAAAAQAAAAFtwAAAAAAAAAKABQAHgAyAEYAjACiAL4BFgE2AY4AAAABAAAADAA8AAMAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEADQAAAAEAAAAAAAIABwCWAAEAAAAAAAMADQBIAAEAAAAAAAQADQCrAAEAAAAAAAUACwAnAAEAAAAAAAYADQBvAAEAAAAAAAoAGgDSAAMAAQQJAAEAGgANAAMAAQQJAAIADgCdAAMAAQQJAAMAGgBVAAMAAQQJAAQAGgC4AAMAAQQJAAUAFgAyAAMAAQQJAAYAGgB8AAMAAQQJAAoANADsd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzVmVyc2lvbiAxLjAAVgBlAHIAcwBpAG8AbgAgADEALgAwd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzUmVndWxhcgBSAGUAZwB1AGwAYQByd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzRm9udCBnZW5lcmF0ZWQgYnkgSWNvTW9vbi4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.optik-site [class^="w-icon-"], .optik-site [class*=" w-icon-"] {
+  speak: none;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-family: webflow-icons !important;
+}
+
+.optik-site .w-icon-slider-right:before {
+  content: "";
+}
+
+.optik-site .w-icon-slider-left:before {
+  content: "";
+}
+
+.optik-site .w-icon-nav-menu:before {
+  content: "";
+}
+
+.optik-site .w-icon-arrow-down:before, .optik-site .w-icon-dropdown-toggle:before {
+  content: "";
+}
+
+.optik-site .w-icon-file-upload-remove:before {
+  content: "";
+}
+
+.optik-site .w-icon-file-upload-icon:before {
+  content: "";
+}
+
+.optik-site * {
+  box-sizing: border-box;
+}
+
+.optik-site {
+  height: 100%;
+}
+
+.optik-site {
+  color: #333;
+  background-color: #fff;
+  min-height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.optik-site img {
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.optik-site.w-mod-touch * {
+  background-attachment: scroll !important;
+}
+
+.optik-site .w-block {
+  display: block;
+}
+
+.optik-site .w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.optik-site .w-clearfix:before, .optik-site .w-clearfix:after {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.optik-site .w-clearfix:after {
+  clear: both;
+}
+
+.optik-site .w-hidden {
+  display: none;
+}
+
+.optik-site .w-button {
+  color: #fff;
+  line-height: inherit;
+  cursor: pointer;
+  background-color: #3898ec;
+  border: 0;
+  border-radius: 0;
+  padding: 9px 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.optik-site input.w-button {
+  -webkit-appearance: button;
+}
+
+.optik-site :where(button.w-popover-trigger) {
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  background-color: #0000;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.optik-site .w-popover {
+  position-anchor: none;
+}
+
+.optik-site .w-popover[popover]:not(:popover-open) {
+  display: none;
+}
+
+.optik-site[data-w-dynpage] [data-w-cloak] {
+  color: #0000 !important;
+}
+
+.optik-site .w-code-block {
+  margin: unset;
+}
+
+.optik-site pre.w-code-block code {
+  all: inherit;
+}
+
+.optik-site pre.w-code-block code > span {
+  display: block !important;
+}
+
+.optik-site .w-optimization {
+  display: contents;
+}
+
+.optik-site .w-webflow-badge, .optik-site .w-webflow-badge > img {
+  box-sizing: unset;
+  width: unset;
+  height: unset;
+  max-height: unset;
+  max-width: unset;
+  min-height: unset;
+  min-width: unset;
+  margin: unset;
+  padding: unset;
+  float: unset;
+  clear: unset;
+  border: unset;
+  border-radius: unset;
+  background: unset;
+  background-image: unset;
+  background-position: unset;
+  background-size: unset;
+  background-repeat: unset;
+  background-origin: unset;
+  background-clip: unset;
+  background-attachment: unset;
+  background-color: unset;
+  box-shadow: unset;
+  transform: unset;
+  direction: unset;
+  font-family: unset;
+  font-weight: unset;
+  color: unset;
+  font-size: unset;
+  line-height: unset;
+  font-style: unset;
+  font-variant: unset;
+  text-align: unset;
+  letter-spacing: unset;
+  -webkit-text-decoration: unset;
+  text-decoration: unset;
+  text-indent: unset;
+  text-transform: unset;
+  list-style-type: unset;
+  text-shadow: unset;
+  vertical-align: unset;
+  cursor: unset;
+  white-space: unset;
+  word-break: unset;
+  word-spacing: unset;
+  word-wrap: unset;
+  transition: unset;
+}
+
+.optik-site .w-webflow-badge {
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px #0000001a, 0 1px 3px #0000001a;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 2147483647 !important;
+  color: #aaadb0 !important;
+  width: auto !important;
+  height: auto !important;
+  overflow: unset !important;
+  background-color: #fff !important;
+  border-radius: 3px !important;
+  margin: 0 !important;
+  padding: 6px !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  position: fixed !important;
+  inset: auto 12px 12px auto !important;
+  transform: none !important;
+}
+
+.optik-site .w-webflow-badge > img {
+  position: unset;
+  visibility: unset !important;
+  opacity: 1 !important;
+  vertical-align: middle !important;
+  display: inline-block !important;
+}
+
+.optik-site h1, .optik-site h2, .optik-site h3, .optik-site h4, .optik-site h5, .optik-site h6 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.optik-site h1 {
+  margin-top: 20px;
+  font-size: 38px;
+  line-height: 44px;
+}
+
+.optik-site h2 {
+  margin-top: 20px;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.optik-site h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.optik-site h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.optik-site h5 {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.optik-site h6 {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.optik-site p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.optik-site blockquote {
+  border-left: 5px solid #e2e2e2;
+  margin: 0 0 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.optik-site figure {
+  margin: 0 0 10px;
+}
+
+.optik-site figcaption {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.optik-site ul, .optik-site ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 40px;
+}
+
+.optik-site .w-list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.optik-site .w-embed:before, .optik-site .w-embed:after {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.optik-site .w-embed:after {
+  clear: both;
+}
+
+.optik-site .w-video {
+  width: 100%;
+  padding: 0;
+  position: relative;
+}
+
+.optik-site .w-video iframe, .optik-site .w-video object, .optik-site .w-video embed {
+  border: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.optik-site fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.optik-site button, .optik-site [type="button"], .optik-site [type="reset"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  border: 0;
+}
+
+.optik-site .w-form {
+  margin: 0 0 15px;
+}
+
+.optik-site .w-form-done {
+  text-align: center;
+  background-color: #ddd;
+  padding: 20px;
+  display: none;
+}
+
+.optik-site .w-form-fail {
+  background-color: #ffdede;
+  margin-top: 10px;
+  padding: 10px;
+  display: none;
+}
+
+.optik-site label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+}
+
+.optik-site .w-input, .optik-site .w-select {
+  color: #333;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 38px;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  display: block;
+}
+
+.optik-site .w-input::placeholder, .optik-site .w-select::placeholder {
+  color: #999;
+}
+
+.optik-site .w-input:focus, .optik-site .w-select:focus {
+  border-color: #3898ec;
+  outline: 0;
+}
+
+.optik-site .w-input[disabled], .optik-site .w-select[disabled], .optik-site .w-input[readonly], .optik-site .w-select[readonly], .optik-site fieldset[disabled] .w-input, .optik-site fieldset[disabled] .w-select {
+  cursor: not-allowed;
+}
+
+.optik-site .w-input[disabled]:not(.w-input-disabled), .optik-site .w-select[disabled]:not(.w-input-disabled), .optik-site .w-input[readonly], .optik-site .w-select[readonly], .optik-site fieldset[disabled]:not(.w-input-disabled) .w-input, .optik-site fieldset[disabled]:not(.w-input-disabled) .w-select {
+  background-color: #eee;
+}
+
+.optik-site textarea.w-input, .optik-site textarea.w-select {
+  height: auto;
+}
+
+.optik-site .w-select {
+  background-color: #f3f3f3;
+}
+
+.optik-site .w-select[multiple] {
+  height: auto;
+}
+
+.optik-site .w-form-label {
+  cursor: pointer;
+  margin-bottom: 0;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.optik-site .w-radio {
+  margin-bottom: 5px;
+  padding-left: 20px;
+  display: block;
+}
+
+.optik-site .w-radio:before, .optik-site .w-radio:after {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.optik-site .w-radio:after {
+  clear: both;
+}
+
+.optik-site .w-radio-input {
+  float: left;
+  margin: 3px 0 0 -20px;
+  line-height: normal;
+}
+
+.optik-site .w-file-upload {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.optik-site .w-file-upload-input {
+  opacity: 0;
+  z-index: -100;
+  width: .1px;
+  height: .1px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.optik-site .w-file-upload-default, .optik-site .w-file-upload-uploading, .optik-site .w-file-upload-success {
+  color: #333;
+  display: inline-block;
+}
+
+.optik-site .w-file-upload-error {
+  margin-top: 10px;
+  display: block;
+}
+
+.optik-site .w-file-upload-default.w-hidden, .optik-site .w-file-upload-uploading.w-hidden, .optik-site .w-file-upload-error.w-hidden, .optik-site .w-file-upload-success.w-hidden {
+  display: none;
+}
+
+.optik-site .w-file-upload-uploading-btn {
+  cursor: pointer;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  display: flex;
+}
+
+.optik-site .w-file-upload-file {
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin: 0;
+  padding: 8px 9px 8px 11px;
+  display: flex;
+}
+
+.optik-site .w-file-upload-file-name {
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+}
+
+.optik-site .w-file-remove-link {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  margin-top: 3px;
+  margin-left: 10px;
+  padding: 3px;
+  display: block;
+}
+
+.optik-site .w-icon-file-upload-remove {
+  margin: auto;
+  font-size: 10px;
+}
+
+.optik-site .w-file-upload-error-msg {
+  color: #ea384c;
+  padding: 2px 0;
+  display: inline-block;
+}
+
+.optik-site .w-file-upload-info {
+  padding: 0 12px;
+  line-height: 38px;
+  display: inline-block;
+}
+
+.optik-site .w-file-upload-label {
+  cursor: pointer;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.optik-site .w-icon-file-upload-icon, .optik-site .w-icon-file-upload-uploading {
+  width: 20px;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.optik-site .w-icon-file-upload-uploading {
+  height: 20px;
+}
+
+.optik-site .w-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.optik-site .w-container:before, .optik-site .w-container:after {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.optik-site .w-container:after {
+  clear: both;
+}
+
+.optik-site .w-container .w-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.optik-site .w-row:before, .optik-site .w-row:after {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.optik-site .w-row:after {
+  clear: both;
+}
+
+.optik-site .w-row .w-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.optik-site .w-col {
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.optik-site .w-col .w-col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.optik-site .w-col-1 {
+  width: 8.33333%;
+}
+
+.optik-site .w-col-2 {
+  width: 16.6667%;
+}
+
+.optik-site .w-col-3 {
+  width: 25%;
+}
+
+.optik-site .w-col-4 {
+  width: 33.3333%;
+}
+
+.optik-site .w-col-5 {
+  width: 41.6667%;
+}
+
+.optik-site .w-col-6 {
+  width: 50%;
+}
+
+.optik-site .w-col-7 {
+  width: 58.3333%;
+}
+
+.optik-site .w-col-8 {
+  width: 66.6667%;
+}
+
+.optik-site .w-col-9 {
+  width: 75%;
+}
+
+.optik-site .w-col-10 {
+  width: 83.3333%;
+}
+
+.optik-site .w-col-11 {
+  width: 91.6667%;
+}
+
+.optik-site .w-col-12 {
+  width: 100%;
+}
+
+.optik-site .w-hidden-main {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+  .optik-site .w-container {
+    max-width: 728px;
+  }
+
+  .optik-site .w-hidden-main {
+    display: inherit !important;
+  }
+
+  .optik-site .w-hidden-medium {
+    display: none !important;
+  }
+
+  .optik-site .w-col-medium-1 {
+    width: 8.33333%;
+  }
+
+  .optik-site .w-col-medium-2 {
+    width: 16.6667%;
+  }
+
+  .optik-site .w-col-medium-3 {
+    width: 25%;
+  }
+
+  .optik-site .w-col-medium-4 {
+    width: 33.3333%;
+  }
+
+  .optik-site .w-col-medium-5 {
+    width: 41.6667%;
+  }
+
+  .optik-site .w-col-medium-6 {
+    width: 50%;
+  }
+
+  .optik-site .w-col-medium-7 {
+    width: 58.3333%;
+  }
+
+  .optik-site .w-col-medium-8 {
+    width: 66.6667%;
+  }
+
+  .optik-site .w-col-medium-9 {
+    width: 75%;
+  }
+
+  .optik-site .w-col-medium-10 {
+    width: 83.3333%;
+  }
+
+  .optik-site .w-col-medium-11 {
+    width: 91.6667%;
+  }
+
+  .optik-site .w-col-medium-12 {
+    width: 100%;
+  }
+
+  .optik-site .w-col-stack {
+    width: 100%;
+    left: auto;
+    right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .optik-site .w-hidden-main, .optik-site .w-hidden-medium {
+    display: inherit !important;
+  }
+
+  .optik-site .w-hidden-small {
+    display: none !important;
+  }
+
+  .optik-site .w-row, .optik-site .w-container .w-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .optik-site .w-col {
+    width: 100%;
+    left: auto;
+    right: auto;
+  }
+
+  .optik-site .w-col-small-1 {
+    width: 8.33333%;
+  }
+
+  .optik-site .w-col-small-2 {
+    width: 16.6667%;
+  }
+
+  .optik-site .w-col-small-3 {
+    width: 25%;
+  }
+
+  .optik-site .w-col-small-4 {
+    width: 33.3333%;
+  }
+
+  .optik-site .w-col-small-5 {
+    width: 41.6667%;
+  }
+
+  .optik-site .w-col-small-6 {
+    width: 50%;
+  }
+
+  .optik-site .w-col-small-7 {
+    width: 58.3333%;
+  }
+
+  .optik-site .w-col-small-8 {
+    width: 66.6667%;
+  }
+
+  .optik-site .w-col-small-9 {
+    width: 75%;
+  }
+
+  .optik-site .w-col-small-10 {
+    width: 83.3333%;
+  }
+
+  .optik-site .w-col-small-11 {
+    width: 91.6667%;
+  }
+
+  .optik-site .w-col-small-12 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .optik-site .w-container {
+    max-width: none;
+  }
+
+  .optik-site .w-hidden-main, .optik-site .w-hidden-medium, .optik-site .w-hidden-small {
+    display: inherit !important;
+  }
+
+  .optik-site .w-hidden-tiny {
+    display: none !important;
+  }
+
+  .optik-site .w-col {
+    width: 100%;
+  }
+
+  .optik-site .w-col-tiny-1 {
+    width: 8.33333%;
+  }
+
+  .optik-site .w-col-tiny-2 {
+    width: 16.6667%;
+  }
+
+  .optik-site .w-col-tiny-3 {
+    width: 25%;
+  }
+
+  .optik-site .w-col-tiny-4 {
+    width: 33.3333%;
+  }
+
+  .optik-site .w-col-tiny-5 {
+    width: 41.6667%;
+  }
+
+  .optik-site .w-col-tiny-6 {
+    width: 50%;
+  }
+
+  .optik-site .w-col-tiny-7 {
+    width: 58.3333%;
+  }
+
+  .optik-site .w-col-tiny-8 {
+    width: 66.6667%;
+  }
+
+  .optik-site .w-col-tiny-9 {
+    width: 75%;
+  }
+
+  .optik-site .w-col-tiny-10 {
+    width: 83.3333%;
+  }
+
+  .optik-site .w-col-tiny-11 {
+    width: 91.6667%;
+  }
+
+  .optik-site .w-col-tiny-12 {
+    width: 100%;
+  }
+}
+
+.optik-site .w-widget {
+  position: relative;
+}
+
+.optik-site .w-widget-map {
+  width: 100%;
+  height: 400px;
+}
+
+.optik-site .w-widget-map label {
+  width: auto;
+  display: inline;
+}
+
+.optik-site .w-widget-map img {
+  max-width: inherit;
+}
+
+.optik-site .w-widget-map .gm-style-iw {
+  text-align: center;
+}
+
+.optik-site .w-widget-map .gm-style-iw > button {
+  display: none !important;
+}
+
+.optik-site .w-widget-twitter {
+  overflow: hidden;
+}
+
+.optik-site .w-widget-twitter-count-shim {
+  vertical-align: top;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #758696;
+  border-radius: 3px;
+  width: 28px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.optik-site .w-widget-twitter-count-shim * {
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.optik-site .w-widget-twitter-count-shim .w-widget-twitter-count-inner {
+  text-align: center;
+  color: #999;
+  font-family: serif;
+  font-size: 15px;
+  line-height: 12px;
+  position: relative;
+}
+
+.optik-site .w-widget-twitter-count-shim .w-widget-twitter-count-clear {
+  display: block;
+  position: relative;
+}
+
+.optik-site .w-widget-twitter-count-shim.w--large {
+  width: 36px;
+  height: 28px;
+}
+
+.optik-site .w-widget-twitter-count-shim.w--large .w-widget-twitter-count-inner {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.optik-site .w-widget-twitter-count-shim:not(.w--vertical) {
+  margin-left: 5px;
+  margin-right: 8px;
+}
+
+.optik-site .w-widget-twitter-count-shim:not(.w--vertical).w--large {
+  margin-left: 6px;
+}
+
+.optik-site .w-widget-twitter-count-shim:not(.w--vertical):before, .optik-site .w-widget-twitter-count-shim:not(.w--vertical):after {
+  content: " ";
+  pointer-events: none;
+  border: solid #0000;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.optik-site .w-widget-twitter-count-shim:not(.w--vertical):before {
+  border-width: 4px;
+  border-color: #75869600 #5d6c7b #75869600 #75869600;
+  margin-top: -4px;
+  margin-left: -9px;
+}
+
+.optik-site .w-widget-twitter-count-shim:not(.w--vertical).w--large:before {
+  border-width: 5px;
+  margin-top: -5px;
+  margin-left: -10px;
+}
+
+.optik-site .w-widget-twitter-count-shim:not(.w--vertical):after {
+  border-width: 4px;
+  border-color: #fff0 #fff #fff0 #fff0;
+  margin-top: -4px;
+  margin-left: -8px;
+}
+
+.optik-site .w-widget-twitter-count-shim:not(.w--vertical).w--large:after {
+  border-width: 5px;
+  margin-top: -5px;
+  margin-left: -9px;
+}
+
+.optik-site .w-widget-twitter-count-shim.w--vertical {
+  width: 61px;
+  height: 33px;
+  margin-bottom: 8px;
+}
+
+.optik-site .w-widget-twitter-count-shim.w--vertical:before, .optik-site .w-widget-twitter-count-shim.w--vertical:after {
+  content: " ";
+  pointer-events: none;
+  border: solid #0000;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+.optik-site .w-widget-twitter-count-shim.w--vertical:before {
+  border-width: 5px;
+  border-color: #5d6c7b #75869600 #75869600;
+  margin-left: -5px;
+}
+
+.optik-site .w-widget-twitter-count-shim.w--vertical:after {
+  border-width: 4px;
+  border-color: #fff #fff0 #fff0;
+  margin-left: -4px;
+}
+
+.optik-site .w-widget-twitter-count-shim.w--vertical .w-widget-twitter-count-inner {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.optik-site .w-widget-twitter-count-shim.w--vertical.w--large {
+  width: 76px;
+}
+
+.optik-site .w-background-video {
+  color: #fff;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.optik-site .w-background-video > video {
+  object-fit: cover;
+  z-index: -100;
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  inset: -100%;
+}
+
+.optik-site .w-background-video > video::-webkit-media-controls-start-playback-button {
+  -webkit-appearance: none;
+  display: none !important;
+}
+
+.optik-site .w-background-video--control {
+  background-color: #0000;
+  padding: 0;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+.optik-site .w-background-video--control > [hidden] {
+  display: none !important;
+}
+
+.optik-site .w-slider {
+  text-align: center;
+  clear: both;
+  -webkit-tap-highlight-color: #0000;
+  tap-highlight-color: #0000;
+  background: #ddd;
+  height: 300px;
+  position: relative;
+}
+
+.optik-site .w-slider-mask {
+  z-index: 1;
+  white-space: nowrap;
+  height: 100%;
+  display: block;
+  position: relative;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.optik-site .w-slide {
+  vertical-align: top;
+  white-space: normal;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.optik-site .w-slider-nav {
+  z-index: 2;
+  text-align: center;
+  -webkit-tap-highlight-color: #0000;
+  tap-highlight-color: #0000;
+  height: 40px;
+  margin: auto;
+  padding-top: 10px;
+  position: absolute;
+  inset: auto 0 0;
+}
+
+.optik-site .w-slider-nav.w-round > div {
+  border-radius: 100%;
+}
+
+.optik-site .w-slider-nav.w-num > div {
+  width: auto;
+  height: auto;
+  font-size: inherit;
+  line-height: inherit;
+  padding: .2em .5em;
+}
+
+.optik-site .w-slider-nav.w-shadow > div {
+  box-shadow: 0 0 3px #3336;
+}
+
+.optik-site .w-slider-nav-invert {
+  color: #fff;
+}
+
+.optik-site .w-slider-nav-invert > div {
+  background-color: #2226;
+}
+
+.optik-site .w-slider-nav-invert > div.w-active {
+  background-color: #222;
+}
+
+.optik-site .w-slider-dot {
+  cursor: pointer;
+  background-color: #fff6;
+  width: 1em;
+  height: 1em;
+  margin: 0 3px .5em;
+  transition: background-color .1s, color .1s;
+  display: inline-block;
+  position: relative;
+}
+
+.optik-site .w-slider-dot.w-active {
+  background-color: #fff;
+}
+
+.optik-site .w-slider-dot:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.optik-site .w-slider-dot:focus.w-active {
+  box-shadow: none;
+}
+
+.optik-site .w-slider-arrow-left, .optik-site .w-slider-arrow-right {
+  cursor: pointer;
+  color: #fff;
+  -webkit-tap-highlight-color: #0000;
+  tap-highlight-color: #0000;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 80px;
+  margin: auto;
+  font-size: 40px;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.optik-site .w-slider-arrow-left [class^="w-icon-"], .optik-site .w-slider-arrow-right [class^="w-icon-"], .optik-site .w-slider-arrow-left [class*=" w-icon-"], .optik-site .w-slider-arrow-right [class*=" w-icon-"] {
+  position: absolute;
+}
+
+.optik-site .w-slider-arrow-left:focus, .optik-site .w-slider-arrow-right:focus {
+  outline: 0;
+}
+
+.optik-site .w-slider-arrow-left {
+  z-index: 3;
+  right: auto;
+}
+
+.optik-site .w-slider-arrow-right {
+  z-index: 4;
+  left: auto;
+}
+
+.optik-site .w-icon-slider-left, .optik-site .w-icon-slider-right {
+  width: 1em;
+  height: 1em;
+  margin: auto;
+  inset: 0;
+}
+
+.optik-site .w-slider-aria-label {
+  clip: rect(0 0 0 0);
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.optik-site .w-slider-force-show {
+  display: block !important;
+}
+
+.optik-site .w-dropdown {
+  text-align: left;
+  z-index: 900;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  position: relative;
+}
+
+.optik-site .w-dropdown-btn, .optik-site .w-dropdown-toggle, .optik-site .w-dropdown-link {
+  vertical-align: top;
+  color: #222;
+  text-align: left;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.optik-site .w-dropdown-toggle {
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  padding-right: 40px;
+  display: inline-block;
+}
+
+.optik-site .w-dropdown-toggle:focus {
+  outline: 0;
+}
+
+.optik-site .w-icon-dropdown-toggle {
+  width: 1em;
+  height: 1em;
+  margin: auto 20px auto auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.optik-site .w-dropdown-list {
+  background: #ddd;
+  min-width: 100%;
+  display: none;
+  position: absolute;
+}
+
+.optik-site .w-dropdown-list.w--open {
+  display: block;
+}
+
+.optik-site .w-dropdown-link {
+  color: #222;
+  padding: 10px 20px;
+  display: block;
+}
+
+.optik-site .w-dropdown-link.w--current {
+  color: #0082f3;
+}
+
+.optik-site .w-dropdown-link:focus {
+  outline: 0;
+}
+
+.optik-site .w-lightbox-backdrop {
+  cursor: auto;
+  letter-spacing: normal;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  visibility: visible;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  color: #fff;
+  text-align: center;
+  z-index: 2000;
+  opacity: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  background: #000000e6;
+  outline: 0;
+  font-family: Helvetica Neue, Helvetica, Ubuntu, Segoe UI, Verdana, sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.2;
+  list-style: disc;
+  position: fixed;
+  inset: 0;
+  -webkit-transform: translate(0);
+}
+
+.optik-site .w-lightbox-backdrop, .optik-site .w-lightbox-container {
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  overflow: auto;
+}
+
+.optik-site .w-lightbox-content {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.optik-site .w-lightbox-view {
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.optik-site .w-lightbox-view:before {
+  content: "";
+  height: 100vh;
+}
+
+.optik-site .w-lightbox-group, .optik-site .w-lightbox-group .w-lightbox-view, .optik-site .w-lightbox-group .w-lightbox-view:before {
+  height: 86vh;
+}
+
+.optik-site .w-lightbox-frame, .optik-site .w-lightbox-view:before {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.optik-site .w-lightbox-figure {
+  margin: 0;
+  position: relative;
+}
+
+.optik-site .w-lightbox-group .w-lightbox-figure {
+  cursor: pointer;
+}
+
+.optik-site .w-lightbox-img {
+  width: auto;
+  max-width: none;
+  height: auto;
+}
+
+.optik-site .w-lightbox-image {
+  float: none;
+  max-width: 100vw;
+  max-height: 100vh;
+  display: block;
+}
+
+.optik-site .w-lightbox-group .w-lightbox-image {
+  max-height: 86vh;
+}
+
+.optik-site .w-lightbox-caption {
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: #0006;
+  padding: .5em 1em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.optik-site .w-lightbox-embed {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.optik-site .w-lightbox-control {
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  width: 4em;
+  transition: all .3s;
+  position: absolute;
+  top: 0;
+}
+
+.optik-site .w-lightbox-left {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yMCAwIDI0IDQwIiB3aWR0aD0iMjQiIGhlaWdodD0iNDAiPjxnIHRyYW5zZm9ybT0icm90YXRlKDQ1KSI+PHBhdGggZD0ibTAgMGg1djIzaDIzdjVoLTI4eiIgb3BhY2l0eT0iLjQiLz48cGF0aCBkPSJtMSAxaDN2MjNoMjN2M2gtMjZ6IiBmaWxsPSIjZmZmIi8+PC9nPjwvc3ZnPg==");
+  display: none;
+  bottom: 0;
+  left: 0;
+}
+
+.optik-site .w-lightbox-right {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii00IDAgMjQgNDAiIHdpZHRoPSIyNCIgaGVpZ2h0PSI0MCI+PGcgdHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJtMC0waDI4djI4aC01di0yM2gtMjN6IiBvcGFjaXR5PSIuNCIvPjxwYXRoIGQ9Im0xIDFoMjZ2MjZoLTN2LTIzaC0yM3oiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+");
+  display: none;
+  bottom: 0;
+  right: 0;
+}
+
+.optik-site .w-lightbox-close {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii00IDAgMTggMTciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyI+PGcgdHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJtMCAwaDd2LTdoNXY3aDd2NWgtN3Y3aC01di03aC03eiIgb3BhY2l0eT0iLjQiLz48cGF0aCBkPSJtMSAxaDd2LTdoM3Y3aDd2M2gtN3Y3aC0zdi03aC03eiIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4=");
+  background-size: 18px;
+  height: 2.6em;
+  right: 0;
+}
+
+.optik-site .w-lightbox-strip {
+  white-space: nowrap;
+  padding: 0 1vh;
+  line-height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto hidden;
+}
+
+.optik-site .w-lightbox-item {
+  box-sizing: content-box;
+  cursor: pointer;
+  width: 10vh;
+  padding: 2vh 1vh;
+  display: inline-block;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.optik-site .w-lightbox-active {
+  opacity: .3;
+}
+
+.optik-site .w-lightbox-thumbnail {
+  background: #222;
+  height: 10vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.optik-site .w-lightbox-thumbnail-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.optik-site .w-lightbox-thumbnail .w-lightbox-tall {
+  width: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.optik-site .w-lightbox-thumbnail .w-lightbox-wide {
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.optik-site .w-lightbox-spinner {
+  box-sizing: border-box;
+  border: 5px solid #0006;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  margin-left: -20px;
+  animation: .8s linear infinite spin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.optik-site .w-lightbox-spinner:after {
+  content: "";
+  border: 3px solid #0000;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  inset: -4px;
+}
+
+.optik-site .w-lightbox-hide {
+  display: none;
+}
+
+.optik-site .w-lightbox-noscroll {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .optik-site .w-lightbox-content {
+    height: 96vh;
+    margin-top: 2vh;
+  }
+
+  .optik-site .w-lightbox-view, .optik-site .w-lightbox-view:before {
+    height: 96vh;
+  }
+
+  .optik-site .w-lightbox-group, .optik-site .w-lightbox-group .w-lightbox-view, .optik-site .w-lightbox-group .w-lightbox-view:before {
+    height: 84vh;
+  }
+
+  .optik-site .w-lightbox-image {
+    max-width: 96vw;
+    max-height: 96vh;
+  }
+
+  .optik-site .w-lightbox-group .w-lightbox-image {
+    max-width: 82.3vw;
+    max-height: 84vh;
+  }
+
+  .optik-site .w-lightbox-left, .optik-site .w-lightbox-right {
+    opacity: .5;
+    display: block;
+  }
+
+  .optik-site .w-lightbox-close {
+    opacity: .8;
+  }
+
+  .optik-site .w-lightbox-control:hover {
+    opacity: 1;
+  }
+}
+
+.optik-site .w-lightbox-inactive, .optik-site .w-lightbox-inactive:hover {
+  opacity: 0;
+}
+
+.optik-site .w-richtext:before, .optik-site .w-richtext:after {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.optik-site .w-richtext:after {
+  clear: both;
+}
+
+.optik-site .w-richtext[contenteditable="true"]:before, .optik-site .w-richtext[contenteditable="true"]:after {
+  white-space: initial;
+}
+
+.optik-site .w-richtext ol, .optik-site .w-richtext ul {
+  overflow: hidden;
+}
+
+.optik-site .w-richtext .w-richtext-figure-selected.w-richtext-figure-type-video div:after, .optik-site .w-richtext .w-richtext-figure-selected[data-rt-type="video"] div:after, .optik-site .w-richtext .w-richtext-figure-selected.w-richtext-figure-type-image div, .optik-site .w-richtext .w-richtext-figure-selected[data-rt-type="image"] div {
+  outline: 2px solid #2895f7;
+}
+
+.optik-site .w-richtext figure.w-richtext-figure-type-video > div:after, .optik-site .w-richtext figure[data-rt-type="video"] > div:after {
+  content: "";
+  display: none;
+  position: absolute;
+  inset: 0;
+}
+
+.optik-site .w-richtext figure {
+  max-width: 60%;
+  position: relative;
+}
+
+.optik-site .w-richtext figure > div:before {
+  cursor: default !important;
+}
+
+.optik-site .w-richtext figure img {
+  width: 100%;
+}
+
+.optik-site .w-richtext figure figcaption.w-richtext-figcaption-placeholder {
+  opacity: .6;
+}
+
+.optik-site .w-richtext figure div {
+  color: #0000;
+  font-size: 0;
+}
+
+.optik-site .w-richtext figure.w-richtext-figure-type-image, .optik-site .w-richtext figure[data-rt-type="image"] {
+  display: table;
+}
+
+.optik-site .w-richtext figure.w-richtext-figure-type-image > div, .optik-site .w-richtext figure[data-rt-type="image"] > div {
+  display: inline-block;
+}
+
+.optik-site .w-richtext figure.w-richtext-figure-type-image > figcaption, .optik-site .w-richtext figure[data-rt-type="image"] > figcaption {
+  caption-side: bottom;
+  display: table-caption;
+}
+
+.optik-site .w-richtext figure.w-richtext-figure-type-video, .optik-site .w-richtext figure[data-rt-type="video"] {
+  width: 60%;
+  height: 0;
+}
+
+.optik-site .w-richtext figure.w-richtext-figure-type-video iframe, .optik-site .w-richtext figure[data-rt-type="video"] iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.optik-site .w-richtext figure.w-richtext-figure-type-video > div, .optik-site .w-richtext figure[data-rt-type="video"] > div {
+  width: 100%;
+}
+
+.optik-site .w-richtext figure.w-richtext-align-center {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.optik-site .w-richtext figure.w-richtext-align-center.w-richtext-figure-type-image > div, .optik-site .w-richtext figure.w-richtext-align-center[data-rt-type="image"] > div {
+  max-width: 100%;
+}
+
+.optik-site .w-richtext figure.w-richtext-align-normal {
+  clear: both;
+}
+
+.optik-site .w-richtext figure.w-richtext-align-fullwidth {
+  text-align: center;
+  clear: both;
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.optik-site .w-richtext figure.w-richtext-align-fullwidth > div {
+  padding-bottom: inherit;
+  display: inline-block;
+}
+
+.optik-site .w-richtext figure.w-richtext-align-fullwidth > figcaption {
+  display: block;
+}
+
+.optik-site .w-richtext figure.w-richtext-align-floatleft {
+  float: left;
+  clear: none;
+  margin-right: 15px;
+}
+
+.optik-site .w-richtext figure.w-richtext-align-floatright {
+  float: right;
+  clear: none;
+  margin-left: 15px;
+}
+
+.optik-site .w-nav {
+  z-index: 1000;
+  background: #ddd;
+  position: relative;
+}
+
+.optik-site .w-nav:before, .optik-site .w-nav:after {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.optik-site .w-nav:after {
+  clear: both;
+}
+
+.optik-site .w-nav-brand {
+  float: left;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+}
+
+.optik-site .w-nav-link {
+  vertical-align: top;
+  color: #222;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.optik-site .w-nav-link.w--current {
+  color: #0082f3;
+}
+
+.optik-site .w-nav-menu {
+  float: right;
+  position: relative;
+}
+
+.optik-site [data-nav-menu-open] {
+  text-align: center;
+  background: #c8c8c8;
+  min-width: 200px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  overflow: visible;
+  display: block !important;
+}
+
+.optik-site .w--nav-link-open {
+  display: block;
+  position: relative;
+}
+
+.optik-site .w-nav-overlay {
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.optik-site .w-nav-overlay [data-nav-menu-open] {
+  top: 0;
+}
+
+.optik-site .w-nav[data-animation="over-left"] .w-nav-overlay {
+  width: auto;
+}
+
+.optik-site .w-nav[data-animation="over-left"] .w-nav-overlay, .optik-site .w-nav[data-animation="over-left"] [data-nav-menu-open] {
+  z-index: 1;
+  top: 0;
+  right: auto;
+}
+
+.optik-site .w-nav[data-animation="over-right"] .w-nav-overlay {
+  width: auto;
+}
+
+.optik-site .w-nav[data-animation="over-right"] .w-nav-overlay, .optik-site .w-nav[data-animation="over-right"] [data-nav-menu-open] {
+  z-index: 1;
+  top: 0;
+  left: auto;
+}
+
+.optik-site .w-nav-button {
+  float: right;
+  cursor: pointer;
+  -webkit-tap-highlight-color: #0000;
+  tap-highlight-color: #0000;
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 18px;
+  font-size: 24px;
+  display: none;
+  position: relative;
+}
+
+.optik-site .w-nav-button:focus {
+  outline: 0;
+}
+
+.optik-site .w-nav-button.w--open {
+  color: #fff;
+  background-color: #c8c8c8;
+}
+
+.optik-site .w-nav[data-collapse="all"] .w-nav-menu {
+  display: none;
+}
+
+.optik-site .w-nav[data-collapse="all"] .w-nav-button, .optik-site .w--nav-dropdown-open, .optik-site .w--nav-dropdown-toggle-open {
+  display: block;
+}
+
+.optik-site .w--nav-dropdown-list-open {
+  position: static;
+}
+
+@media screen and (max-width: 991px) {
+  .optik-site .w-nav[data-collapse="medium"] .w-nav-menu {
+    display: none;
+  }
+
+  .optik-site .w-nav[data-collapse="medium"] .w-nav-button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .optik-site .w-nav[data-collapse="small"] .w-nav-menu {
+    display: none;
+  }
+
+  .optik-site .w-nav[data-collapse="small"] .w-nav-button {
+    display: block;
+  }
+
+  .optik-site .w-nav-brand {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .optik-site .w-nav[data-collapse="tiny"] .w-nav-menu {
+    display: none;
+  }
+
+  .optik-site .w-nav[data-collapse="tiny"] .w-nav-button {
+    display: block;
+  }
+}
+
+.optik-site .w-tabs {
+  position: relative;
+}
+
+.optik-site .w-tabs:before, .optik-site .w-tabs:after {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.optik-site .w-tabs:after {
+  clear: both;
+}
+
+.optik-site .w-tab-menu {
+  position: relative;
+}
+
+.optik-site .w-tab-link {
+  vertical-align: top;
+  text-align: left;
+  cursor: pointer;
+  color: #222;
+  background-color: #ddd;
+  padding: 9px 30px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.optik-site .w-tab-link.w--current {
+  background-color: #c8c8c8;
+}
+
+.optik-site .w-tab-link:focus {
+  outline: 0;
+}
+
+.optik-site .w-tab-content {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.optik-site .w-tab-pane {
+  display: none;
+  position: relative;
+}
+
+.optik-site .w--tab-active {
+  display: block;
+}
+
+@media screen and (max-width: 479px) {
+  .optik-site .w-tab-link {
+    display: block;
+  }
+}
+
+.optik-site .w-ix-emptyfix:after {
+  content: "";
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.optik-site .w-dyn-empty {
+  background-color: #ddd;
+  padding: 10px;
+}
+
+.optik-site .w-dyn-hide, .optik-site .w-dyn-bind-empty, .optik-site .w-condition-invisible {
+  display: none !important;
+}
+
+.optik-site .wf-layout-layout {
+  display: grid;
+}
+
+.optik-site .w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.optik-site {
+  --_colors---body-bg: #f7f7f7;
+  --_size---body--font-family: var(--_typography---body-font);
+  --_colors---text-color: #000c;
+  --_size---body--font-size: 18px;
+  --_size---body--line-height: 145%;
+  --_size---body--font-weight: 500;
+  --_size---body--letter-spacing: 0px;
+  --_size---h1--font-family: var(--_typography---heading-font);
+  --_colors---black: black;
+  --_size---h1--font-size: 210px;
+  --_size---h1--line-height: 104%;
+  --_size---h1--font-weight: 500;
+  --_size---h1--letter-spacing: -.48px;
+  --_size---h2--font-family: var(--_typography---heading-font);
+  --_size---h2--font-size: 128px;
+  --_size---h2--line-height: 90%;
+  --_size---h2--font-weight: 700;
+  --_size---h2--letter-spacing: -.48px;
+  --_size---h3--font-family: var(--_typography---heading-font);
+  --_size---h3--font-size: 56px;
+  --_size---h3--line-height: 98%;
+  --_size---h3--font-weight: 600;
+  --_size---h3--letter-spacing: 0px;
+  --_size---h4--font-family: var(--_typography---heading-font);
+  --_size---h4--font-size: 32px;
+  --_size---h4--line-height: 102%;
+  --_size---h4--font-weight: 500;
+  --_size---h4--letter-spacing: 0px;
+  --_size---h5--font-family: var(--_typography---heading-font);
+  --_size---h5--font-size: 24px;
+  --_size---h5--line-height: 99%;
+  --_size---h5--font-weight: 600;
+  --_size---h5--letter-spacing: 0px;
+  --_size---h6--font-family: var(--_typography---heading-font);
+  --_size---h6--font-size: 18px;
+  --_size---h6--line-height: 100%;
+  --_size---h6--font-weight: 600;
+  --_size---h6--letter-spacing: 0px;
+  --_colors---white: white;
+  --_colors---border-color-three: #0000001a;
+  --_colors---text-color-two: #0000000f;
+  --_colors---icon-bg: #fff6;
+  --_colors---text-color-three: #00000026;
+  --_colors---call-bg: #56565630;
+  --_colors---text-colo-six: #ffffffb3;
+  --_colors---text-color-five: #141414bd;
+  --_colors---patner-bg: #2d2d2de8;
+  --_colors---footer-overlay: #ededed00;
+  --_colors---christmas-white: #ededed;
+  --_colors---text-color-four: #000000b3;
+  --weight: 100%;
+  --height: 100%;
+  --_size---caption--font-size: 20px;
+  --_size---caption--line-height: 145%;
+  --_size---caption--font-weight: 500;
+  --_size---caption--letter-spacing: 0px;
+  --_size---caption-small--font-family: var(--_typography---body-font);
+  --_size---caption-small--font-size: 14px;
+  --_size---caption-small--line-height: 150%;
+  --_size---caption-small--font-weight: 500;
+  --_size---caption-small--letter-spacing: .48px;
+  --letter-spcing: 1.92px;
+  --_size---counter--font-family: var(--_typography---heading-font);
+  --_size---counter--font-size: 48px;
+  --_size---counter--line-height: 110%;
+  --_size---counter--font-weight: 600;
+  --_size---counter--letter-spacing: 0px;
+  --_size---body-two--font-family: var(--_typography---body-font);
+  --_size---body-two--line-height: 131%;
+  --_size---body-two--font-weight: 500;
+  --_size---body-two--letter-spacing: 0px;
+  --_size---caption--font-family: var(--_typography---body-font);
+  --_size---body-two--font-size: 16px;
+  --_size---heading-lg: 96px;
+  --hero-ovelay: #0000009e;
+  --_typography---heading-font: Phudu, sans-serif;
+  --_typography---body-font: Urbanist, sans-serif;
+}
+
+.optik-site .w-layout-blockcontainer {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .optik-site .w-layout-blockcontainer {
+    max-width: 728px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .optik-site .w-layout-blockcontainer {
+    max-width: none;
+  }
+}
+
+.optik-site {
+  background-color: var(--_colors---body-bg);
+  font-family: var(--_size---body--font-family);
+  color: var(--_colors---text-color);
+  font-size: var(--_size---body--font-size);
+  line-height: var(--_size---body--line-height);
+  font-weight: var(--_size---body--font-weight);
+  letter-spacing: var(--_size---body--letter-spacing);
+}
+
+.optik-site h1 {
+  font-family: var(--_size---h1--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h1--font-size);
+  line-height: var(--_size---h1--line-height);
+  font-weight: var(--_size---h1--font-weight);
+  letter-spacing: var(--_size---h1--letter-spacing);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.optik-site h2 {
+  font-family: var(--_size---h2--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h2--font-size);
+  line-height: var(--_size---h2--line-height);
+  font-weight: var(--_size---h2--font-weight);
+  letter-spacing: var(--_size---h2--letter-spacing);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.optik-site h3 {
+  font-family: var(--_size---h3--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h3--font-size);
+  line-height: var(--_size---h3--line-height);
+  font-weight: var(--_size---h3--font-weight);
+  letter-spacing: var(--_size---h3--letter-spacing);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.optik-site h4 {
+  font-family: var(--_size---h4--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h4--font-size);
+  line-height: var(--_size---h4--line-height);
+  font-weight: var(--_size---h4--font-weight);
+  letter-spacing: var(--_size---h4--letter-spacing);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.optik-site h5 {
+  font-family: var(--_size---h5--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h5--font-size);
+  line-height: var(--_size---h5--line-height);
+  font-weight: var(--_size---h5--font-weight);
+  letter-spacing: var(--_size---h5--letter-spacing);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.optik-site h6 {
+  font-family: var(--_size---h6--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h6--font-size);
+  line-height: var(--_size---h6--line-height);
+  font-weight: var(--_size---h6--font-weight);
+  letter-spacing: var(--_size---h6--letter-spacing);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.optik-site p {
+  font-family: var(--_size---body--font-family);
+  color: var(--_colors---text-color);
+  font-size: var(--_size---body--font-size);
+  line-height: var(--_size---body--line-height);
+  font-weight: var(--_size---body--font-weight);
+  letter-spacing: var(--_size---body--letter-spacing);
+  margin-bottom: 0;
+}
+
+.optik-site a {
+  font-family: var(--_size---h6--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h6--font-size);
+  line-height: var(--_size---h6--line-height);
+  font-weight: var(--_size---h6--font-weight);
+  letter-spacing: var(--_size---h6--letter-spacing);
+  text-decoration: none;
+  -webkit-text-decoration-color: var(--_colors---black);
+  text-decoration-color: var(--_colors---black);
+}
+
+.optik-site .body-bg-color-code {
+  color: #0c1c02;
+  border: 1px #000;
+}
+
+.optik-site .btn-text-wrap-02 {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.optik-site .typography-h1-to-h6 {
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .button-text {
+  font-family: var(--_size---h6--font-family);
+  color: var(--_colors---white);
+  font-size: var(--_size---h6--font-size);
+  line-height: var(--_size---h6--line-height);
+  font-weight: var(--_size---h6--font-weight);
+  letter-spacing: var(--_size---h6--letter-spacing);
+}
+
+.optik-site .button-text.color {
+  color: var(--_colors---black);
+}
+
+.optik-site .color-style {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .colors-style-wrap-2 {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.optik-site .btn-link-wrap {
+  z-index: 2;
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  color: #fff;
+  background-color: #ffffff1a;
+  border: 1px solid #ffffff21;
+  border-radius: 56px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 8px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 105%;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .btn-link-wrap.color-white {
+  background-color: var(--_colors---white);
+  color: var(--_colors---black);
+  font-size: var(--_size---h6--font-size);
+  line-height: var(--_size---h6--line-height);
+  font-weight: var(--_size---h6--font-weight);
+  letter-spacing: var(--_size---h6--letter-spacing);
+  border-style: none;
+  border-color: #0000;
+  border-radius: 8px;
+  padding: 14px 24px;
+}
+
+.optik-site .btn-link-wrap.color {
+  background-color: var(--_colors---black);
+  color: var(--_colors---black);
+  font-size: var(--_size---h6--font-size);
+  line-height: var(--_size---h6--line-height);
+  font-weight: var(--_size---h6--font-weight);
+  letter-spacing: var(--_size---h6--letter-spacing);
+  border-style: none;
+  border-color: #0000;
+  border-radius: 8px;
+  padding: 14px 24px;
+}
+
+.optik-site .colors-style {
+  font-size: 64px;
+}
+
+.optik-site .btn-wrap {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .styleguide-row {
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+  border-top: 1px solid #d6dbc8;
+  flex-flow: column;
+  padding-top: 100px;
+  display: flex;
+}
+
+.optik-site .buttons-style {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.optik-site .styleguide-section {
+  padding: 40px 20px 100px;
+}
+
+.optik-site .color-item-2 {
+  border: 1px solid var(--_colors---border-color-three);
+  background-color: var(--_colors---body-bg);
+  width: auto;
+  height: 100px;
+  color: var(--_colors---text-color);
+  font-size: var(--_size---body--font-size);
+  line-height: var(--_size---body--line-height);
+  font-weight: var(--_size---body--font-weight);
+  border-radius: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .color-item-2.text-color {
+  background-color: var(--_colors---text-color-two);
+}
+
+.optik-site .color-item-2.bright-gray {
+  background-color: var(--_colors---white);
+}
+
+.optik-site .color-item-2.pastel-blue {
+  background-color: var(--_colors---icon-bg);
+}
+
+.optik-site .color-item-2.jet {
+  background-color: var(--_colors---text-color-three);
+}
+
+.optik-site .color-item-2.theme-color {
+  background-color: var(--_colors---black);
+}
+
+.optik-site .color-item-2.theme-color-600 {
+  background-color: var(--_colors---text-color);
+}
+
+.optik-site .color-item-2.cultured {
+  background-color: var(--_colors---call-bg);
+}
+
+.optik-site .color-item-2.cultured._04 {
+  background-color: var(--_colors---text-colo-six);
+}
+
+.optik-site .color-item-2.cultured._02 {
+  background-color: var(--_colors---text-color-five);
+}
+
+.optik-site .color-item-2.cultured._03 {
+  background-color: var(--_colors---patner-bg);
+}
+
+.optik-site .color-item-2.cultured._05 {
+  background-color: var(--_colors---footer-overlay);
+}
+
+.optik-site .color-item-2.cultured._06 {
+  background-color: var(--_colors---christmas-white);
+}
+
+.optik-site .color-item-2.cultured._07 {
+  background-color: var(--_colors---border-color-three);
+}
+
+.optik-site .color-item-2.davy-s-grey {
+  background-color: var(--_colors---text-color-four);
+}
+
+.optik-site .theme-button-wrap {
+  background-color: #0000;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.optik-site .typography-wrap {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .container {
+  width: 100%;
+  max-width: 1300px;
+}
+
+.optik-site .container._02 {
+  max-width: 1075px;
+}
+
+.optik-site .color-code-2 {
+  color: var(--_colors---white);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.optik-site .color-code-2.border-color-two-code {
+  color: var(--_colors---black);
+  border: 1px #000;
+}
+
+.optik-site .btn-text-box {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20px;
+  padding-bottom: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.optik-site .btn-text-box._02 {
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+}
+
+.optik-site .typography {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.optik-site .arrow {
+  width: 100%;
+  height: 100%;
+}
+
+.optik-site .navbar {
+  background-color: #0000;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .header-logo-wrap.w--current {
+  padding-left: 0;
+}
+
+.optik-site .header-item-left {
+  width: 12%;
+}
+
+.optik-site .header-item-right {
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 35%;
+  display: flex;
+}
+
+.optik-site .navigation {
+  color: var(--_colors---text-color);
+  font-size: var(--_size---body--font-size);
+  line-height: var(--_size---body--line-height);
+  font-weight: var(--_size---body--font-weight);
+  letter-spacing: var(--_size---body--letter-spacing);
+  text-transform: none;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.optik-site .navigation.w--current {
+  color: var(--_colors---text-color);
+  background-color: #0000;
+}
+
+.optik-site .header-section {
+  z-index: 111;
+  background-color: #0000;
+  padding: 20px 20px 0;
+  overflow: visible;
+}
+
+.optik-site .header-wrap {
+  z-index: 11;
+  border: 2px #ffffff17;
+  border-radius: 12px;
+  padding: 0;
+  position: relative;
+}
+
+.optik-site .header-container {
+  max-width: 1300px;
+}
+
+.optik-site .nav-menu {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  text-overflow: clip;
+  object-fit: cover;
+  background-color: #0000;
+  border-radius: 0;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  max-width: 706px;
+  height: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .header-logo {
+  width: var(--weight);
+  height: var(--height);
+  max-width: 93px;
+}
+
+.optik-site .call-link {
+  font-family: var(--_size---body--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h6--font-size);
+  line-height: var(--_size---h6--line-height);
+  font-weight: var(--_size---h6--font-weight);
+  letter-spacing: var(--_size---h6--letter-spacing);
+  text-decoration: none;
+}
+
+.optik-site .header-item-right-wrap {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .call-icon-wrap {
+  background-color: var(--_colors---call-bg);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  display: flex;
+}
+
+.optik-site .call-icon-wrap._02 {
+  background-color: var(--_colors---white);
+  margin-left: -33px;
+}
+
+.optik-site .header-item-right-text-wrap {
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.optik-site .call-text {
+  font-family: var(--_size---body--font-family);
+  color: var(--_colors---text-color-five);
+  font-size: var(--_size---body--font-size);
+  line-height: var(--_size---h6--line-height);
+  font-weight: var(--_size---body--font-weight);
+  letter-spacing: var(--_size---body--letter-spacing);
+  text-transform: none;
+}
+
+.optik-site .hero {
+  height: 830px;
+  padding-top: 220px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.optik-site .hero-row {
+  z-index: 2;
+  grid-column-gap: 48px;
+  grid-row-gap: 48px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .hero-text {
+  max-width: 229px;
+  font-size: var(--_size---caption--font-size);
+  line-height: var(--_size---caption--line-height);
+  font-weight: var(--_size---caption--font-weight);
+  letter-spacing: var(--_size---caption--letter-spacing);
+}
+
+.optik-site .hero-img {
+  width: var(--weight);
+  height: var(--height);
+  max-width: 1000px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.optik-site .hero-title {
+  z-index: 4;
+  width: var(--weight);
+  background-image: linear-gradient(90deg, var(--_colors---black) 40%, var(--_colors---white) 40%, var(--_colors---white));
+  -webkit-text-fill-color: transparent;
+  --_size---body--font-family: var(--_typography---body-font);
+  --_size---body--font-size: 18px;
+  --_size---body--line-height: 145%;
+  --_size---body--font-weight: 500;
+  --_size---body--letter-spacing: 0px;
+  --_size---h1--font-family: var(--_typography---heading-font);
+  --_size---h1--font-size: 210px;
+  --_size---h1--line-height: 104%;
+  --_size---h1--font-weight: 500;
+  --_size---h1--letter-spacing: -.48px;
+  --_size---h2--font-family: var(--_typography---heading-font);
+  --_size---h2--font-size: 128px;
+  --_size---h2--line-height: 90%;
+  --_size---h2--font-weight: 700;
+  --_size---h2--letter-spacing: -.48px;
+  --_size---h3--font-family: var(--_typography---heading-font);
+  --_size---h3--font-size: 56px;
+  --_size---h3--line-height: 98%;
+  --_size---h3--font-weight: 600;
+  --_size---h3--letter-spacing: 0px;
+  --_size---h4--font-family: var(--_typography---heading-font);
+  --_size---h4--font-size: 32px;
+  --_size---h4--line-height: 102%;
+  --_size---h4--font-weight: 500;
+  --_size---h4--letter-spacing: 0px;
+  --_size---h5--font-family: var(--_typography---heading-font);
+  --_size---h5--font-size: 24px;
+  --_size---h5--line-height: 99%;
+  --_size---h5--font-weight: 600;
+  --_size---h5--letter-spacing: 0px;
+  --_size---h6--font-family: var(--_typography---heading-font);
+  --_size---h6--font-size: 18px;
+  --_size---h6--line-height: 100%;
+  --_size---h6--font-weight: 600;
+  --_size---h6--letter-spacing: 0px;
+  --_size---caption--font-size: 20px;
+  --_size---caption--line-height: 145%;
+  --_size---caption--font-weight: 500;
+  --_size---caption--letter-spacing: 0px;
+  --_size---caption-small--font-family: var(--_typography---body-font);
+  --_size---caption-small--font-size: 14px;
+  --_size---caption-small--line-height: 150%;
+  --_size---caption-small--font-weight: 500;
+  --_size---caption-small--letter-spacing: .48px;
+  --_size---counter--font-family: var(--_typography---heading-font);
+  --_size---counter--font-size: 48px;
+  --_size---counter--line-height: 110%;
+  --_size---counter--font-weight: 600;
+  --_size---counter--letter-spacing: 0px;
+  --_size---body-two--font-family: var(--_typography---body-font);
+  --_size---body-two--line-height: 131%;
+  --_size---body-two--font-weight: 500;
+  --_size---body-two--letter-spacing: 0px;
+  --_size---caption--font-family: var(--_typography---body-font);
+  --_size---body-two--font-size: 16px;
+  --_size---heading-lg: 96px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+}
+
+.optik-site .client-wrap {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-width: 100%;
+  max-width: 1375px;
+  display: flex;
+}
+
+.optik-site .letter-animation.text-wrapper {
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  overflow: hidden;
+}
+
+.optik-site .client-img {
+  width: var(--weight);
+  height: var(--height);
+  max-width: 100px;
+}
+
+.optik-site .patner-container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.optik-site .text-wrapper.left-contant-wrap {
+  width: 50%;
+}
+
+.optik-site .patner-exar-two {
+  max-width: 200px;
+  font-family: var(--_size---caption-small--font-family);
+  color: var(--_colors---text-colo-six);
+  font-size: var(--_size---caption-small--font-size);
+  line-height: var(--_size---caption-small--line-height);
+  font-weight: var(--_size---caption-small--font-weight);
+  letter-spacing: var(--_size---caption-small--letter-spacing);
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.optik-site .patner-exar-wrap {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  flex-flow: column;
+  display: flex;
+  overflow: hidden;
+}
+
+.optik-site .patner-wrap {
+  z-index: 2;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .patner-section {
+  z-index: 2;
+  background-color: var(--_colors---patner-bg);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  margin-left: -2px;
+  margin-right: -2px;
+  padding: 60px 20px;
+  position: relative;
+  top: -32px;
+  transform: rotate(1deg);
+  box-shadow: 0 -5px 40px #240c8717;
+}
+
+.optik-site .ticket-wrap {
+  grid-column-gap: 70px;
+  grid-row-gap: 70px;
+  justify-content: space-between;
+  width: 70%;
+  display: flex;
+  overflow: hidden;
+}
+
+.optik-site .page-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.optik-site .page-wrapper._02 {
+  overflow: visible;
+}
+
+.optik-site .about {
+  padding: 100px 20px;
+}
+
+.optik-site .about-row {
+  display: flex;
+}
+
+.optik-site .abou-left {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+  display: flex;
+}
+
+.optik-site .abou-right {
+  width: var(--weight);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .section-title-wrap {
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .section-title-cirle {
+  background-color: var(--_colors---black);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.optik-site .section-title {
+  font-family: var(--_size---h6--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---caption-small--font-size);
+  line-height: var(--_size---caption-small--line-height);
+  font-weight: var(--_size---caption-small--font-weight);
+  letter-spacing: var(--letter-spcing);
+  text-transform: uppercase;
+}
+
+.optik-site .about-section-title {
+  max-width: 418px;
+  font-family: var(--_size---h3--font-family);
+  font-size: var(--_size---h3--font-size);
+  line-height: var(--_size---h3--line-height);
+  font-weight: var(--_size---h3--font-weight);
+  letter-spacing: var(--_size---h3--letter-spacing);
+}
+
+.optik-site .about-section-title._02 {
+  max-width: 450px;
+}
+
+.optik-site .about-section-title._03 {
+  max-width: 430px;
+}
+
+.optik-site .abou-left-text {
+  max-width: 411px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.optik-site .abou-left-btn-wrap {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  border-bottom: 1px solid var(--_colors---black);
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+.optik-site .abou-left-btn-text {
+  font-family: var(--_size---h6--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h6--font-size);
+  line-height: var(--_size---h6--line-height);
+  font-weight: var(--_size---h6--font-weight);
+  letter-spacing: var(--_size---h6--letter-spacing);
+}
+
+.optik-site .abou-img-wrap {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  display: flex;
+}
+
+.optik-site .image {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 8px;
+  max-width: 182px;
+}
+
+.optik-site .about-img-two {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 8px;
+  max-width: 332px;
+}
+
+.optik-site .counter-wrap {
+  width: var(--weight);
+  grid-column-gap: 48px;
+  grid-row-gap: 48px;
+  flex-flow: column;
+  max-width: 105px;
+  display: flex;
+}
+
+.optik-site .counter-wrap._02 {
+  max-width: var(--weight);
+  flex-flow: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.optik-site .counter-item {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .counter-item-text {
+  font-family: var(--_size---counter--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---counter--font-size);
+  line-height: var(--_size---counter--line-height);
+  font-weight: var(--_size---counter--font-weight);
+  letter-spacing: var(--_size---counter--letter-spacing);
+}
+
+.optik-site .counter-text {
+  max-width: 80px;
+  font-family: var(--_size---body-two--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---body--font-size);
+  line-height: var(--_size---body-two--line-height);
+  font-weight: var(--_size---body-two--font-weight);
+  letter-spacing: var(--_size---body-two--letter-spacing);
+}
+
+.optik-site .counter-text._02 {
+  max-width: 100%;
+}
+
+.optik-site .about-c {
+  width: var(--weight);
+  height: var(--height);
+  max-width: 310px;
+  max-height: 312px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
+.optik-site .about-c._02 {
+  top: 0;
+  left: 65px;
+}
+
+.optik-site .portfolio {
+  background-color: var(--_colors---white);
+  padding: 100px 20px;
+}
+
+.optik-site .portfolio-row {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .portfolio-title {
+  width: var(--weight);
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.optik-site .portfolio-title-top {
+  padding-left: 70px;
+}
+
+.optik-site .portfolio-section-title {
+  max-width: 418px;
+  font-family: var(--_size---h3--font-family);
+  font-size: var(--_size---h3--font-size);
+  line-height: var(--_size---h3--line-height);
+  font-weight: var(--_size---h3--font-weight);
+  letter-spacing: var(--_size---h3--letter-spacing);
+}
+
+.optik-site .portfolio-section-title._02 {
+  max-width: var(--weight);
+}
+
+.optik-site .portfolio-title-box {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .portfolio-title-box._02 {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.optik-site .portfolio-title-box._03 {
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 70px;
+}
+
+.optik-site .portfolio-item-wrap {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  display: flex;
+}
+
+.optik-site .portfolio-collection-list-wrapper {
+  width: var(--weight);
+}
+
+.optik-site .portfolio-collection-list-wrapper._02 {
+  padding-top: 50px;
+}
+
+.optik-site .portfolio-collection-list-wrapper._02.max-weight {
+  max-width: 232px;
+}
+
+.optik-site .portfolio-collection-list-wrapper._02.max-weight-02 {
+  max-width: 256px;
+}
+
+.optik-site .portfolio-collection-list-wrapper.max-weight-01 {
+  max-width: 302px;
+}
+
+.optik-site .portfolio-collection {
+  overflow: hidden;
+}
+
+.optik-site .portfolio-collection-wrap {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .portfolio-collection-img-wrap {
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.optik-site .portfolio-collection-img {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 8px;
+  transition: all .5s;
+}
+
+.optik-site .portfolio-collection-img:hover {
+  transform: scale(1.2);
+}
+
+.optik-site .portfolio-collection-text-wrap {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 35px;
+  display: flex;
+}
+
+.optik-site .portfolio-collection-text-wrap._02 {
+  order: -9999;
+}
+
+.optik-site .portfolio-collection-text {
+  font-family: var(--_size---h5--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h5--font-size);
+  line-height: var(--_size---h5--line-height);
+  font-weight: var(--_size---h5--font-weight);
+  letter-spacing: var(--_size---h5--letter-spacing);
+}
+
+.optik-site .location-wrap {
+  grid-column-gap: 7px;
+  grid-row-gap: 7px;
+  background-color: var(--_colors---icon-bg);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  border-radius: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4px 12px;
+  display: flex;
+  position: absolute;
+  inset: 24px auto auto 24px;
+}
+
+.optik-site .location {
+  font-family: var(--_size---caption--font-family);
+  color: var(--_colors---white);
+  font-size: var(--_size---caption-small--font-size);
+  line-height: var(--_size---caption-small--line-height);
+  font-weight: var(--_size---caption-small--font-weight);
+  letter-spacing: var(--_size---caption-small--letter-spacing);
+}
+
+.optik-site .service {
+  padding: 100px 20px;
+}
+
+.optik-site .service._02 {
+  padding-top: 0;
+}
+
+.optik-site .service-row {
+  grid-column-gap: 75px;
+  grid-row-gap: 75px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .service-top {
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+
+.optik-site .service-top-left {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.optik-site .service-section-title {
+  max-width: 425px;
+  font-family: var(--_size---h3--font-family);
+  font-size: var(--_size---h3--font-size);
+  line-height: var(--_size---h3--line-height);
+  font-weight: var(--_size---h3--font-weight);
+  letter-spacing: var(--_size---h3--letter-spacing);
+}
+
+.optik-site .service-top-img {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 8px;
+  max-width: 305px;
+}
+
+.optik-site .service-top-right {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .service-top-right-img {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 50%;
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.optik-site .service-top-right-text {
+  max-width: 304px;
+}
+
+.optik-site .service-item-wrap {
+  width: var(--weight);
+}
+
+.optik-site .service-item-wrap._02 {
+  max-width: 1075px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.optik-site .service-collection {
+  width: var(--weight);
+}
+
+.optik-site .service-collection-list {
+  width: var(--weight);
+  border-top: 1px solid var(--_colors---text-color-three);
+}
+
+.optik-site .service-collection-item {
+  width: var(--weight);
+  justify-content: center;
+  display: flex;
+  position: relative;
+  overflow: visible;
+}
+
+.optik-site .service-collection-item:hover {
+  border-radius: 16px;
+}
+
+.optik-site .service-collection-item-left {
+  width: var(--weight);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  border-bottom: 1px solid var(--_colors---text-color-three);
+  background-color: var(--_colors---body-bg);
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+  display: flex;
+}
+
+.optik-site .service-collection-item-left:hover {
+  border-radius: 16px;
+}
+
+.optik-site .service-collection-item-left._02 {
+  max-width: var(--weight);
+}
+
+.optik-site .service-collection-item-img-wrap {
+  z-index: 2;
+  width: var(--weight);
+  max-width: 304px;
+  margin-left: 220px;
+  position: absolute;
+  top: -60px;
+}
+
+.optik-site .service-collection-item-img-wrap._02 {
+  display: block;
+}
+
+.optik-site .service-collection-item-left-number {
+  font-family: var(--_size---h2--font-family);
+  color: #0000;
+  font-size: var(--_size---h2--font-size);
+  line-height: var(--_size---h2--line-height);
+  font-weight: var(--_size---h3--font-weight);
+  letter-spacing: var(--_size---h2--letter-spacing);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--_colors---text-color-three);
+}
+
+.optik-site .service-collection-item-left-text-wrap {
+  width: var(--weight);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .service-collection-item-left-title {
+  font-family: var(--_size---h5--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h5--font-size);
+  line-height: var(--_size---h5--line-height);
+  font-weight: var(--_size---h5--font-weight);
+  letter-spacing: var(--_size---h5--letter-spacing);
+  text-decoration: none;
+}
+
+.optik-site .service-collection-item-left-text {
+  max-width: 228px;
+}
+
+.optik-site .service-collection-item-left-tag-wrap {
+  width: var(--weight);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .service-collection-item-left-tag {
+  background-color: var(--_colors---white);
+  font-family: var(--_size---h6--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---body-two--font-size);
+  line-height: var(--_size---h6--line-height);
+  font-weight: var(--_size---body--font-weight);
+  letter-spacing: var(--_size---body--letter-spacing);
+  border-radius: 8px;
+  padding: 6px 17px 8px;
+}
+
+.optik-site .service-collection-item-img {
+  width: var(--weight);
+  opacity: 0;
+  object-fit: cover;
+  border-radius: 8px;
+  height: 302px;
+}
+
+.optik-site .awards {
+  background-color: var(--_colors---white);
+  padding: 100px 20px;
+}
+
+.optik-site .awards-row {
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .awards-title {
+  max-width: 465px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.optik-site .awards-item-wrap {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  display: flex;
+}
+
+.optik-site .awards-section-title {
+  max-width: 418px;
+  font-family: var(--_size---h3--font-family);
+  font-size: var(--_size---h3--font-size);
+  line-height: var(--_size---h3--line-height);
+  font-weight: var(--_size---h3--font-weight);
+  letter-spacing: var(--_size---h3--letter-spacing);
+}
+
+.optik-site .awards-section-title._02 {
+  max-width: var(--weight);
+}
+
+.optik-site .awards-title-top {
+  padding-left: 60px;
+}
+
+.optik-site .awards-item-left {
+  width: var(--weight);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.optik-site .awards-item-right {
+  width: var(--weight);
+  grid-column-gap: 100px;
+  grid-row-gap: 100px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .awards-img {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 8px;
+  max-width: 304px;
+}
+
+.optik-site .awards-img._02 {
+  max-width: 196px;
+  max-height: 191px;
+}
+
+.optik-site .awards-item-box {
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .awards-item {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  border-bottom: 1px solid var(--_colors---text-color-three);
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+}
+
+.optik-site .awards-item-title {
+  font-family: var(--_size---h6--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---caption--font-size);
+  line-height: var(--_size---caption--line-height);
+  font-weight: var(--_size---h3--font-weight);
+  letter-spacing: var(--_size---h2--letter-spacing);
+}
+
+.optik-site .awards-item-title.year {
+  width: var(--weight);
+  font-size: var(--_size---h6--font-size);
+  line-height: var(--_size---h3--line-height);
+}
+
+.optik-site .awards-item-text {
+  color: var(--_colors---text-color-four);
+  font-size: var(--_size---body-two--font-size);
+}
+
+.optik-site .awards-item-title-wrap {
+  width: 100%;
+}
+
+.optik-site .awards-item-text-wrap {
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  display: flex;
+}
+
+.optik-site .awards-item-bottom {
+  grid-column-gap: 100px;
+  grid-row-gap: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .awards-item-buttom {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-left: -225px;
+  display: flex;
+}
+
+.optik-site .awards-item-buttom-17 {
+  background-color: var(--_colors---black);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: flex-end;
+  width: 146px;
+  height: 146px;
+  display: flex;
+}
+
+.optik-site .awards-item-buttom-17-text {
+  font-family: var(--_size---h2--font-family);
+  color: var(--_colors---white);
+  font-size: var(--_size---h2--font-size);
+  line-height: var(--_size---h2--line-height);
+  font-weight: var(--_size---h2--font-weight);
+  margin-bottom: -6px;
+}
+
+.optik-site .awards-item-buttom-text {
+  max-width: 150px;
+  font-family: var(--_size---h4--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h4--font-size);
+  line-height: var(--_size---h2--letter-spacing);
+  font-weight: var(--_size---h3--font-weight);
+  letter-spacing: var(--_size---h4--letter-spacing);
+}
+
+.optik-site .awards-item-bottom-text-wrap {
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.optik-site .awards-item-bottom-text {
+  color: var(--_colors---black);
+  font-size: var(--_size---h5--font-size);
+  line-height: var(--_size---body-two--line-height);
+  font-weight: var(--_size---body--font-weight);
+  letter-spacing: var(--_size---body--letter-spacing);
+}
+
+.optik-site .testimonial {
+  padding: 100px 20px;
+}
+
+.optik-site .testimonial._02 {
+  padding-bottom: 0;
+}
+
+.optik-site .testimonial-row {
+  grid-column-gap: 70px;
+  grid-row-gap: 70px;
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+}
+
+.optik-site .testimonial-left {
+  width: var(--weight);
+}
+
+.optik-site .testimonial-right {
+  width: var(--weight);
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .testimonials-right-item {
+  grid-column-gap: 34px;
+  grid-row-gap: 34px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  display: flex;
+}
+
+.optik-site .testimonials-text {
+  color: var(--_colors---black);
+  font-size: var(--_size---h5--font-size);
+  line-height: var(--_size---caption-small--line-height);
+  font-weight: var(--_size---h4--font-weight);
+  letter-spacing: var(--_size---h6--letter-spacing);
+}
+
+.optik-site .testimonials-name-wrap {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .testimonials-img-wrap {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 50%;
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.optik-site .testimonials-name-box {
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .testimonials-name {
+  font-family: var(--_size---h6--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h5--font-size);
+  line-height: var(--_size---h6--line-height);
+  font-style: italic;
+  font-weight: var(--_size---body-two--font-weight);
+  letter-spacing: var(--_size---h5--letter-spacing);
+}
+
+.optik-site .testimonials-name-text {
+  font-family: var(--_size---caption-small--font-family);
+  color: var(--_colors---text-color);
+  font-size: var(--_size---caption-small--font-size);
+  font-weight: var(--_size---caption-small--font-weight);
+  letter-spacing: var(--_size---body-two--letter-spacing);
+}
+
+.optik-site .star-wrap {
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .slider {
+  background-color: #0000;
+  height: auto;
+}
+
+.optik-site .mask {
+  height: auto;
+  padding-bottom: 60px;
+}
+
+.optik-site .slide-nav {
+  display: none;
+}
+
+.optik-site .left-arrow {
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+  transform: translate(-1157%);
+}
+
+.optik-site .right-arrow {
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  inset: auto 0 0;
+  transform: translate(-990%);
+}
+
+.optik-site .testimonial-left-img {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 8px;
+}
+
+.optik-site .big-text {
+  padding: 64px 20px 120px;
+}
+
+.optik-site .big-text-row {
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .big-title {
+  width: var(--weight);
+  min-width: 107%;
+}
+
+.optik-site .big-img-wrap {
+  max-width: 240px;
+  position: absolute;
+  top: -50px;
+}
+
+.optik-site .big-img {
+  width: var(--weight);
+  height: var(--height);
+  transform: rotate(11.34deg);
+}
+
+.optik-site .big-img._02 {
+  position: absolute;
+  inset: 0%;
+  transform: none;
+}
+
+.optik-site .blog {
+  background-color: var(--_colors---white);
+  padding: 100px 20px;
+}
+
+.optik-site .blog._02 {
+  background-color: #0000;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.optik-site .blog-row {
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  border-bottom: 1px solid var(--_colors---black);
+  flex-flow: column;
+  padding-bottom: 100px;
+  display: flex;
+}
+
+.optik-site .blog-row._02 {
+  border-bottom-style: none;
+  padding-bottom: 0;
+}
+
+.optik-site .blog-title {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.optik-site .blog-title-box {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .blog-collection-list {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .blog-collection-list._02 {
+  grid-column-gap: 24px;
+  grid-row-gap: 40px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.optik-site .blog-collection {
+  width: var(--weight);
+  overflow: hidden;
+}
+
+.optik-site .blog-collection-wrap {
+  grid-column-gap: 21px;
+  grid-row-gap: 21px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .blog-collection-img {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 8px;
+  transition: all .5s cubic-bezier(.455, .03, .515, .955);
+}
+
+.optik-site .blog-collection-img:hover {
+  transform: scale(1.2);
+}
+
+.optik-site .blog-collection-text-wrap {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .blog-collection-date-wrap {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .blog-collection-date {
+  color: var(--_colors---text-color-four);
+  font-size: var(--_size---body-two--font-size);
+  line-height: var(--_size---caption-small--line-height);
+  font-weight: var(--_size---body-two--font-weight);
+}
+
+.optik-site .blog-collection-tag {
+  border: 1px solid var(--_colors---black);
+  border-radius: 24px;
+  padding: 0 12px;
+}
+
+.optik-site .blog-collection-title {
+  font-family: var(--_size---h4--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h4--font-size);
+  line-height: var(--_size---h4--line-height);
+  font-weight: var(--_size---h4--font-weight);
+  letter-spacing: var(--_size---h4--letter-spacing);
+  text-decoration: none;
+}
+
+.optik-site .footer {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.optik-site .footer-row {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .footer-left {
+  width: var(--weight);
+  grid-column-gap: 80px;
+  grid-row-gap: 80px;
+  max-width: 550px;
+  display: flex;
+}
+
+.optik-site .footer-right {
+  width: var(--weight);
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 304px;
+  display: flex;
+}
+
+.optik-site .footer-link-wrap {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.optik-site .footer-link-title {
+  opacity: 1;
+  font-family: var(--_size---h5--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h5--font-size);
+  line-height: var(--_size---h5--line-height);
+  font-weight: var(--_size---h5--font-weight);
+  letter-spacing: var(--_size---h5--letter-spacing);
+}
+
+.optik-site .footer-link-item {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.optik-site .footer-link-item-wrap {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .footer-link {
+  color: var(--_colors---black);
+  font-size: var(--_size---body--font-size);
+  line-height: var(--_size---body-two--line-height);
+  font-weight: var(--_size---body--font-weight);
+  letter-spacing: var(--_size---body--letter-spacing);
+  text-transform: none;
+  text-decoration: none;
+  transition: all .5s cubic-bezier(.645, .045, .355, 1);
+}
+
+.optik-site .footer-link:hover {
+  color: var(--_colors---black);
+}
+
+.optik-site .footer-link-p {
+  max-width: 184px;
+  color: var(--_colors---black);
+}
+
+.optik-site .footer-link-item-2 {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.optik-site .footer-link-item-2._02 {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  flex-flow: column;
+}
+
+.optik-site .footer-link-item-wrap-2 {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .footer-link-item-wrap-2._02 {
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.optik-site .footer-link-2 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 135%;
+  text-decoration: none;
+  transition: all .5s cubic-bezier(.645, .045, .355, 1);
+}
+
+.optik-site .footer-link-2:hover {
+  color: #fff;
+}
+
+.optik-site .footer-link-2._02 {
+  color: var(--_colors---black);
+  font-size: var(--_size---body--font-size);
+  line-height: var(--_size---body--line-height);
+  font-weight: var(--_size---body--font-weight);
+}
+
+.optik-site .footer-link-2._02.email {
+  color: var(--_colors---black);
+  text-decoration: none;
+}
+
+.optik-site .coppy {
+  margin-top: 10px;
+}
+
+.optik-site .footer-img-wrap {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 85px;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .footer-img {
+  width: var(--weight);
+  height: var(--height);
+}
+
+.optik-site .footer-logo {
+  z-index: 2;
+  width: var(--weight);
+  height: var(--height);
+  max-width: 1036px;
+  max-height: 381px;
+  position: absolute;
+  bottom: 0;
+}
+
+.optik-site .footer-shap {
+  width: var(--weight);
+  background-image: linear-gradient(180deg, var(--_colors---footer-overlay), var(--_colors---christmas-white));
+  height: 293px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.optik-site .about-page-title {
+  padding: 100px 20px;
+}
+
+.optik-site .about-page-title-row {
+  grid-column-gap: 134px;
+  grid-row-gap: 134px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .about-page-title-left {
+  width: var(--weight);
+  grid-column-gap: 35px;
+  grid-row-gap: 35px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.optik-site .about-page-title-left._02 {
+  justify-content: center;
+  align-items: center;
+}
+
+.optik-site .about-page-title-right {
+  width: var(--weight);
+}
+
+.optik-site .about-page-title-left-btn {
+  margin-top: 10px;
+}
+
+.optik-site .about-page-title-left-text {
+  max-width: 304px;
+  font-size: var(--_size---caption--font-size);
+}
+
+.optik-site .about-page-title-left-text._02 {
+  text-align: center;
+  max-width: 640px;
+}
+
+.optik-site .about-page-title-right-img {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 8px;
+}
+
+.optik-site .about-two {
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.optik-site .about-two-row {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+
+.optik-site .about-two-left {
+  width: var(--weight);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .about-two-center {
+  width: var(--weight);
+  height: var(--height);
+  position: relative;
+}
+
+.optik-site .about-two-right {
+  width: var(--weight);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: flex;
+}
+
+.optik-site .about-two-center-img {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 8px;
+}
+
+.optik-site .about-two-right-img {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 8px;
+  max-width: 200px;
+}
+
+.optik-site .values {
+  background-color: var(--_colors---white);
+  padding: 100px 20px;
+}
+
+.optik-site .values-row {
+  grid-column-gap: 44px;
+  grid-row-gap: 44px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .values-title {
+  max-width: 557px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.optik-site .values-title-top {
+  padding-left: 140px;
+}
+
+.optik-site .values-section-title {
+  max-width: 418px;
+  font-family: var(--_size---h3--font-family);
+  font-size: var(--_size---h3--font-size);
+  line-height: var(--_size---h3--line-height);
+  font-weight: var(--_size---h3--font-weight);
+  letter-spacing: var(--_size---h3--letter-spacing);
+}
+
+.optik-site .values-title-box {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .values-item-wrap {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.optik-site .values-item {
+  width: var(--weight);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  background-image: url("/optik/assets/23cee973b4-6996d1713b642fa45e11c9d9_Values-Item.avif");
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 8px;
+  flex-flow: column;
+  padding: 80px 40px 40px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.optik-site .values-item-title {
+  z-index: 2;
+  max-width: 180px;
+  font-family: var(--_size---h5--font-family);
+  color: var(--_colors---white);
+  font-size: var(--_size---h5--font-size);
+  line-height: var(--_size---h5--line-height);
+  font-weight: var(--_size---h5--font-weight);
+  letter-spacing: var(--_size---h5--letter-spacing);
+  position: relative;
+}
+
+.optik-site .values-item-text {
+  z-index: 2;
+  max-width: 226px;
+  color: var(--_colors---text-colo-six);
+  position: relative;
+}
+
+.optik-site .values-item-overlay {
+  background-color: var(--_colors---text-color-four);
+  position: absolute;
+  inset: 0%;
+}
+
+.optik-site .values-item-02 {
+  width: var(--weight);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .values-item-02.margin {
+  margin-top: 60px;
+}
+
+.optik-site .values-item-img {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 8px;
+}
+
+.optik-site .values-item-02-title {
+  max-width: 180px;
+  font-family: var(--_size---h5--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h5--font-size);
+  line-height: var(--_size---h5--line-height);
+  font-weight: var(--_size---h5--font-weight);
+  letter-spacing: var(--_size---h5--letter-spacing);
+}
+
+.optik-site .values-item-02-title-wrap {
+  padding-left: 40px;
+}
+
+.optik-site .team {
+  padding: 100px 20px;
+}
+
+.optik-site .team-row {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.optik-site .team-collection-list._02 {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  display: flex;
+}
+
+.optik-site .team-collection-wrap {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .team-collection-img {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 8px;
+  transition: all .5s;
+}
+
+.optik-site .team-collection-img:hover {
+  transform: scale(1.2);
+}
+
+.optik-site .team-collection-text-wrap {
+  grid-column-gap: 23px;
+  grid-row-gap: 23px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .team-collection-name {
+  font-family: var(--_size---h5--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h5--font-size);
+  line-height: var(--_size---h5--line-height);
+  font-weight: var(--_size---h5--font-weight);
+  letter-spacing: var(--_size---h5--letter-spacing);
+  text-decoration: none;
+}
+
+.optik-site .team-collection-name-wrap {
+  max-width: 92px;
+  line-height: var(--_size---h6--line-height);
+}
+
+.optik-site .team-collection-tag {
+  color: var(--_colors---text-color-four);
+  font-size: var(--_size---body-two--font-size);
+  line-height: var(--_size---body-two--line-height);
+  font-weight: var(--_size---body-two--font-weight);
+}
+
+.optik-site .cta {
+  background-image: url("/optik/assets/8d3004882b-699880403ca9617cf58ab7bf_modern-house-design-5-1.avif");
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-flow: column;
+  justify-content: flex-end;
+  height: 782px;
+  padding: 100px 20px;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .cta-row {
+  z-index: 2;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .cta-title {
+  max-width: 900px;
+  color: var(--_colors---white);
+  font-size: var(--_size---heading-lg);
+}
+
+.optik-site .cta-overlay {
+  background-image: linear-gradient(180deg, transparent, var(--_colors---text-color-four));
+  position: absolute;
+  inset: 0%;
+}
+
+.optik-site .contact-info {
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.optik-site .contact-info-row {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+
+.optik-site .contact-info-left {
+  width: var(--weight);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .contact-info-right {
+  width: var(--weight);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: space-between;
+  display: flex;
+  overflow: hidden;
+}
+
+.optik-site .contact-info-right-item-wrap {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .contact-info-right-item {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  border-bottom: 1px solid var(--_colors---text-color-three);
+  flex-flow: column;
+  padding-bottom: 16px;
+  display: flex;
+}
+
+.optik-site .contact-info-right-item._02 {
+  border-bottom-style: none;
+  padding-bottom: 0;
+}
+
+.optik-site .contact-info-right-item-title {
+  font-family: var(--_size---h5--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h5--font-size);
+  line-height: var(--_size---h5--line-height);
+  font-weight: var(--_size---h5--font-weight);
+  letter-spacing: var(--_size---h5--letter-spacing);
+}
+
+.optik-site .contact-info-right-item-text {
+  opacity: .5;
+  max-width: 246px;
+  color: var(--_colors---black);
+}
+
+.optik-site .call-link-02 {
+  color: var(--_colors---black);
+  line-height: var(--_size---h1--line-height);
+  text-decoration: none;
+}
+
+.optik-site .contact-row {
+  margin-top: -140px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.optik-site .contact-form-wrap {
+  z-index: 2;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  background-color: var(--_colors---white);
+  border-radius: 8px;
+  flex-flow: column;
+  max-width: 856px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .contanct-form {
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.optik-site .contanct-form-input-wrap {
+  grid-column-gap: 33px;
+  grid-row-gap: 33px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 33px;
+  display: flex;
+}
+
+.optik-site .message-btn-wrap {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 7px;
+  display: flex;
+}
+
+.optik-site .erro {
+  background-color: var(--_colors---black);
+  color: var(--_colors---white);
+}
+
+.optik-site .message {
+  background-color: var(--_colors---black);
+  font-family: var(--_size---h6--font-family);
+  color: var(--_colors---white);
+  font-size: var(--_size---h6--font-size);
+  line-height: var(--_size---h6--line-height);
+  font-weight: var(--_size---h6--font-weight);
+  letter-spacing: var(--_size---h6--letter-spacing);
+  border-radius: 16px;
+  padding: 20px 32px;
+}
+
+.optik-site .contanct-form-btn-wrap {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  display: flex;
+}
+
+.optik-site .success-message {
+  background-color: var(--_colors---black);
+  color: var(--_colors---white);
+}
+
+.optik-site .contanct-form-input {
+  border-style: none none solid;
+  border-width: 1px;
+  border-color: black black var(--_colors---black);
+  width: 100%;
+  height: 41px;
+  font-family: var(--_size---body--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---body--font-size);
+  line-height: var(--_size---body--line-height);
+  font-weight: var(--_size---body--font-weight);
+  letter-spacing: var(--_size---body--letter-spacing);
+  background-color: #0000;
+  margin-bottom: 0;
+  padding: 0 0 10px;
+}
+
+.optik-site .contanct-form-input::placeholder {
+  color: var(--_colors---black);
+}
+
+.optik-site .contanct-form-input._02 {
+  height: 98px;
+}
+
+.optik-site .contanct-form-input._03 {
+  border-style: solid;
+  border-color: var(--_colors---border-color-three);
+  border-radius: 16px;
+  height: 56px;
+  margin-bottom: 10px;
+  padding: 12px 15px 12px 25px;
+}
+
+.optik-site .contact-img {
+  width: var(--weight);
+  height: var(--height);
+}
+
+.optik-site .about-page-title-02 {
+  text-align: center;
+  max-width: 730px;
+}
+
+.optik-site .about-page-title-02.max-weight {
+  max-width: 400px;
+}
+
+.optik-site .blog-row-2 {
+  border-bottom: 1px solid var(--_colors---black);
+  padding-bottom: 100px;
+}
+
+.optik-site .icon-wrap-2 {
+  border: 1px solid var(--_colors---text-color);
+  background-color: var(--_colors---text-color);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  display: flex;
+}
+
+.optik-site .blog-details-img {
+  box-sizing: border-box;
+  width: var(--weight);
+  aspect-ratio: auto;
+  object-fit: cover;
+  background-color: #0000;
+  border-radius: 8px;
+  height: 600px;
+}
+
+.optik-site .blog-single {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.optik-site .tag-date-wrap-2 {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  display: flex;
+}
+
+.optik-site .tag-date-wrap-2._02 {
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  border-radius: 12px;
+}
+
+.optik-site .blog-single-wrap {
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+}
+
+.optik-site .blog-single-2 {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  flex-flow: column;
+  width: 100%;
+  max-width: 660px;
+  display: flex;
+}
+
+.optik-site .blog-details-img-wrap {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  background-color: #0000;
+  border-radius: 12px;
+  flex-flow: column;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .socile-wrap {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  inset: auto 0 80px 30px;
+}
+
+.optik-site .blog-details-row {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  flex-flow: column;
+  width: 100%;
+  display: flex;
+}
+
+.optik-site .blog-details-contant {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .blog-collection-date-2 {
+  opacity: .8;
+  font-family: var(--_size---body--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---body-two--font-size);
+  line-height: var(--_size---counter--line-height);
+  font-weight: var(--_size---counter--font-weight);
+  text-transform: none;
+}
+
+.optik-site .blog-single-title-02 {
+  font-family: var(--_size---h3--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h3--font-size);
+  line-height: var(--_size---h3--line-height);
+  font-weight: var(--_size---h3--font-weight);
+  letter-spacing: var(--_size---h3--letter-spacing);
+}
+
+.optik-site .service-single-img-box {
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.optik-site .service-single-img-row {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  display: flex;
+}
+
+.optik-site .service-single-img-left {
+  width: var(--weight);
+  max-width: 856px;
+  height: 649px;
+}
+
+.optik-site .service-single-img {
+  width: var(--weight);
+  height: var(--height);
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.optik-site .service-single-img-right {
+  width: var(--weight);
+  max-width: 417px;
+  height: 536px;
+  margin-bottom: -40px;
+}
+
+.optik-site .service-single-row {
+  grid-column-gap: 100px;
+  grid-row-gap: 100px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .service-single-item-wrap {
+  grid-column-gap: 46px;
+  grid-row-gap: 46px;
+  border-bottom: 1px solid var(--_colors---black);
+  flex-flow: column;
+  padding-bottom: 100px;
+  display: flex;
+}
+
+.optik-site .service-single-top-left {
+  width: var(--weight);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .service-single-top {
+  display: flex;
+}
+
+.optik-site .service-single-right-item-wrap {
+  width: var(--weight);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .service-single {
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.optik-site .service-single-right-text {
+  width: var(--weight);
+  max-width: 523px;
+}
+
+.optik-site .service-single-item {
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .service-single-item-left {
+  width: var(--weight);
+}
+
+.optik-site .service-single-item-right {
+  width: var(--weight);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .service-single-item-left-img {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 8px;
+}
+
+.optik-site .service-single-item-right-list {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  flex-flow: column;
+  margin-top: 24px;
+  display: flex;
+}
+
+.optik-site .service-single-item-right-list-item {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .portfolio-row-2 {
+  grid-column-gap: 80px;
+  grid-row-gap: 80px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .portfolio-item-wrap-2 {
+  grid-column-gap: 46px;
+  grid-row-gap: 46px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .portfolio-single-img-wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.optik-site .banner-img-right {
+  width: 35%;
+}
+
+.optik-site .banner-img-left {
+  width: 65%;
+}
+
+.optik-site .portfolio-top-left-title {
+  max-width: 500px;
+  font-family: var(--_size---h5--font-family);
+  font-size: var(--_size---h5--font-size);
+  line-height: var(--_size---h5--line-height);
+  font-style: normal;
+  font-weight: var(--_size---h5--font-weight);
+  letter-spacing: var(--_size---h5--letter-spacing);
+}
+
+.optik-site .banner-img {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 8px;
+}
+
+.optik-site .portfolio-2 {
+  padding: 100px 20px;
+}
+
+.optik-site .portfolio-top-left {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  flex-flow: column;
+  width: 65%;
+  display: flex;
+}
+
+.optik-site .portfolio-top {
+  grid-column-gap: 130px;
+  grid-row-gap: 130px;
+  display: flex;
+}
+
+.optik-site .banner-img-wrap {
+  grid-column-gap: 26px;
+  grid-row-gap: 26px;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.optik-site .portfolio-single-img-box {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.optik-site .portfolio-single-img {
+  width: var(--weight);
+  object-fit: cover;
+  object-position: 50% 100%;
+  border-radius: 8px;
+  height: 649px;
+}
+
+.optik-site .portfolio-top-right {
+  width: var(--weight);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .portfolio-top-left-list-item {
+  border-bottom: 1px solid var(--_colors---border-color-three);
+  padding-bottom: 12px;
+  display: flex;
+}
+
+.optik-site .portfolio-top-left-list-item-left {
+  width: 60%;
+}
+
+.optik-site .portfolio-top-left-list-item-right {
+  width: var(--weight);
+}
+
+.optik-site .portfolio-top-left-list-item-left-text {
+  color: var(--_colors---black);
+  font-size: var(--_size---body--font-size);
+  line-height: var(--_size---caption-small--line-height);
+  font-weight: var(--_size---counter--font-weight);
+}
+
+.optik-site .portfolio-top-right-text {
+  max-width: 523px;
+}
+
+.optik-site .portfolio-single-img-box-two {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.optik-site .portfolio-single-img-box-two-row {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  display: flex;
+}
+
+.optik-site .portfolio-single-img-item {
+  width: var(--weight);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .portfolio-single-img-02 {
+  width: var(--weight);
+  height: var(--height);
+  border-radius: 8px;
+}
+
+.optik-site .share-project {
+  padding-top: 36px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.optik-site .share-project-row {
+  width: var(--weight);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 510px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.optik-site .share-project-title {
+  font-family: var(--_size---h5--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h5--font-size);
+  line-height: var(--_size---h5--line-height);
+  font-weight: var(--_size---h5--font-weight);
+  letter-spacing: var(--_size---h5--letter-spacing);
+}
+
+.optik-site .share-project-row-line {
+  background-color: var(--_colors---black);
+  width: 78px;
+  height: 1px;
+}
+
+.optik-site .share-wrap {
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+  display: flex;
+}
+
+.optik-site .share-icon-wrap {
+  border: 1px solid var(--_colors---black);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 43px;
+  display: flex;
+}
+
+.optik-site .team-single-img-wrap {
+  height: auto;
+}
+
+.optik-site .team-single-left {
+  width: 50%;
+  height: 100%;
+  position: sticky;
+  top: 0;
+}
+
+.optik-site .line {
+  background-color: #ffffff0a;
+  width: 1px;
+}
+
+.optik-site .tean-contant {
+  color: var(--_colors---text-color);
+}
+
+.optik-site .team-single {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.optik-site .image-8 {
+  width: 100%;
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.optik-site .team-single-row {
+  z-index: 2;
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .footer-social-icon-link-wrap {
+  border: 1px solid #ffffff1a;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  display: flex;
+}
+
+.optik-site .footer-social-icon-link-wrap:hover {
+  background-color: #0000;
+  border-style: solid;
+  border-color: #0000001a;
+}
+
+.optik-site .footer-social-icon-link-wrap._02 {
+  border-color: var(--_colors---black);
+}
+
+.optik-site .team-single-right-item-wrap {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  border-top: 1px solid #ffffff1a;
+  border-bottom: 1px solid #ffffff1a;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+}
+
+.optik-site .team-single-right-item-wrap._02 {
+  border-top-color: var(--_colors---border-color-three);
+  border-bottom-style: none;
+  padding-bottom: 0;
+}
+
+.optik-site .team-single-right-item-wrap.one {
+  border-top-color: var(--_colors---border-color-three);
+  border-bottom-style: none;
+  border-bottom-color: #dfdedb;
+  margin-top: 40px;
+  padding-bottom: 0;
+}
+
+.optik-site .skill-title {
+  font-family: var(--_size---h4--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h4--font-size);
+  line-height: var(--_size---h4--line-height);
+  font-weight: var(--_size---h4--font-weight);
+  letter-spacing: var(--_size---h4--letter-spacing);
+}
+
+.optik-site .team-single-img {
+  width: var(--weight);
+  height: var(--height);
+  border: 1px #0000;
+  border-radius: 12px;
+}
+
+.optik-site .team-single-right {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 65%;
+  padding-top: 170px;
+  display: flex;
+}
+
+.optik-site .socile-icon-facebook {
+  max-width: 16px;
+  display: none;
+}
+
+.optik-site .socile-icon-facebook._02 {
+  display: block;
+}
+
+.optik-site .call-text-wrap {
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.optik-site .team-single-contact {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  border-bottom: 1px solid var(--_colors---border-color-three);
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding-bottom: 30px;
+  display: flex;
+}
+
+.optik-site .call-link-2 {
+  color: #13195c;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 113%;
+  text-decoration: none;
+}
+
+.optik-site .call-link-2._02 {
+  color: var(--_colors---text-color);
+  font-size: var(--_size---body--font-size);
+  line-height: var(--_size---body--line-height);
+  font-weight: var(--_size---body--font-weight);
+}
+
+.optik-site .section-shap {
+  justify-content: space-around;
+  display: flex;
+  position: absolute;
+  inset: 0%;
+}
+
+.optik-site .team-single-contact-wrap {
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  background-color: #0000;
+  border-radius: 16px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  display: flex;
+}
+
+.optik-site .social-icon-wrap {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.optik-site .social-icon-wrap._02 {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.optik-site .team-single-contant {
+  font-size: var(--_size---body--font-size);
+  font-weight: var(--_size---body--font-weight);
+  margin-left: -20px;
+}
+
+.optik-site .call-wrap {
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+}
+
+.optik-site .blog-collection-img-wrap, .optik-site .team-collection-img-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.optik-site .licenses {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.optik-site .license-row {
+  z-index: 2;
+  grid-column-gap: 70px;
+  grid-row-gap: 70px;
+  flex-flow: column;
+  width: 100%;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .license-item-wrap {
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .img-license {
+  color: var(--_colors---black);
+  font-size: var(--_size---h3--font-size);
+  line-height: var(--_size---h3--line-height);
+  font-weight: var(--_size---h3--font-weight);
+}
+
+.optik-site .licems {
+  border: 1px solid var(--_colors---border-color-three);
+  color: var(--_colors---text-color);
+  border-radius: 20px;
+  padding: 20px 20px 20px 30px;
+}
+
+.optik-site .change-log-left {
+  width: 20%;
+  position: relative;
+}
+
+.optik-site .change-log-left._03 {
+  padding-top: 60px;
+}
+
+.optik-site .change-log-wrap {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.optik-site .dashboard-title {
+  color: var(--_colors---black);
+  font-size: var(--_size---h5--font-size);
+  text-transform: none;
+}
+
+.optik-site .change-log-box {
+  z-index: 2;
+  position: relative;
+}
+
+.optik-site .change-log-contact-box {
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .cercile-2 {
+  background-color: var(--_colors---black);
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  inset: auto -3px 7px auto;
+}
+
+.optik-site .change-log-section-02 {
+  z-index: 3;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.optik-site .change-log-date {
+  color: var(--_colors---text-color);
+  line-height: var(--_size---h4--line-height);
+  margin-top: -5px;
+}
+
+.optik-site .dashboard-list-wrap {
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  flex-flow: column;
+  margin-bottom: 0;
+  padding-left: 20px;
+  display: flex;
+}
+
+.optik-site .change-log-contact-title-wrap {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .change-container {
+  max-width: 800px;
+}
+
+.optik-site .version-title {
+  color: #000;
+}
+
+.optik-site .version-title._03 {
+  color: var(--_colors---black);
+  font-size: var(--_size---h3--font-size);
+  text-transform: capitalize;
+  margin-top: -18px;
+}
+
+.optik-site .change-log-right {
+  border-left: 2px dotted var(--_colors---border-color-three);
+  width: 100%;
+  padding-left: 30px;
+}
+
+.optik-site .change-log-right._03 {
+  padding-top: 60px;
+}
+
+.optik-site .change-log-contact-wrap-2 {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  flex-flow: column;
+  display: flex;
+}
+
+.optik-site .released {
+  color: var(--_colors---text-color);
+}
+
+.optik-site .div-block {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .utility-page-wrap {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  display: flex;
+}
+
+.optik-site .utility-page-content {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.optik-site .utility-page-form {
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+}
+
+.optik-site .heading {
+  font-size: var(--_size---h3--font-size);
+}
+
+.optik-site .field-label {
+  font-weight: var(--_size---h6--font-weight);
+  margin-top: 10px;
+}
+
+.optik-site ._404-btn-wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.optik-site ._404 {
+  max-width: 800px;
+  color: var(--_colors---black);
+  font-size: var(--_size---h2--font-size);
+  text-align: center;
+}
+
+.optik-site ._404-contant-wrap {
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+}
+
+.optik-site ._404-exar {
+  text-align: center;
+  max-width: 500px;
+  letter-spacing: var(--_size---body--letter-spacing);
+}
+
+.optik-site ._404-wrap {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site ._404-container {
+  max-width: 1220px;
+}
+
+.optik-site ._404-section {
+  z-index: 3;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  position: relative;
+}
+
+.optik-site .awards-item-text-box {
+  width: var(--weight);
+}
+
+.optik-site .slider-2 {
+  display: none;
+}
+
+.optik-site .hero-title-wrap {
+  width: var(--weight);
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .service-collection-item-left-wrap {
+  width: var(--weight);
+  grid-column-gap: 100px;
+  grid-row-gap: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .hero-ovelay {
+  filter: blur(5px);
+  background-image: linear-gradient(90deg, #0000 35%, #0000009e);
+  height: 400px;
+  position: absolute;
+  inset: auto 0% 0%;
+}
+
+.optik-site .big-title-wrap {
+  width: var(--weight);
+  min-width: var(--weight);
+  display: flex;
+}
+
+.optik-site .text-link {
+  font-family: var(--_size---h6--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h6--font-size);
+  line-height: var(--_size---h6--line-height);
+  font-weight: var(--_size---h6--font-weight);
+  letter-spacing: var(--_size---h6--letter-spacing);
+}
+
+.optik-site .heading-1 {
+  font-family: var(--_size---h1--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h1--font-size);
+  line-height: var(--_size---h1--line-height);
+  font-weight: var(--_size---h1--font-weight);
+  letter-spacing: var(--_size---h1--letter-spacing);
+}
+
+.optik-site .heading-2 {
+  font-family: var(--_size---h2--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h2--font-size);
+  line-height: var(--_size---h2--line-height);
+  font-weight: var(--_size---h2--font-weight);
+  letter-spacing: var(--_size---h2--letter-spacing);
+}
+
+.optik-site .heading-3 {
+  font-family: var(--_size---h3--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h3--font-size);
+  line-height: var(--_size---h3--line-height);
+  font-weight: var(--_size---h3--font-weight);
+  letter-spacing: var(--_size---h3--letter-spacing);
+}
+
+.optik-site .heading-4 {
+  font-family: var(--_size---h4--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h4--font-size);
+  line-height: var(--_size---h4--line-height);
+  font-weight: var(--_size---h4--font-weight);
+  letter-spacing: var(--_size---h4--letter-spacing);
+}
+
+.optik-site .heading-5 {
+  font-family: var(--_size---h5--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h5--font-size);
+  line-height: var(--_size---h5--line-height);
+  font-weight: var(--_size---h5--font-weight);
+  letter-spacing: var(--_size---h5--letter-spacing);
+}
+
+.optik-site .heading-6 {
+  font-family: var(--_size---h6--font-family);
+  color: var(--_colors---black);
+  font-size: var(--_size---h6--font-size);
+  line-height: var(--_size---h6--line-height);
+  font-weight: var(--_size---h6--font-weight);
+  letter-spacing: var(--_size---h6--letter-spacing);
+}
+
+.optik-site .p {
+  font-family: var(--_size---body--font-family);
+  color: var(--_colors---text-color);
+  font-size: var(--_size---body--font-size);
+  line-height: var(--_size---body--line-height);
+  font-weight: var(--_size---body--font-weight);
+  letter-spacing: var(--_size---body--letter-spacing);
+}
+
+.optik-site .image-9 {
+  width: var(--weight);
+  height: var(--height);
+  max-width: 93px;
+}
+
+.optik-site .error-btn-text {
+  color: var(--_colors---black);
+  font-size: var(--_size---caption-small--font-size);
+  line-height: var(--_size---counter--line-height);
+  font-weight: var(--_size---counter--font-weight);
+}
+
+.optik-site .error-btn-text._02 {
+  color: var(--_colors---white);
+}
+
+.optik-site .subscrive-top {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.optik-site .subscrive-text-wrap {
+  height: 16px;
+  overflow: hidden;
+}
+
+.optik-site .subscrive-buttom-wrap {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.optik-site .subscrive-text {
+  color: var(--_colors---black);
+  font-size: var(--_size---caption-small--font-size);
+  letter-spacing: var(--_size---counter--letter-spacing);
+}
+
+.optik-site .subscrive-btn {
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  background-color: var(--_colors---call-bg);
+  border-radius: 32px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  text-decoration: none;
+  display: flex;
+}
+
+.optik-site .subscrive-btn.two {
+  background-color: var(--_colors---black);
+}
+
+.optik-site .subscrive-btn-wtap {
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  flex-flow: column;
+  width: 100%;
+  display: flex;
+}
+
+.optik-site .subscrive-wrap {
+  z-index: 22;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  background-color: var(--_colors---white);
+  width: 100%;
+  max-width: 220px;
+  box-shadow: 0 2px 5px 0 var(--_colors---call-bg);
+  border-radius: 20px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  display: flex;
+  position: fixed;
+  inset: auto 30px 30px auto;
+}
+
+.optik-site .subscrive-text-icon {
+  width: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .optik-site .header-wrap {
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .optik-site .hero-title {
+    --_size---body--font-family: var(--_typography---body-font);
+    --_size---body--font-size: 18px;
+    --_size---body--line-height: 145%;
+    --_size---body--font-weight: 500;
+    --_size---body--letter-spacing: 0px;
+    --_size---h1--font-family: var(--_typography---heading-font);
+    --_size---h1--font-size: 210px;
+    --_size---h1--line-height: 104%;
+    --_size---h1--font-weight: 500;
+    --_size---h1--letter-spacing: -.48px;
+    --_size---h2--font-family: var(--_typography---heading-font);
+    --_size---h2--font-size: 128px;
+    --_size---h2--line-height: 90%;
+    --_size---h2--font-weight: 700;
+    --_size---h2--letter-spacing: -.48px;
+    --_size---h3--font-family: var(--_typography---heading-font);
+    --_size---h3--font-size: 56px;
+    --_size---h3--line-height: 98%;
+    --_size---h3--font-weight: 600;
+    --_size---h3--letter-spacing: 0px;
+    --_size---h4--font-family: var(--_typography---heading-font);
+    --_size---h4--font-size: 32px;
+    --_size---h4--line-height: 102%;
+    --_size---h4--font-weight: 500;
+    --_size---h4--letter-spacing: 0px;
+    --_size---h5--font-family: var(--_typography---heading-font);
+    --_size---h5--font-size: 24px;
+    --_size---h5--line-height: 99%;
+    --_size---h5--font-weight: 600;
+    --_size---h5--letter-spacing: 0px;
+    --_size---h6--font-family: var(--_typography---heading-font);
+    --_size---h6--font-size: 18px;
+    --_size---h6--line-height: 100%;
+    --_size---h6--font-weight: 600;
+    --_size---h6--letter-spacing: 0px;
+    --_size---caption--font-size: 20px;
+    --_size---caption--line-height: 145%;
+    --_size---caption--font-weight: 500;
+    --_size---caption--letter-spacing: 0px;
+    --_size---caption-small--font-family: var(--_typography---body-font);
+    --_size---caption-small--font-size: 14px;
+    --_size---caption-small--line-height: 150%;
+    --_size---caption-small--font-weight: 500;
+    --_size---caption-small--letter-spacing: .48px;
+    --_size---counter--font-family: var(--_typography---heading-font);
+    --_size---counter--font-size: 48px;
+    --_size---counter--line-height: 110%;
+    --_size---counter--font-weight: 600;
+    --_size---counter--letter-spacing: 0px;
+    --_size---body-two--font-family: var(--_typography---body-font);
+    --_size---body-two--line-height: 131%;
+    --_size---body-two--font-weight: 500;
+    --_size---body-two--letter-spacing: 0px;
+    --_size---caption--font-family: var(--_typography---body-font);
+    --_size---body-two--font-size: 16px;
+    --_size---heading-lg: 96px;
+  }
+
+  .optik-site .patner-section {
+    box-shadow: 0 -5px 40px #240c8717;
+  }
+
+  .optik-site .team-single-right {
+    padding-top: 170px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .optik-site {
+    --_size---body--font-family: var(--_typography---body-font);
+    --_size---body--font-size: 18px;
+    --_size---body--line-height: 145%;
+    --_size---body--font-weight: 500;
+    --_size---body--letter-spacing: 0px;
+    --_size---h1--font-family: var(--_typography---heading-font);
+    --_size---h1--font-size: 260px;
+    --_size---h1--line-height: 104%;
+    --_size---h1--font-weight: 500;
+    --_size---h1--letter-spacing: -.48px;
+    --_size---h2--font-family: var(--_typography---heading-font);
+    --_size---h2--font-size: 128px;
+    --_size---h2--line-height: 90%;
+    --_size---h2--font-weight: 700;
+    --_size---h2--letter-spacing: -.48px;
+    --_size---h3--font-family: var(--_typography---heading-font);
+    --_size---h3--font-size: 56px;
+    --_size---h3--line-height: 98%;
+    --_size---h3--font-weight: 600;
+    --_size---h3--letter-spacing: 0px;
+    --_size---h4--font-family: var(--_typography---heading-font);
+    --_size---h4--font-size: 32px;
+    --_size---h4--line-height: 102%;
+    --_size---h4--font-weight: 500;
+    --_size---h4--letter-spacing: 0px;
+    --_size---h5--font-family: var(--_typography---heading-font);
+    --_size---h5--font-size: 24px;
+    --_size---h5--line-height: 99%;
+    --_size---h5--font-weight: 600;
+    --_size---h5--letter-spacing: 0px;
+    --_size---h6--font-family: var(--_typography---heading-font);
+    --_size---h6--font-size: 18px;
+    --_size---h6--line-height: 100%;
+    --_size---h6--font-weight: 600;
+    --_size---h6--letter-spacing: 0px;
+    --_size---caption--font-size: 20px;
+    --_size---caption--line-height: 145%;
+    --_size---caption--font-weight: 500;
+    --_size---caption--letter-spacing: 0px;
+    --_size---caption-small--font-family: var(--_typography---body-font);
+    --_size---caption-small--font-size: 14px;
+    --_size---caption-small--line-height: 150%;
+    --_size---caption-small--font-weight: 500;
+    --_size---caption-small--letter-spacing: .48px;
+    --_size---counter--font-family: var(--_typography---heading-font);
+    --_size---counter--font-size: 48px;
+    --_size---counter--line-height: 110%;
+    --_size---counter--font-weight: 600;
+    --_size---counter--letter-spacing: 0px;
+    --_size---body-two--font-family: var(--_typography---body-font);
+    --_size---body-two--line-height: 131%;
+    --_size---body-two--font-weight: 500;
+    --_size---body-two--letter-spacing: 0px;
+    --_size---caption--font-family: var(--_typography---body-font);
+    --_size---body-two--font-size: 16px;
+    --_size---heading-lg: 96px;
+  }
+
+  .optik-site .btn-text-wrap-02, .optik-site .btn-link-wrap, .optik-site .btn-text-box {
+    position: relative;
+  }
+
+  .optik-site .hero-img {
+    max-width: 1200px;
+  }
+
+  .optik-site .hero-title {
+    z-index: 4;
+    width: var(--weight);
+    max-width: var(--weight);
+    background-image: linear-gradient(90deg, var(--_colors---black) 38%, var(--_colors---white) 38%, var(--_colors---white));
+    --_size---body--font-family: var(--_typography---body-font);
+    --_size---body--font-size: 18px;
+    --_size---body--line-height: 145%;
+    --_size---body--font-weight: 500;
+    --_size---body--letter-spacing: 0px;
+    --_size---h1--font-family: var(--_typography---heading-font);
+    --_size---h1--font-size: 260px;
+    --_size---h1--line-height: 104%;
+    --_size---h1--font-weight: 500;
+    --_size---h1--letter-spacing: -.48px;
+    --_size---h2--font-family: var(--_typography---heading-font);
+    --_size---h2--font-size: 128px;
+    --_size---h2--line-height: 90%;
+    --_size---h2--font-weight: 700;
+    --_size---h2--letter-spacing: -.48px;
+    --_size---h3--font-family: var(--_typography---heading-font);
+    --_size---h3--font-size: 56px;
+    --_size---h3--line-height: 98%;
+    --_size---h3--font-weight: 600;
+    --_size---h3--letter-spacing: 0px;
+    --_size---h4--font-family: var(--_typography---heading-font);
+    --_size---h4--font-size: 32px;
+    --_size---h4--line-height: 102%;
+    --_size---h4--font-weight: 500;
+    --_size---h4--letter-spacing: 0px;
+    --_size---h5--font-family: var(--_typography---heading-font);
+    --_size---h5--font-size: 24px;
+    --_size---h5--line-height: 99%;
+    --_size---h5--font-weight: 600;
+    --_size---h5--letter-spacing: 0px;
+    --_size---h6--font-family: var(--_typography---heading-font);
+    --_size---h6--font-size: 18px;
+    --_size---h6--line-height: 100%;
+    --_size---h6--font-weight: 600;
+    --_size---h6--letter-spacing: 0px;
+    --_size---caption--font-size: 20px;
+    --_size---caption--line-height: 145%;
+    --_size---caption--font-weight: 500;
+    --_size---caption--letter-spacing: 0px;
+    --_size---caption-small--font-family: var(--_typography---body-font);
+    --_size---caption-small--font-size: 14px;
+    --_size---caption-small--line-height: 150%;
+    --_size---caption-small--font-weight: 500;
+    --_size---caption-small--letter-spacing: .48px;
+    --_size---counter--font-family: var(--_typography---heading-font);
+    --_size---counter--font-size: 48px;
+    --_size---counter--line-height: 110%;
+    --_size---counter--font-weight: 600;
+    --_size---counter--letter-spacing: 0px;
+    --_size---body-two--font-family: var(--_typography---body-font);
+    --_size---body-two--line-height: 131%;
+    --_size---body-two--font-weight: 500;
+    --_size---body-two--letter-spacing: 0px;
+    --_size---caption--font-family: var(--_typography---body-font);
+    --_size---body-two--font-size: 16px;
+    --_size---heading-lg: 96px;
+    min-width: 1600px;
+    position: relative;
+  }
+
+  .optik-site .patner-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    top: -33px;
+  }
+
+  .optik-site .abou-left {
+    width: 66%;
+  }
+
+  .optik-site .testimonials-right-item {
+    min-width: 45%;
+  }
+
+  .optik-site .hero-title-wrap {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .optik-site .hero-ovelay {
+    background-image: linear-gradient(90deg, transparent 35%, var(--hero-ovelay));
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .optik-site {
+    --_size---body--font-family: var(--_typography---body-font);
+    --_size---body--font-size: 18px;
+    --_size---body--line-height: 145%;
+    --_size---body--font-weight: 500;
+    --_size---body--letter-spacing: 0px;
+    --_size---h1--font-family: var(--_typography---heading-font);
+    --_size---h1--font-size: 125px;
+    --_size---h1--line-height: 104%;
+    --_size---h1--font-weight: 500;
+    --_size---h1--letter-spacing: -.48px;
+    --_size---h2--font-family: var(--_typography---heading-font);
+    --_size---h2--font-size: 100px;
+    --_size---h2--line-height: 90%;
+    --_size---h2--font-weight: 700;
+    --_size---h2--letter-spacing: -.48px;
+    --_size---h3--font-family: var(--_typography---heading-font);
+    --_size---h3--font-size: 46px;
+    --_size---h3--line-height: 98%;
+    --_size---h3--font-weight: 600;
+    --_size---h3--letter-spacing: 0px;
+    --_size---h4--font-family: var(--_typography---heading-font);
+    --_size---h4--font-size: 30px;
+    --_size---h4--line-height: 102%;
+    --_size---h4--font-weight: 500;
+    --_size---h4--letter-spacing: 0px;
+    --_size---h5--font-family: var(--_typography---heading-font);
+    --_size---h5--font-size: 24px;
+    --_size---h5--line-height: 99%;
+    --_size---h5--font-weight: 600;
+    --_size---h5--letter-spacing: 0px;
+    --_size---h6--font-family: var(--_typography---heading-font);
+    --_size---h6--font-size: 18px;
+    --_size---h6--line-height: 100%;
+    --_size---h6--font-weight: 600;
+    --_size---h6--letter-spacing: 0px;
+    --_size---caption--font-size: 20px;
+    --_size---caption--line-height: 145%;
+    --_size---caption--font-weight: 500;
+    --_size---caption--letter-spacing: 0px;
+    --_size---caption-small--font-family: var(--_typography---body-font);
+    --_size---caption-small--font-size: 14px;
+    --_size---caption-small--line-height: 150%;
+    --_size---caption-small--font-weight: 500;
+    --_size---caption-small--letter-spacing: .48px;
+    --_size---counter--font-family: var(--_typography---heading-font);
+    --_size---counter--font-size: 40px;
+    --_size---counter--line-height: 110%;
+    --_size---counter--font-weight: 600;
+    --_size---counter--letter-spacing: 0px;
+    --_size---body-two--font-family: var(--_typography---body-font);
+    --_size---body-two--line-height: 131%;
+    --_size---body-two--font-weight: 500;
+    --_size---body-two--letter-spacing: 0px;
+    --_size---caption--font-family: var(--_typography---body-font);
+    --_size---body-two--font-size: 16px;
+    --_size---heading-lg: 85px;
+  }
+
+  .optik-site .btn-wrap {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  .optik-site .styleguide-row {
+    padding-top: 70px;
+  }
+
+  .optik-site .styleguide-section {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
+  .optik-site .header-item-left {
+    width: 100%;
+  }
+
+  .optik-site .header-item-right {
+    width: 50%;
+    display: none;
+  }
+
+  .optik-site .navigation {
+    background-color: #0000;
+    padding: 10px 0;
+  }
+
+  .optik-site .navigation.w--current {
+    color: #0f0f0f;
+    background-color: #0000;
+  }
+
+  .optik-site .header-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 20px;
+    overflow: visible;
+  }
+
+  .optik-site .header-wrap {
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .optik-site .mobile-menu-btn {
+    background-color: var(--_colors---black);
+    color: var(--_colors---white);
+    font-size: var(--_size---body--font-size);
+    font-weight: var(--_size---body--font-weight);
+    border-radius: 8%;
+    padding: 10px;
+  }
+
+  .optik-site .mobile-menu-btn.w--open {
+    background-color: var(--_colors---black);
+    color: var(--_colors---white);
+  }
+
+  .optik-site .nav-menu {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: var(--_colors---white);
+    width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 40px 0 var(--_colors---text-color-two);
+    clip-path: none;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+  }
+
+  .optik-site .hero-img {
+    max-width: 600px;
+  }
+
+  .optik-site .hero-title {
+    --_size---body--font-family: var(--_typography---body-font);
+    --_size---body--font-size: 18px;
+    --_size---body--line-height: 145%;
+    --_size---body--font-weight: 500;
+    --_size---body--letter-spacing: 0px;
+    --_size---h1--font-family: var(--_typography---heading-font);
+    --_size---h1--font-size: 125px;
+    --_size---h1--line-height: 104%;
+    --_size---h1--font-weight: 500;
+    --_size---h1--letter-spacing: -.48px;
+    --_size---h2--font-family: var(--_typography---heading-font);
+    --_size---h2--font-size: 100px;
+    --_size---h2--line-height: 90%;
+    --_size---h2--font-weight: 700;
+    --_size---h2--letter-spacing: -.48px;
+    --_size---h3--font-family: var(--_typography---heading-font);
+    --_size---h3--font-size: 46px;
+    --_size---h3--line-height: 98%;
+    --_size---h3--font-weight: 600;
+    --_size---h3--letter-spacing: 0px;
+    --_size---h4--font-family: var(--_typography---heading-font);
+    --_size---h4--font-size: 30px;
+    --_size---h4--line-height: 102%;
+    --_size---h4--font-weight: 500;
+    --_size---h4--letter-spacing: 0px;
+    --_size---h5--font-family: var(--_typography---heading-font);
+    --_size---h5--font-size: 24px;
+    --_size---h5--line-height: 99%;
+    --_size---h5--font-weight: 600;
+    --_size---h5--letter-spacing: 0px;
+    --_size---h6--font-family: var(--_typography---heading-font);
+    --_size---h6--font-size: 18px;
+    --_size---h6--line-height: 100%;
+    --_size---h6--font-weight: 600;
+    --_size---h6--letter-spacing: 0px;
+    --_size---caption--font-size: 20px;
+    --_size---caption--line-height: 145%;
+    --_size---caption--font-weight: 500;
+    --_size---caption--letter-spacing: 0px;
+    --_size---caption-small--font-family: var(--_typography---body-font);
+    --_size---caption-small--font-size: 14px;
+    --_size---caption-small--line-height: 150%;
+    --_size---caption-small--font-weight: 500;
+    --_size---caption-small--letter-spacing: .48px;
+    --_size---counter--font-family: var(--_typography---heading-font);
+    --_size---counter--font-size: 40px;
+    --_size---counter--line-height: 110%;
+    --_size---counter--font-weight: 600;
+    --_size---counter--letter-spacing: 0px;
+    --_size---body-two--font-family: var(--_typography---body-font);
+    --_size---body-two--line-height: 131%;
+    --_size---body-two--font-weight: 500;
+    --_size---body-two--letter-spacing: 0px;
+    --_size---caption--font-family: var(--_typography---body-font);
+    --_size---body-two--font-size: 16px;
+    --_size---heading-lg: 85px;
+    min-width: 1040px;
+  }
+
+  .optik-site .text-wrapper.left-contant-wrap {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+  }
+
+  .optik-site .patner-wrap {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    flex-flow: column;
+  }
+
+  .optik-site .patner-section {
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transform: none;
+  }
+
+  .optik-site .ticket-wrap {
+    width: 100%;
+  }
+
+  .optik-site .about {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
+  .optik-site .about-row {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: column;
+  }
+
+  .optik-site .abou-left {
+    width: 100%;
+  }
+
+  .optik-site .portfolio {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .optik-site .portfolio-item-wrap {
+    grid-column-gap: 24px;
+    grid-row-gap: 40px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  .optik-site .service {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .optik-site .service-row {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+
+  .optik-site .service-top {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: column;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  .optik-site .service-top-img {
+    max-width: var(--weight);
+  }
+
+  .optik-site .awards {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .optik-site .awards-item-wrap {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    flex-flow: column;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: flex;
+  }
+
+  .optik-site .awards-item-left {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .optik-site .awards-item-right {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+
+  .optik-site .awards-img._02 {
+    max-height: var(--height);
+    max-width: var(--weight);
+  }
+
+  .optik-site .awards-item-bottom {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .optik-site .awards-item-buttom {
+    margin-left: 0;
+  }
+
+  .optik-site .testimonial {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .optik-site .testimonial._02 {
+    padding-top: 60px;
+  }
+
+  .optik-site .testimonial-row {
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    flex-flow: column;
+  }
+
+  .optik-site .left-arrow {
+    transform: translate(-1463%);
+  }
+
+  .optik-site .right-arrow {
+    transform: translate(-1270%);
+  }
+
+  .optik-site .big-text {
+    padding-bottom: 150px;
+  }
+
+  .optik-site .big-title {
+    min-width: 150%;
+  }
+
+  .optik-site .big-img-wrap {
+    right: 280px;
+  }
+
+  .optik-site .blog {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .optik-site .blog-row {
+    padding-bottom: 70px;
+  }
+
+  .optik-site .blog-collection-list {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  .optik-site .blog-collection-list._02 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .optik-site .blog-collection-title {
+    font-size: var(--_size---h5--font-size);
+  }
+
+  .optik-site .footer {
+    padding-top: 70px;
+  }
+
+  .optik-site .footer-row {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .optik-site .footer-left {
+    max-width: var(--weight);
+  }
+
+  .optik-site .footer-right {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .optik-site .footer-link-wrap {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .optik-site .footer-link-2 {
+    font-size: 16px;
+  }
+
+  .optik-site .footer-img-wrap {
+    margin-top: 60px;
+  }
+
+  .optik-site .about-page-title {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .optik-site .about-page-title-row {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: column;
+  }
+
+  .optik-site .about-page-title-left-btn {
+    margin-top: 0;
+  }
+
+  .optik-site .about-page-title-left-text {
+    max-width: 600px;
+  }
+
+  .optik-site .about-two {
+    padding-bottom: 70px;
+  }
+
+  .optik-site .about-two-row {
+    grid-column-gap: 24px;
+    grid-row-gap: 40px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  .optik-site .values {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .optik-site .values-item-wrap {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: column;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    place-items: center stretch;
+    display: flex;
+  }
+
+  .optik-site .values-item-text {
+    max-width: none;
+  }
+
+  .optik-site .values-item-02.margin {
+    margin-top: 0;
+  }
+
+  .optik-site .team {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .optik-site .team-row {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: flex;
+  }
+
+  .optik-site .cta {
+    height: 600px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .optik-site .cta-row {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .optik-site .contact-info {
+    padding-bottom: 70px;
+  }
+
+  .optik-site .contact-info-row {
+    grid-column-gap: 24px;
+    grid-row-gap: 40px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  .optik-site .blog-row-2 {
+    padding-bottom: 70px;
+  }
+
+  .optik-site .blog-single-wrap {
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .optik-site .blog-single-2 {
+    max-width: none;
+  }
+
+  .optik-site .socile-wrap {
+    left: 30px;
+  }
+
+  .optik-site .service-single-img-box {
+    padding-bottom: 70px;
+  }
+
+  .optik-site .service-single-img-row {
+    flex-flow: column;
+  }
+
+  .optik-site .service-single-img-left {
+    height: auto;
+    max-width: var(--weight);
+  }
+
+  .optik-site .service-single-img-right {
+    max-width: var(--weight);
+    display: none;
+  }
+
+  .optik-site .service-single-row {
+    grid-column-gap: 70px;
+    grid-row-gap: 70px;
+  }
+
+  .optik-site .service-single-item-wrap {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    padding-bottom: 70px;
+  }
+
+  .optik-site .service-single {
+    padding-bottom: 70px;
+  }
+
+  .optik-site .service-single-item {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: column;
+  }
+
+  .optik-site .portfolio-row-2, .optik-site .portfolio-item-wrap-2 {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+
+  .optik-site .portfolio-2 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .optik-site .portfolio-top-left {
+    width: var(--weight);
+  }
+
+  .optik-site .portfolio-top {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: column;
+  }
+
+  .optik-site .portfolio-single-img {
+    height: auto;
+  }
+
+  .optik-site .portfolio-single-img-box-two {
+    padding-top: 70px;
+  }
+
+  .optik-site .team-single-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .team-single-right {
+    padding-top: 100px;
+  }
+
+  .optik-site .team-single-contact-wrap {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .license-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .optik-site .change-log-contact-wrap-2 {
+    width: 100%;
+  }
+
+  .optik-site ._404-wrap {
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+
+  .optik-site .service-collection-item-left-wrap {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .optik-site {
+    --_size---body--font-family: var(--_typography---body-font);
+    --_size---body--font-size: 18px;
+    --_size---body--line-height: 145%;
+    --_size---body--font-weight: 500;
+    --_size---body--letter-spacing: 0px;
+    --_size---h1--font-family: var(--_typography---heading-font);
+    --_size---h1--font-size: 120px;
+    --_size---h1--line-height: 104%;
+    --_size---h1--font-weight: 500;
+    --_size---h1--letter-spacing: -.48px;
+    --_size---h2--font-family: var(--_typography---heading-font);
+    --_size---h2--font-size: 80px;
+    --_size---h2--line-height: 90%;
+    --_size---h2--font-weight: 700;
+    --_size---h2--letter-spacing: -.48px;
+    --_size---h3--font-family: var(--_typography---heading-font);
+    --_size---h3--font-size: 36px;
+    --_size---h3--line-height: 98%;
+    --_size---h3--font-weight: 600;
+    --_size---h3--letter-spacing: 0px;
+    --_size---h4--font-family: var(--_typography---heading-font);
+    --_size---h4--font-size: 28px;
+    --_size---h4--line-height: 102%;
+    --_size---h4--font-weight: 500;
+    --_size---h4--letter-spacing: 0px;
+    --_size---h5--font-family: var(--_typography---heading-font);
+    --_size---h5--font-size: 24px;
+    --_size---h5--line-height: 99%;
+    --_size---h5--font-weight: 600;
+    --_size---h5--letter-spacing: 0px;
+    --_size---h6--font-family: var(--_typography---heading-font);
+    --_size---h6--font-size: 18px;
+    --_size---h6--line-height: 100%;
+    --_size---h6--font-weight: 600;
+    --_size---h6--letter-spacing: 0px;
+    --_size---caption--font-size: 18px;
+    --_size---caption--line-height: 145%;
+    --_size---caption--font-weight: 500;
+    --_size---caption--letter-spacing: 0px;
+    --_size---caption-small--font-family: var(--_typography---body-font);
+    --_size---caption-small--font-size: 14px;
+    --_size---caption-small--line-height: 150%;
+    --_size---caption-small--font-weight: 500;
+    --_size---caption-small--letter-spacing: .48px;
+    --_size---counter--font-family: var(--_typography---heading-font);
+    --_size---counter--font-size: 35px;
+    --_size---counter--line-height: 110%;
+    --_size---counter--font-weight: 600;
+    --_size---counter--letter-spacing: 0px;
+    --_size---body-two--font-family: var(--_typography---body-font);
+    --_size---body-two--line-height: 131%;
+    --_size---body-two--font-weight: 500;
+    --_size---body-two--letter-spacing: 0px;
+    --_size---caption--font-family: var(--_typography---body-font);
+    --_size---body-two--font-size: 16px;
+    --_size---heading-lg: 65px;
+  }
+
+  .optik-site .colors-style-wrap-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .optik-site .styleguide-row {
+    padding-top: 60px;
+  }
+
+  .optik-site .styleguide-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .optik-site .theme-button-wrap {
+    display: block;
+  }
+
+  .optik-site .header-logo-wrap {
+    padding-left: 0;
+    display: block;
+  }
+
+  .optik-site .header-item-left {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+  }
+
+  .optik-site .header-section {
+    top: 10px;
+    left: 0;
+    right: 0;
+  }
+
+  .optik-site .hero {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .optik-site .hero-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .optik-site .hero-text {
+    text-align: center;
+  }
+
+  .optik-site .hero-img {
+    max-width: 700px;
+    display: none;
+  }
+
+  .optik-site .hero-title {
+    background-color: var(--_colors---black);
+    text-align: center;
+    --_size---body--font-family: var(--_typography---body-font);
+    --_size---body--font-size: 18px;
+    --_size---body--line-height: 145%;
+    --_size---body--font-weight: 500;
+    --_size---body--letter-spacing: 0px;
+    --_size---h1--font-family: var(--_typography---heading-font);
+    --_size---h1--font-size: 120px;
+    --_size---h1--line-height: 104%;
+    --_size---h1--font-weight: 500;
+    --_size---h1--letter-spacing: -.48px;
+    --_size---h2--font-family: var(--_typography---heading-font);
+    --_size---h2--font-size: 80px;
+    --_size---h2--line-height: 90%;
+    --_size---h2--font-weight: 700;
+    --_size---h2--letter-spacing: -.48px;
+    --_size---h3--font-family: var(--_typography---heading-font);
+    --_size---h3--font-size: 36px;
+    --_size---h3--line-height: 98%;
+    --_size---h3--font-weight: 600;
+    --_size---h3--letter-spacing: 0px;
+    --_size---h4--font-family: var(--_typography---heading-font);
+    --_size---h4--font-size: 28px;
+    --_size---h4--line-height: 102%;
+    --_size---h4--font-weight: 500;
+    --_size---h4--letter-spacing: 0px;
+    --_size---h5--font-family: var(--_typography---heading-font);
+    --_size---h5--font-size: 24px;
+    --_size---h5--line-height: 99%;
+    --_size---h5--font-weight: 600;
+    --_size---h5--letter-spacing: 0px;
+    --_size---h6--font-family: var(--_typography---heading-font);
+    --_size---h6--font-size: 18px;
+    --_size---h6--line-height: 100%;
+    --_size---h6--font-weight: 600;
+    --_size---h6--letter-spacing: 0px;
+    --_size---caption--font-size: 18px;
+    --_size---caption--line-height: 145%;
+    --_size---caption--font-weight: 500;
+    --_size---caption--letter-spacing: 0px;
+    --_size---caption-small--font-family: var(--_typography---body-font);
+    --_size---caption-small--font-size: 14px;
+    --_size---caption-small--line-height: 150%;
+    --_size---caption-small--font-weight: 500;
+    --_size---caption-small--letter-spacing: .48px;
+    --_size---counter--font-family: var(--_typography---heading-font);
+    --_size---counter--font-size: 35px;
+    --_size---counter--line-height: 110%;
+    --_size---counter--font-weight: 600;
+    --_size---counter--letter-spacing: 0px;
+    --_size---body-two--font-family: var(--_typography---body-font);
+    --_size---body-two--line-height: 131%;
+    --_size---body-two--font-weight: 500;
+    --_size---body-two--letter-spacing: 0px;
+    --_size---caption--font-family: var(--_typography---body-font);
+    --_size---body-two--font-size: 16px;
+    --_size---heading-lg: 65px;
+    background-image: none;
+    min-width: auto;
+  }
+
+  .optik-site .client-wrap {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+  }
+
+  .optik-site .text-wrapper.left-contant-wrap {
+    width: 100%;
+  }
+
+  .optik-site .patner-section {
+    padding-bottom: 40px;
+  }
+
+  .optik-site .ticket-wrap {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .optik-site .about {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .optik-site .abou-left {
+    width: 100%;
+  }
+
+  .optik-site .counter-wrap._02 {
+    margin-top: 0;
+  }
+
+  .optik-site .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .optik-site .portfolio-title {
+    max-width: 300px;
+  }
+
+  .optik-site .service {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .optik-site .service-top {
+    display: flex;
+  }
+
+  .optik-site .service-collection-item-left {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    flex-flow: column;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+  }
+
+  .optik-site .service-collection-item-img-wrap, .optik-site .service-collection-item-img-wrap._02 {
+    display: none;
+  }
+
+  .optik-site .service-collection-item-left-text-wrap {
+    width: auto;
+  }
+
+  .optik-site .service-collection-item-left-tag-wrap {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .optik-site .awards {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .optik-site .awards-row {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+
+  .optik-site .awards-item-left {
+    flex-flow: column;
+  }
+
+  .optik-site .awards-img {
+    max-width: var(--weight);
+  }
+
+  .optik-site .awards-img._02 {
+    display: none;
+  }
+
+  .optik-site .awards-item-buttom-17 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .optik-site .testimonial {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .optik-site .testimonials-right-item {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    padding: 0;
+  }
+
+  .optik-site .testimonials-text {
+    max-width: 600px;
+  }
+
+  .optik-site .mask {
+    padding-bottom: 40px;
+  }
+
+  .optik-site .left-arrow {
+    transform: translate(-1054%);
+  }
+
+  .optik-site .right-arrow {
+    transform: translate(-850%);
+  }
+
+  .optik-site .big-text {
+    padding-bottom: 160px;
+  }
+
+  .optik-site .big-title {
+    min-width: 160%;
+  }
+
+  .optik-site .big-img-wrap {
+    right: 170px;
+  }
+
+  .optik-site .blog {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .optik-site .blog-row {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    padding-bottom: 60px;
+  }
+
+  .optik-site .blog-collection-list {
+    flex-flow: column;
+    display: flex;
+  }
+
+  .optik-site .blog-collection-title {
+    font-size: var(--_size---h4--font-size);
+  }
+
+  .optik-site .footer {
+    padding-top: 60px;
+  }
+
+  .optik-site .footer-left {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  .optik-site .footer-link-wrap {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+
+  .optik-site .footer-shap {
+    height: 200px;
+  }
+
+  .optik-site .about-page-title {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .optik-site .about-two {
+    padding-bottom: 60px;
+  }
+
+  .optik-site .about-two-row {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: column;
+    display: flex;
+  }
+
+  .optik-site .values {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .optik-site .values-row {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+
+  .optik-site .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .optik-site .team-row {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: column;
+  }
+
+  .optik-site .team-collection-list._02 {
+    grid-column-gap: 24px;
+    grid-row-gap: 40px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  .optik-site .cta {
+    height: 500px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .optik-site .cta-title {
+    width: var(--weight);
+    max-width: var(--weight);
+    font-size: var(--_size---heading-lg);
+  }
+
+  .optik-site .contact-info {
+    padding-bottom: 60px;
+  }
+
+  .optik-site .contact-info-row {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: column;
+    display: flex;
+  }
+
+  .optik-site .contanct-form-btn-wrap {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .optik-site .blog-row-2 {
+    padding-bottom: 60px;
+  }
+
+  .optik-site .blog-details-img {
+    height: auto;
+  }
+
+  .optik-site .tag-date-wrap-2 {
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    flex-flow: column;
+  }
+
+  .optik-site .tag-date-wrap-2._02 {
+    flex-flow: row;
+  }
+
+  .optik-site .blog-single-wrap {
+    margin-top: 0;
+  }
+
+  .optik-site .service-single-img-box {
+    padding-bottom: 60px;
+  }
+
+  .optik-site .service-single-row {
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+  }
+
+  .optik-site .service-single-item-wrap {
+    padding-bottom: 60px;
+  }
+
+  .optik-site .service-single-top {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: column;
+  }
+
+  .optik-site .service-single-right-item-wrap {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+
+  .optik-site .service-single {
+    padding-bottom: 60px;
+  }
+
+  .optik-site .portfolio-2 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .optik-site .portfolio-single-img-box-two {
+    padding-top: 60px;
+  }
+
+  .optik-site .portfolio-single-img-box-two-row {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    flex-flow: column;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  .optik-site .team-single-left {
+    width: 100%;
+    position: static;
+  }
+
+  .optik-site .team-single-row {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: column;
+  }
+
+  .optik-site .team-single-right-item-wrap {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .team-single-right-item-wrap.one {
+    margin-top: 0;
+  }
+
+  .optik-site .team-single-right {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .optik-site .social-icon-wrap {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .optik-site .change-log-left {
+    width: 30%;
+  }
+
+  .optik-site .change-log-section-02 {
+    margin-top: 0;
+    padding-top: 10px;
+  }
+
+  .optik-site .service-collection-item-left-wrap {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .optik-site {
+    --_size---body--font-family: var(--_typography---body-font);
+    --_size---body--font-size: 16px;
+    --_size---body--line-height: 145%;
+    --_size---body--font-weight: 500;
+    --_size---body--letter-spacing: 0px;
+    --_size---h1--font-family: var(--_typography---heading-font);
+    --_size---h1--font-size: 80px;
+    --_size---h1--line-height: 104%;
+    --_size---h1--font-weight: 500;
+    --_size---h1--letter-spacing: -.48px;
+    --_size---h2--font-family: var(--_typography---heading-font);
+    --_size---h2--font-size: 55px;
+    --_size---h2--line-height: 90%;
+    --_size---h2--font-weight: 700;
+    --_size---h2--letter-spacing: -.48px;
+    --_size---h3--font-family: var(--_typography---heading-font);
+    --_size---h3--font-size: 30px;
+    --_size---h3--line-height: 98%;
+    --_size---h3--font-weight: 600;
+    --_size---h3--letter-spacing: 0px;
+    --_size---h4--font-family: var(--_typography---heading-font);
+    --_size---h4--font-size: 25px;
+    --_size---h4--line-height: 102%;
+    --_size---h4--font-weight: 500;
+    --_size---h4--letter-spacing: 0px;
+    --_size---h5--font-family: var(--_typography---heading-font);
+    --_size---h5--font-size: 24px;
+    --_size---h5--line-height: 99%;
+    --_size---h5--font-weight: 600;
+    --_size---h5--letter-spacing: 0px;
+    --_size---h6--font-family: var(--_typography---heading-font);
+    --_size---h6--font-size: 16px;
+    --_size---h6--line-height: 100%;
+    --_size---h6--font-weight: 600;
+    --_size---h6--letter-spacing: 0px;
+    --_size---caption--font-size: 18px;
+    --_size---caption--line-height: 145%;
+    --_size---caption--font-weight: 500;
+    --_size---caption--letter-spacing: 0px;
+    --_size---caption-small--font-family: var(--_typography---body-font);
+    --_size---caption-small--font-size: 14px;
+    --_size---caption-small--line-height: 150%;
+    --_size---caption-small--font-weight: 500;
+    --_size---caption-small--letter-spacing: .48px;
+    --_size---counter--font-family: var(--_typography---heading-font);
+    --_size---counter--font-size: 30px;
+    --_size---counter--line-height: 110%;
+    --_size---counter--font-weight: 600;
+    --_size---counter--letter-spacing: 0px;
+    --_size---body-two--font-family: var(--_typography---body-font);
+    --_size---body-two--line-height: 131%;
+    --_size---body-two--font-weight: 500;
+    --_size---body-two--letter-spacing: 0px;
+    --_size---caption--font-family: var(--_typography---body-font);
+    --_size---body-two--font-size: 16px;
+    --_size---heading-lg: 45px;
+  }
+
+  .optik-site .button-text {
+    font-size: 16px;
+  }
+
+  .optik-site .colors-style-wrap-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .optik-site .btn-link-wrap {
+    padding: 10px 20px;
+  }
+
+  .optik-site .btn-wrap {
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .optik-site .styleguide-row {
+    padding-top: 50px;
+  }
+
+  .optik-site .styleguide-section {
+    padding: 20px 10px 50px;
+  }
+
+  .optik-site .theme-button-wrap {
+    position: relative;
+  }
+
+  .optik-site .btn-text-box {
+    height: 18px;
+  }
+
+  .optik-site .typography, .optik-site .header-item-left {
+    width: 100%;
+  }
+
+  .optik-site .header-item-right {
+    display: none;
+  }
+
+  .optik-site .header-section {
+    padding: 10px 10px 0;
+    top: 10px;
+    overflow: visible;
+  }
+
+  .optik-site .nav-menu {
+    display: none;
+  }
+
+  .optik-site .hero {
+    padding: 50px 10px;
+  }
+
+  .optik-site .hero-title {
+    --_size---body--font-family: var(--_typography---body-font);
+    --_size---body--font-size: 16px;
+    --_size---body--line-height: 145%;
+    --_size---body--font-weight: 500;
+    --_size---body--letter-spacing: 0px;
+    --_size---h1--font-family: var(--_typography---heading-font);
+    --_size---h1--font-size: 80px;
+    --_size---h1--line-height: 104%;
+    --_size---h1--font-weight: 500;
+    --_size---h1--letter-spacing: -.48px;
+    --_size---h2--font-family: var(--_typography---heading-font);
+    --_size---h2--font-size: 55px;
+    --_size---h2--line-height: 90%;
+    --_size---h2--font-weight: 700;
+    --_size---h2--letter-spacing: -.48px;
+    --_size---h3--font-family: var(--_typography---heading-font);
+    --_size---h3--font-size: 30px;
+    --_size---h3--line-height: 98%;
+    --_size---h3--font-weight: 600;
+    --_size---h3--letter-spacing: 0px;
+    --_size---h4--font-family: var(--_typography---heading-font);
+    --_size---h4--font-size: 25px;
+    --_size---h4--line-height: 102%;
+    --_size---h4--font-weight: 500;
+    --_size---h4--letter-spacing: 0px;
+    --_size---h5--font-family: var(--_typography---heading-font);
+    --_size---h5--font-size: 24px;
+    --_size---h5--line-height: 99%;
+    --_size---h5--font-weight: 600;
+    --_size---h5--letter-spacing: 0px;
+    --_size---h6--font-family: var(--_typography---heading-font);
+    --_size---h6--font-size: 16px;
+    --_size---h6--line-height: 100%;
+    --_size---h6--font-weight: 600;
+    --_size---h6--letter-spacing: 0px;
+    --_size---caption--font-size: 18px;
+    --_size---caption--line-height: 145%;
+    --_size---caption--font-weight: 500;
+    --_size---caption--letter-spacing: 0px;
+    --_size---caption-small--font-family: var(--_typography---body-font);
+    --_size---caption-small--font-size: 14px;
+    --_size---caption-small--line-height: 150%;
+    --_size---caption-small--font-weight: 500;
+    --_size---caption-small--letter-spacing: .48px;
+    --_size---counter--font-family: var(--_typography---heading-font);
+    --_size---counter--font-size: 30px;
+    --_size---counter--line-height: 110%;
+    --_size---counter--font-weight: 600;
+    --_size---counter--letter-spacing: 0px;
+    --_size---body-two--font-family: var(--_typography---body-font);
+    --_size---body-two--line-height: 131%;
+    --_size---body-two--font-weight: 500;
+    --_size---body-two--letter-spacing: 0px;
+    --_size---caption--font-family: var(--_typography---body-font);
+    --_size---body-two--font-size: 16px;
+    --_size---heading-lg: 45px;
+  }
+
+  .optik-site .client-wrap {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+  }
+
+  .optik-site .letter-animation.text-wrapper {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .optik-site .patner-exar-two {
+    text-align: center;
+  }
+
+  .optik-site .patner-exar-wrap {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .optik-site .patner-section {
+    padding: 40px 10px;
+    top: 0;
+  }
+
+  .optik-site .ticket-wrap {
+    grid-column-gap: 250px;
+    grid-row-gap: 250px;
+    justify-content: center;
+  }
+
+  .optik-site .page-wrapper._02 {
+    overflow: hidden;
+  }
+
+  .optik-site .about {
+    padding: 50px 10px;
+  }
+
+  .optik-site .about-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .abou-left {
+    width: 100%;
+  }
+
+  .optik-site .abou-right {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    flex-flow: column;
+  }
+
+  .optik-site .about-section-title {
+    max-width: 600px;
+  }
+
+  .optik-site .abou-left-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .optik-site .abou-img-wrap {
+    width: var(--weight);
+    flex-flow: column;
+  }
+
+  .optik-site .image {
+    max-width: var(--weight);
+    display: none;
+  }
+
+  .optik-site .about-img-two {
+    height: 300px;
+    max-width: var(--weight);
+    object-fit: cover;
+  }
+
+  .optik-site .counter-wrap {
+    max-width: var(--weight);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: flex;
+  }
+
+  .optik-site .counter-item {
+    background-color: var(--_colors---white);
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .optik-site .counter-text {
+    max-width: none;
+  }
+
+  .optik-site .about-c {
+    display: none;
+  }
+
+  .optik-site .portfolio {
+    padding: 50px 10px;
+  }
+
+  .optik-site .portfolio-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .portfolio-title {
+    max-width: 280px;
+  }
+
+  .optik-site .portfolio-section-title {
+    max-width: 600px;
+  }
+
+  .optik-site .portfolio-title-box {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .optik-site .portfolio-title-box._03 {
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .optik-site .portfolio-item-wrap {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    flex-flow: column;
+    display: none;
+  }
+
+  .optik-site .portfolio-collection-list-wrapper._02 {
+    padding-top: 0;
+  }
+
+  .optik-site .portfolio-collection-list-wrapper._02.max-weight, .optik-site .portfolio-collection-list-wrapper._02.max-weight-02 {
+    max-width: var(--weight);
+  }
+
+  .optik-site .portfolio-collection-img-wrap {
+    width: var(--weight);
+  }
+
+  .optik-site .portfolio-collection-text-wrap._02 {
+    order: 0;
+  }
+
+  .optik-site .service {
+    padding: 50px 10px;
+  }
+
+  .optik-site .service-row {
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+  .optik-site .service-top {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .optik-site .service-section-title {
+    max-width: 600px;
+  }
+
+  .optik-site .service-top-right {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .optik-site .service-top-right-text {
+    text-align: center;
+  }
+
+  .optik-site .service-item-wrap {
+    display: none;
+  }
+
+  .optik-site .service-item-wrap._02 {
+    display: block;
+  }
+
+  .optik-site .service-collection-item-left {
+    flex-flow: column;
+  }
+
+  .optik-site .service-collection-item-left-text-wrap {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .optik-site .service-collection-item-left-title, .optik-site .service-collection-item-left-text {
+    text-align: center;
+  }
+
+  .optik-site .service-collection-item-left-tag-wrap {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .optik-site .service-collection-item-img {
+    display: none;
+  }
+
+  .optik-site .awards {
+    padding: 50px 10px;
+  }
+
+  .optik-site .awards-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .awards-item-wrap {
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    flex-flow: column;
+    display: flex;
+  }
+
+  .optik-site .awards-section-title {
+    max-width: 600px;
+  }
+
+  .optik-site .awards-img {
+    object-fit: cover;
+    max-height: 300px;
+  }
+
+  .optik-site .testimonial {
+    padding: 50px 10px;
+  }
+
+  .optik-site .testimonial._02 {
+    padding-top: 50px;
+  }
+
+  .optik-site .testimonial-row, .optik-site .testimonials-right-item {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .slider {
+    width: var(--weight);
+  }
+
+  .optik-site .mask {
+    padding-bottom: 30px;
+  }
+
+  .optik-site .left-arrow {
+    transform: translate(-90%);
+  }
+
+  .optik-site .right-arrow {
+    transform: translate(90%);
+  }
+
+  .optik-site .big-text {
+    padding: 0 10px 50px;
+    display: none;
+  }
+
+  .optik-site .big-text-row {
+    width: var(--weight);
+  }
+
+  .optik-site .big-title {
+    min-width: auto;
+    font-size: var(--_size---h2--font-size);
+    text-align: center;
+  }
+
+  .optik-site .big-img-wrap {
+    display: none;
+  }
+
+  .optik-site .blog {
+    padding: 50px 10px;
+  }
+
+  .optik-site .blog-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding-bottom: 50px;
+  }
+
+  .optik-site .blog-title-box {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .optik-site .blog-item-wrap {
+    display: none;
+  }
+
+  .optik-site .blog-item-wrap._02 {
+    display: block;
+  }
+
+  .optik-site .blog-collection-list._02 {
+    grid-row-gap: 30px;
+    display: flex;
+  }
+
+  .optik-site .footer {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .optik-site .footer-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .footer-left {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    flex-flow: column;
+    display: flex;
+  }
+
+  .optik-site .footer-link-wrap {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .optik-site .coppy {
+    margin-top: 0;
+  }
+
+  .optik-site .footer-img-wrap {
+    margin-top: 40px;
+  }
+
+  .optik-site .footer-shap {
+    height: 150px;
+  }
+
+  .optik-site .about-page-title {
+    padding: 50px 10px;
+  }
+
+  .optik-site .about-page-title-row, .optik-site .about-page-title-left {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .about-two {
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .optik-site .about-two-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .about-two-right-img {
+    max-width: var(--weight);
+    display: none;
+  }
+
+  .optik-site .values {
+    padding: 50px 10px;
+  }
+
+  .optik-site .values-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .values-title-top {
+    padding-left: 0;
+  }
+
+  .optik-site .values-section-title {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    display: flex;
+  }
+
+  .optik-site .values-title-box {
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    flex-flow: column;
+    margin-top: 10px;
+  }
+
+  .optik-site .values-item-wrap {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    display: none;
+  }
+
+  .optik-site .values-item {
+    padding: 30px 20px;
+  }
+
+  .optik-site .values-item-02-title-wrap {
+    padding-left: 20px;
+  }
+
+  .optik-site .team {
+    padding: 50px 10px;
+  }
+
+  .optik-site .team-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    display: none;
+  }
+
+  .optik-site .team-collection-list._02 {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    flex-flow: column;
+    display: flex;
+  }
+
+  .optik-site .cta {
+    height: auto;
+    padding: 50px 10px;
+  }
+
+  .optik-site .cta-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .contact-info {
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .optik-site .contact-info-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .contact-info-right {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    flex-flow: column;
+  }
+
+  .optik-site .contact-row {
+    margin-top: -50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .optik-site .contact-form-wrap {
+    padding: 30px 20px;
+  }
+
+  .optik-site .contanct-form {
+    margin-top: 10px;
+  }
+
+  .optik-site .contanct-form-input-wrap {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    flex-flow: column;
+    margin-bottom: 30px;
+  }
+
+  .optik-site .message-btn-wrap {
+    margin-top: 0;
+  }
+
+  .optik-site .contanct-form-btn-wrap {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .optik-site .blog-row-2 {
+    padding-bottom: 50px;
+  }
+
+  .optik-site .icon-wrap-2 {
+    max-width: 30px;
+    height: 30px;
+  }
+
+  .optik-site .blog-details-img {
+    transform: none;
+  }
+
+  .optik-site .blog-single {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .optik-site .tag-date-wrap-2 {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    flex-flow: row;
+  }
+
+  .optik-site .tag-date-wrap-2._02 {
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .optik-site .blog-single-wrap {
+    margin-top: 0;
+  }
+
+  .optik-site .blog-single-2 {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .socile-wrap {
+    bottom: 80px;
+    left: 20px;
+  }
+
+  .optik-site .blog-details-row {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .blog-details-contant {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-top: 0;
+  }
+
+  .optik-site .service-collection-item-left-number-wrap {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .optik-site .service-single-img-box {
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .optik-site .service-single-row {
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }
+
+  .optik-site .service-single-item-wrap {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding-bottom: 50px;
+  }
+
+  .optik-site .service-single-top-left {
+    width: 100%;
+  }
+
+  .optik-site .service-single-top {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    flex-flow: column;
+  }
+
+  .optik-site .service-single-right-item-wrap {
+    width: 100%;
+  }
+
+  .optik-site .service-single {
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .optik-site .portfolio-row-2, .optik-site .portfolio-item-wrap-2 {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .portfolio-single-img-wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .optik-site .banner-img-right, .optik-site .banner-img-left {
+    width: var(--weight);
+  }
+
+  .optik-site .portfolio-2 {
+    padding: 50px 10px;
+  }
+
+  .optik-site .portfolio-top-left {
+    width: 100%;
+  }
+
+  .optik-site .portfolio-top {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    flex-flow: column;
+  }
+
+  .optik-site .banner-img-wrap {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    flex-flow: column;
+  }
+
+  .optik-site .portfolio-single-img-box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .optik-site .portfolio-single-img-box-two {
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .optik-site .portfolio-single-img-box-two-row {
+    display: flex;
+  }
+
+  .optik-site .share-project {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .optik-site .share-project-row {
+    flex-flow: column;
+  }
+
+  .optik-site .team-single-left {
+    width: 100%;
+  }
+
+  .optik-site .team-single {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .optik-site .team-single-row {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    flex-flow: column;
+  }
+
+  .optik-site .team-single-right-item-wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .optik-site .team-single-right {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .optik-site .team-single-contact-wrap {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .optik-site .social-icon-wrap {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .optik-site .call-wrap {
+    margin-top: 0;
+  }
+
+  .optik-site .licenses {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .optik-site .license-row {
+    padding-top: 0;
+  }
+
+  .optik-site .license-item-wrap {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .optik-site .change-log-left {
+    width: 100%;
+  }
+
+  .optik-site .change-log-left._03 {
+    padding-top: 40px;
+  }
+
+  .optik-site .change-log-wrap {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    flex-flow: column;
+  }
+
+  .optik-site .change-log-contact-box {
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+
+  .optik-site .cercile-2 {
+    display: none;
+    right: 0;
+  }
+
+  .optik-site .change-log-section-02 {
+    margin-top: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .optik-site .dashboard-list-wrap {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-size: 16px;
+  }
+
+  .optik-site .version-title._03 {
+    margin-top: 0;
+  }
+
+  .optik-site .change-log-right {
+    border: 1px #000;
+    padding-left: 0;
+  }
+
+  .optik-site .change-log-right._03 {
+    padding-top: 0;
+  }
+
+  .optik-site .change-log-contact-wrap-2 {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .optik-site .released {
+    font-size: 16px;
+  }
+
+  .optik-site ._404-contant-wrap {
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+  .optik-site ._404-wrap {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .optik-site ._404-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .optik-site .slider-2 {
+    background-color: #0000;
+    height: auto;
+    display: block;
+  }
+
+  .optik-site .slide-nav-2 {
+    display: none;
+  }
+
+  .optik-site .mask-2 {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .optik-site .slide-2 {
+    height: auto;
+  }
+
+  .optik-site .subscrive-wrap {
+    display: none;
+  }
+}
+
+.optik-site #w-node-_823bcb6b-275b-224c-6383-bfd7c71312f1-78f30a36, .optik-site #w-node-_7f5bd032-bb68-1f22-424f-c9fdee886555-78f30a36, .optik-site #w-node-b3d02408-3c4a-0bfd-6b30-8ce7e3c26eff-78f30a36, .optik-site #w-node-_254d70b6-3c80-a455-3411-a27df6a3242f-78f30a36 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}

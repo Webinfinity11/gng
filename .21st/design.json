@@ -1,0 +1,25 @@
+{
+    "name":  "GNG studio",
+    "framework":  "Next.js App Router / React / Tailwind CSS",
+    "language":  "ka (public site and administration)",
+    "reference":  "https://optik-studio-recreated.akopov43.chatgpt.site",
+    "colors":  {
+                   "background":  "#f7f7f7",
+                   "foreground":  "#000000",
+                   "accent":  "#ffffff",
+                   "muted":  "#3f3f3f"
+               },
+    "decisions":  [
+                      "Preserve the shared Optik site\u0027s structure and responsive layout.",
+                      "User requested the supplied GNG logo at a larger visible size and Georgian throughout the site on 2026-10-23. Georgian copy supersedes the English template baseline.",
+                      "Use the installed Noto Sans Georgian font for now. Keep heading and body font stacks in globals.css for later brand font changes.",
+                      "Preserve Neon, R2 and administrator functionality. Reference portfolio samples are separate from real GNG draft records.",
+                      "Clipping correction: contain the actual PNG logo mark using its measured offset; allow long Georgian CTA text and standalone detail headings to fit their containers.",
+                      "User explicitly requested the black/white hero split through the centers of upper ვ and lower თ on 2026-10-23. Use the measured 4.73em split for the current Georgian heading/font, scaling with font size instead of container width. Preserve image contrast, mobile black-text fallback and clipping fixes.",
+                      "User requested an unmistakable header call CTA: black filled button, white Georgian copy, phone icon, 8px radius and visible black keyboard focus. Keep the configured telephone link and existing responsive header layout.",
+                      "User requested removing all homepage sections from testimonials through the footer boundary, including testimonials, the large decorative text section and articles. Homepage now ends with awards followed directly by the shared footer.",
+                      "About page uses only the 21 source text entries from the supplied About DOCX, stored in src/lib/about-content.ts. Preserve its company experience (11 years) and specialist experience (26 years) as distinct claims. No invented team roster, counters, awards or marketing claims. Keep existing monochrome typography, image corners, dot label and contact-button pattern; reference images are explicitly captioned as illustrations.",
+                      "Contact page uses a black direct-contact panel beside a white form, existing Georgian typography, dot labels and 8px buttons. User supplied gngteam.ge@gmail.com, +995 551 39 77 66 and Petre Iberi Street 4, explicitly confirmed as Tbilisi. Contact settings remain the single source for page and footer. Embed the address on the fixed Google Maps origin and provide separate directions/open-map links. Do not invent office hours or response-time promises. Without database configuration, explain form availability and offer phone/email links.",
+                      "User requested a compact, cohesive hero on 2026-10-26. Group the headline, description and CTA beside the complete furniture diorama; size the section to its content. Keep the whole platform visible and stack the asset below the copy on smaller screens. Solid black headline supersedes the former split gradient because the text now sits on the light page background."
+                  ]
+}

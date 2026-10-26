@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  /* Replace these two stacks when the final brand fonts are selected. */
+  --font-sans: "Noto Sans Georgian", "Manrope", sans-serif;
+  --font-heading: "Noto Sans Georgian", "Manrope", sans-serif;
+  --background: #f6f5f1;
+  --foreground: #20251f;
+  --accent: #b7c4a5;
+  --muted: #696f65;
+  --line: #d8dbd1;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-sans), Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+button, input, textarea, select { font: inherit; }
+button, a, input, textarea, select { -webkit-tap-highlight-color: transparent; }
+button, a { touch-action: manipulation; }
+button:not(:disabled), select { cursor: pointer; }
+button:disabled { cursor: wait; }
+::selection { background: #c9d5b7; color: #20251f; }
+:focus-visible { outline: 2px solid #657d48; outline-offset: 5px; }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

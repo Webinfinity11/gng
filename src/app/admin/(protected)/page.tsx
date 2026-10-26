@@ -1,0 +1,17 @@
+import Link from "next/link";
+import { ArrowRight, ArrowUpRight, Eye, FileEdit, FolderKanban, Mail, Plus } from "lucide-react";
+import { getInquiries, getProjects } from "@/lib/data";
+
+export const metadata = { title: "მიმოხილვა" };
+export default async function AdminDashboard() {
+  const [projects, inquiries] = await Promise.all([getProjects({ includeDrafts: true }), getInquiries()]);
+  const published = projects.filter((project) => project.status === "published").length;
+  const unread = inquiries.filter((inquiry) => inquiry.status === "new").length;
+  const stats = [
+    { label: "ყველა პროექტი", value: projects.length, icon: FolderKanban, href: "/admin/projects" },
+    { label: "გამოქვეყნებული", value: published, icon: Eye, href: "/admin/projects" },
+    { label: "ფოტოს გარეშე", value: projects.length - published, icon: FileEdit, href: "/admin/projects" },
+    { label: "ახალი შეტყობინება", value: unread, icon: Mail, href: "/admin/inquiries" },
+  ];
+  return <><header className="a-page-header"><div><p className="a-eyebrow">GNG · ადმინისტრაცია</p><h1>მიმოხილვა</h1><p className="a-subtitle">თქვენი საიტის კონტენტი ერთ სივრცეში.</p></div><Link className="a-button" href="/admin/projects/new"><Plus size={18} aria-hidden="true" />ახალი პროექტი</Link></header><div className="a-stats">{stats.map(({ label, value, icon: Icon, href }) => <Link className="a-stat" href={href} key={label}><div className="a-stat-top"><Icon size={21} aria-hidden="true" /><ArrowUpRight size={16} aria-hidden="true" /></div><strong>{value}</strong><span>{label}</span></Link>)}</div><div className="a-dashboard-grid"><section className="a-panel"><div className="a-panel-heading a-heading-link"><div><h2>პროექტები</h2><p>განაახლეთ თქვენი კომპანიის პორტფოლიო.</p></div><Link href="/admin/projects" className="a-text-link">ყველა<ArrowRight size={16} aria-hidden="true" /></Link></div>{projects.length > 0 ? <ul className="a-recent-list">{projects.slice(0, 5).map((project) => <li key={project.id}><Link href={`/admin/projects/${project.id}`}><span><strong>{project.title}</strong><small>{project.images.length} ფოტო</small></span><span className={`a-badge ${project.status === "published" ? "published" : "draft"}`}>{project.status === "published" ? "გამოქვეყნებული" : "ფოტოს გარეშე"}</span></Link></li>)}</ul> : <div className="a-empty a-empty-compact"><FolderKanban size={28} aria-hidden="true" /><p>პირველი პროექტი ჯერ არ დაგიმატებიათ.</p><Link href="/admin/projects/new" className="a-text-link">პროექტის დამატება<ArrowRight size={16} aria-hidden="true" /></Link></div>}</section><section className="a-panel"><div className="a-panel-heading"><h2>სწრაფი მოქმედებები</h2><p>ყველაზე ხშირად გამოყენებული ფუნქციები.</p></div><div className="a-quick-links"><Link href="/admin/projects/new"><span className="a-quick-icon"><Plus size={21} aria-hidden="true" /></span><span><strong>პროექტის დამატება</strong><small>სათაური, მთავარი ფოტო და გალერეა</small></span><ArrowRight size={18} aria-hidden="true" /></Link><Link href="/admin/inquiries"><span className="a-quick-icon"><Mail size={21} aria-hidden="true" /></span><span><strong>მიღებული შეტყობინებები</strong><small>{unread ? `${unread} ახალი მიმართვა` : "ყველა მიღებული მიმართვა"}</small></span><ArrowRight size={18} aria-hidden="true" /></Link><Link href="/" target="_blank" rel="noreferrer"><span className="a-quick-icon"><Eye size={21} aria-hidden="true" /></span><span><strong>საიტის ნახვა</strong><small>გაიხსნება ახალ ჩანართში</small></span><ArrowUpRight size={18} aria-hidden="true" /></Link></div></section></div></>;
+}

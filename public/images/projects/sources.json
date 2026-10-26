@@ -1,0 +1,562 @@
+{
+  "source": "User-supplied MEGA folder: GNG Bussines Portfolio",
+  "folder": "iywFxQJS",
+  "processing": "EXIF orientation applied; resized without enlargement; WebP quality 82; metadata stripped. Original photographs retained in ignored .artifacts/gng-assets/originals.",
+  "photos": [
+    {
+      "asset": "/images/projects/living-room.webp",
+      "sourceNode": "K6pAiJxQ",
+      "sourcePath": "GNG Bussines Portfolio/Private order/ლისი/_MG_6950.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 143450,
+      "variants": [
+        {
+          "src": "/images/projects/living-room-480.webp",
+          "width": 480,
+          "bytes": 11196
+        },
+        {
+          "src": "/images/projects/living-room-960.webp",
+          "width": 960,
+          "bytes": 32964
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/furniture.webp",
+      "sourceNode": "HjxmGRiK",
+      "sourcePath": "GNG Bussines Portfolio/Private order/ლისი/_MG_6956.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 175556,
+      "variants": [
+        {
+          "src": "/images/projects/furniture-480.webp",
+          "width": 480,
+          "bytes": 13186
+        },
+        {
+          "src": "/images/projects/furniture-960.webp",
+          "width": 960,
+          "bytes": 39342
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/panels.webp",
+      "sourceNode": "T7x00biK",
+      "sourcePath": "GNG Bussines Portfolio/Private order/ლისი/_MG_7046 copy.jpg",
+      "width": 1280,
+      "height": 1920,
+      "bytes": 86006,
+      "variants": [
+        {
+          "src": "/images/projects/panels-480.webp",
+          "width": 480,
+          "bytes": 9334
+        },
+        {
+          "src": "/images/projects/panels-960.webp",
+          "width": 960,
+          "bytes": 38104
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/doors.webp",
+      "sourceNode": "27pAATiR",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Hotel Khedi/IMG_20180523_171454.jpg",
+      "width": 1440,
+      "height": 1920,
+      "bytes": 136770,
+      "variants": [
+        {
+          "src": "/images/projects/doors-480.webp",
+          "width": 480,
+          "bytes": 11546
+        },
+        {
+          "src": "/images/projects/doors-960.webp",
+          "width": 960,
+          "bytes": 42698
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/kitchen.webp",
+      "sourceNode": "ymggUZQC",
+      "sourcePath": "GNG Bussines Portfolio/Private order/ლისი/_MG_6974 copy.jpg",
+      "width": 1280,
+      "height": 1920,
+      "bytes": 162576,
+      "variants": [
+        {
+          "src": "/images/projects/kitchen-480.webp",
+          "width": 480,
+          "bytes": 24114
+        },
+        {
+          "src": "/images/projects/kitchen-960.webp",
+          "width": 960,
+          "bytes": 85162
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/lounge.webp",
+      "sourceNode": "vmpgwBSB",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Vazisubani Estate/76773224_2553694084720928_3586983907674816512_o.jpg",
+      "width": 1920,
+      "height": 1218,
+      "bytes": 251450,
+      "variants": [
+        {
+          "src": "/images/projects/lounge-480.webp",
+          "width": 480,
+          "bytes": 26292
+        },
+        {
+          "src": "/images/projects/lounge-960.webp",
+          "width": 960,
+          "bytes": 77708
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/design.webp",
+      "sourceNode": "KvoynLAA",
+      "sourcePath": "GNG Bussines Portfolio/Private order/ლისი/_MG_6952.jpg",
+      "width": 1920,
+      "height": 1279,
+      "bytes": 146668,
+      "variants": [
+        {
+          "src": "/images/projects/design-480.webp",
+          "width": 480,
+          "bytes": 11464
+        },
+        {
+          "src": "/images/projects/design-960.webp",
+          "width": 960,
+          "bytes": 35168
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/production.webp",
+      "sourceNode": "r7hUTRRJ",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Vazisubani Estate/პროცესი/20190905_141259.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 110434,
+      "variants": [
+        {
+          "src": "/images/projects/production-480.webp",
+          "width": 480,
+          "bytes": 14416
+        },
+        {
+          "src": "/images/projects/production-960.webp",
+          "width": 960,
+          "bytes": 36902
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/installation.webp",
+      "sourceNode": "enpEyJCT",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Vazisubani Estate/პროცესი/20191117_141405.jpg",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 255290,
+      "variants": [
+        {
+          "src": "/images/projects/installation-480.webp",
+          "width": 480,
+          "bytes": 25918
+        },
+        {
+          "src": "/images/projects/installation-960.webp",
+          "width": 960,
+          "bytes": 81762
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/restaurant.webp",
+      "sourceNode": "CqgwFRrA",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Vazisubani Estate/76747424_2553694281387575_2762584541733322752_o.jpg",
+      "width": 1920,
+      "height": 1164,
+      "bytes": 265616,
+      "variants": [
+        {
+          "src": "/images/projects/restaurant-480.webp",
+          "width": 480,
+          "bytes": 34056
+        },
+        {
+          "src": "/images/projects/restaurant-960.webp",
+          "width": 960,
+          "bytes": 98868
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/contact.webp",
+      "sourceNode": "HjxmGRiK",
+      "sourcePath": "GNG Bussines Portfolio/Private order/ლისი/_MG_6956.jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 175556,
+      "variants": [
+        {
+          "src": "/images/projects/contact-480.webp",
+          "width": 480,
+          "bytes": 13186
+        },
+        {
+          "src": "/images/projects/contact-960.webp",
+          "width": 960,
+          "bytes": 39342
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/consultation.webp",
+      "sourceNode": "KvoynLAA",
+      "sourcePath": "GNG Bussines Portfolio/Private order/ლისი/_MG_6952.jpg",
+      "width": 1920,
+      "height": 1279,
+      "bytes": 146668,
+      "variants": [
+        {
+          "src": "/images/projects/consultation-480.webp",
+          "width": 480,
+          "bytes": 11464
+        },
+        {
+          "src": "/images/projects/consultation-960.webp",
+          "width": 960,
+          "bytes": 35168
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/khedi-hotel-01.webp",
+      "sourceNode": "GixC2RaJ",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Hotel Khedi/thumbnail (6).jpg",
+      "width": 1080,
+      "height": 525,
+      "bytes": 52686,
+      "variants": [
+        {
+          "src": "/images/projects/khedi-hotel-01-480.webp",
+          "width": 480,
+          "bytes": 13048
+        },
+        {
+          "src": "/images/projects/khedi-hotel-01-960.webp",
+          "width": 960,
+          "bytes": 37988
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/khedi-hotel-02.webp",
+      "sourceNode": "qqxyQbiL",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Hotel Khedi/IMG_20180522_173215.jpg",
+      "width": 1920,
+      "height": 1440,
+      "bytes": 183756,
+      "variants": [
+        {
+          "src": "/images/projects/khedi-hotel-02-480.webp",
+          "width": 480,
+          "bytes": 17100
+        },
+        {
+          "src": "/images/projects/khedi-hotel-02-960.webp",
+          "width": 960,
+          "bytes": 43036
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/khedi-hotel-03.webp",
+      "sourceNode": "CzhkiTrL",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Hotel Khedi/thumbnail (5).jpg",
+      "width": 525,
+      "height": 1080,
+      "bytes": 65404,
+      "variants": [
+        {
+          "src": "/images/projects/khedi-hotel-03-480.webp",
+          "width": 480,
+          "bytes": 49446
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/khedi-hotel-04.webp",
+      "sourceNode": "27pAATiR",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Hotel Khedi/IMG_20180523_171454.jpg",
+      "width": 1440,
+      "height": 1920,
+      "bytes": 136770,
+      "variants": [
+        {
+          "src": "/images/projects/khedi-hotel-04-480.webp",
+          "width": 480,
+          "bytes": 11546
+        },
+        {
+          "src": "/images/projects/khedi-hotel-04-960.webp",
+          "width": 960,
+          "bytes": 42698
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/vazisubani-estate-01.webp",
+      "sourceNode": "CqgwFRrA",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Vazisubani Estate/76747424_2553694281387575_2762584541733322752_o.jpg",
+      "width": 1920,
+      "height": 1164,
+      "bytes": 265616,
+      "variants": [
+        {
+          "src": "/images/projects/vazisubani-estate-01-480.webp",
+          "width": 480,
+          "bytes": 34056
+        },
+        {
+          "src": "/images/projects/vazisubani-estate-01-960.webp",
+          "width": 960,
+          "bytes": 98868
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/vazisubani-estate-02.webp",
+      "sourceNode": "vmpgwBSB",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Vazisubani Estate/76773224_2553694084720928_3586983907674816512_o.jpg",
+      "width": 1920,
+      "height": 1218,
+      "bytes": 251450,
+      "variants": [
+        {
+          "src": "/images/projects/vazisubani-estate-02-480.webp",
+          "width": 480,
+          "bytes": 26292
+        },
+        {
+          "src": "/images/projects/vazisubani-estate-02-960.webp",
+          "width": 960,
+          "bytes": 77708
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/vazisubani-estate-03.webp",
+      "sourceNode": "mvoClBgb",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Vazisubani Estate/78884498_2553694248054245_3021688365238976512_o.jpg",
+      "width": 1920,
+      "height": 1224,
+      "bytes": 268682,
+      "variants": [
+        {
+          "src": "/images/projects/vazisubani-estate-03-480.webp",
+          "width": 480,
+          "bytes": 34378
+        },
+        {
+          "src": "/images/projects/vazisubani-estate-03-960.webp",
+          "width": 960,
+          "bytes": 96064
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/vazisubani-estate-04.webp",
+      "sourceNode": "D7xywLoT",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Vazisubani Estate/WhatsApp Image 2019-11-22 at 13.39.14.jpeg",
+      "width": 1280,
+      "height": 622,
+      "bytes": 110850,
+      "variants": [
+        {
+          "src": "/images/projects/vazisubani-estate-04-480.webp",
+          "width": 480,
+          "bytes": 26080
+        },
+        {
+          "src": "/images/projects/vazisubani-estate-04-960.webp",
+          "width": 960,
+          "bytes": 71840
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/holiday-inn-avlabari-01.webp",
+      "sourceNode": "3mhE1ZBY",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Holiday Inn Express Tbilisi Avlabari/20221005_112103.jpg",
+      "width": 1920,
+      "height": 1384,
+      "bytes": 123232,
+      "variants": [
+        {
+          "src": "/images/projects/holiday-inn-avlabari-01-480.webp",
+          "width": 480,
+          "bytes": 15756
+        },
+        {
+          "src": "/images/projects/holiday-inn-avlabari-01-960.webp",
+          "width": 960,
+          "bytes": 40094
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/holiday-inn-avlabari-02.webp",
+      "sourceNode": "jqogDJCY",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Holiday Inn Express Tbilisi Avlabari/20221005_112033.jpg",
+      "width": 1920,
+      "height": 1440,
+      "bytes": 362304,
+      "variants": [
+        {
+          "src": "/images/projects/holiday-inn-avlabari-02-480.webp",
+          "width": 480,
+          "bytes": 19400
+        },
+        {
+          "src": "/images/projects/holiday-inn-avlabari-02-960.webp",
+          "width": 960,
+          "bytes": 66036
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/holiday-inn-avlabari-03.webp",
+      "sourceNode": "XrgkBRgB",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Holiday Inn Express Tbilisi Avlabari/20221005_112318.jpg",
+      "width": 1920,
+      "height": 1440,
+      "bytes": 170742,
+      "variants": [
+        {
+          "src": "/images/projects/holiday-inn-avlabari-03-480.webp",
+          "width": 480,
+          "bytes": 12206
+        },
+        {
+          "src": "/images/projects/holiday-inn-avlabari-03-960.webp",
+          "width": 960,
+          "bytes": 39664
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/holiday-inn-avlabari-04.webp",
+      "sourceNode": "Sqwyjb7L",
+      "sourcePath": "GNG Bussines Portfolio/Hotels/Holiday Inn Express Tbilisi Avlabari/20221005_111807.jpg",
+      "width": 1030,
+      "height": 1920,
+      "bytes": 116732,
+      "variants": [
+        {
+          "src": "/images/projects/holiday-inn-avlabari-04-480.webp",
+          "width": 480,
+          "bytes": 26622
+        },
+        {
+          "src": "/images/projects/holiday-inn-avlabari-04-960.webp",
+          "width": 960,
+          "bytes": 86860
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/coca-cola-bottlers-georgia-01.webp",
+      "sourceNode": "zrgFURjB",
+      "sourcePath": "GNG Bussines Portfolio/Offices/CocaCola/20190615_153210.jpg",
+      "width": 1920,
+      "height": 933,
+      "bytes": 69230,
+      "variants": [
+        {
+          "src": "/images/projects/coca-cola-bottlers-georgia-01-480.webp",
+          "width": 480,
+          "bytes": 7998
+        },
+        {
+          "src": "/images/projects/coca-cola-bottlers-georgia-01-960.webp",
+          "width": 960,
+          "bytes": 22598
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/coca-cola-bottlers-georgia-02.webp",
+      "sourceNode": "zyhjBThI",
+      "sourcePath": "GNG Bussines Portfolio/Offices/CocaCola/20190615_153428.jpg",
+      "width": 1920,
+      "height": 933,
+      "bytes": 130592,
+      "variants": [
+        {
+          "src": "/images/projects/coca-cola-bottlers-georgia-02-480.webp",
+          "width": 480,
+          "bytes": 11672
+        },
+        {
+          "src": "/images/projects/coca-cola-bottlers-georgia-02-960.webp",
+          "width": 960,
+          "bytes": 39196
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/coca-cola-bottlers-georgia-03.webp",
+      "sourceNode": "uzhhETDI",
+      "sourcePath": "GNG Bussines Portfolio/Offices/CocaCola/20190615_153441.jpg",
+      "width": 1920,
+      "height": 933,
+      "bytes": 113082,
+      "variants": [
+        {
+          "src": "/images/projects/coca-cola-bottlers-georgia-03-480.webp",
+          "width": 480,
+          "bytes": 11632
+        },
+        {
+          "src": "/images/projects/coca-cola-bottlers-georgia-03-960.webp",
+          "width": 960,
+          "bytes": 34968
+        }
+      ]
+    },
+    {
+      "asset": "/images/projects/coca-cola-bottlers-georgia-04.webp",
+      "sourceNode": "W6p32ZRI",
+      "sourcePath": "GNG Bussines Portfolio/Offices/CocaCola/IMG-831fa831d643b8478f2a1011c2638211-V.jpg",
+      "width": 1600,
+      "height": 1200,
+      "bytes": 91260,
+      "variants": [
+        {
+          "src": "/images/projects/coca-cola-bottlers-georgia-04-480.webp",
+          "width": 480,
+          "bytes": 14926
+        },
+        {
+          "src": "/images/projects/coca-cola-bottlers-georgia-04-960.webp",
+          "width": 960,
+          "bytes": 40570
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+.next/
+.artifacts/
+.21st/
+node_modules/
+tests/
+*.docx
+~$*
+ლოგო.png
+tsconfig.tsbuildinfo

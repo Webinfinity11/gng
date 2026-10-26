@@ -1,0 +1,10 @@
+import Link from "next/link";
+import { redirect } from "next/navigation";
+import { ArrowLeft, Database, ExternalLink } from "lucide-react";
+import { isAuthConfigured } from "@/lib/config";
+
+export const metadata = { title: "საწყისი გამართვა" };
+export default function SetupPage() {
+  if (isAuthConfigured()) redirect("/admin/login");
+  return <main className="a-auth-wrap"><div className="a-auth-card a-setup-card"><Link className="a-brand a-auth-brand" href="/"><img className="a-brand-logo" src="/images/gng-logo.png" alt="GNG" width={1938} height={811} /></Link><div className="a-setup-icon"><Database size={26} /></div><p className="a-eyebrow">საწყისი გამართვა</p><h1>დააკავშირეთ მონაცემთა ბაზა</h1><p className="a-subtitle">მართვის პანელის ასამუშავებლად საჭიროა Neon PostgreSQL-ის, Cloudflare R2-ისა და ადმინისტრატორის ანგარიშის გამართვა.</p><ol className="a-setup-steps"><li><strong>დაამატეთ კავშირის მონაცემები</strong><p>შექმენით <code>.env.local</code> ფაილი <code>.env.example</code>-ის მიხედვით. მიუთითეთ Neon-ის <code>DATABASE_URL</code>, <code>BETTER_AUTH_SECRET</code> და საიტის მისამართი <code>BETTER_AUTH_URL</code> / <code>NEXT_PUBLIC_SITE_URL</code>.</p></li><li><strong>მოამზადეთ მონაცემთა ბაზა</strong><p>გაუშვით <code>scripts/db-migrate.mjs</code>, შემდეგ შექმენით ადმინისტრატორი <code>scripts/create-admin.ts</code>-ით. ზუსტი ბრძანებები <code>README.md</code> ფაილშია.</p></li><li><strong>გამართეთ ფოტოების საცავი</strong><p>დაამატეთ Cloudflare-ის <code>R2_ACCOUNT_ID</code>, <code>R2_ACCESS_KEY_ID</code>, <code>R2_SECRET_ACCESS_KEY</code>, <code>R2_BUCKET_NAME</code> და <code>R2_PUBLIC_URL</code>.</p></li><li><strong>ხელახლა გაუშვით საიტი</strong><p>გარემოს ცვლადების დამატების შემდეგ გადატვირთეთ სერვერი და გახსენით შესვლის გვერდი.</p></li></ol><a className="a-button" href="https://console.neon.tech" target="_blank" rel="noreferrer">Neon-ის გახსნა<ExternalLink size={16} aria-hidden="true" /></a><Link className="a-back-link" href="/"><ArrowLeft size={16} aria-hidden="true" />საიტზე დაბრუნება</Link></div></main>;
+}

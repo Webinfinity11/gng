@@ -1,0 +1,11 @@
+node_modules
+.next
+.artifacts
+.21st
+.env*
+!.env.example
+tests
+*.docx
+~$*
+ლოგო.png
+tsconfig.tsbuildinfo

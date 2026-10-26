@@ -1,0 +1,98 @@
+/* Project photo grid: a repeating bento pattern. */
+.optik-site .gng-gallery { padding: 40px 20px 100px; }
+.optik-site .gng-gallery-head { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-bottom: 24px; margin-bottom: 32px; border-bottom: 1px solid var(--_colors---border-color-three); }
+.optik-site .gng-gallery-total { color: var(--_colors---text-color-four); font-size: 15px; font-weight: 600; }
+.optik-site .gng-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-auto-rows: 180px;
+  grid-auto-flow: dense;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.optik-site .gng-gallery-item { grid-column: span 4; grid-row: span 2; min-width: 0; }
+@media (min-width: 768px) {
+  /* Seven-tile cycle: wide + tall, three squares, two halves. */
+  .optik-site .gng-gallery-item:nth-child(7n + 1) { grid-column: span 8; grid-row: span 3; }
+  .optik-site .gng-gallery-item:nth-child(7n + 2) { grid-column: span 4; grid-row: span 3; }
+  .optik-site .gng-gallery-item:nth-child(7n + 6),
+  .optik-site .gng-gallery-item:nth-child(7n) { grid-column: span 6; grid-row: span 2; }
+  /* Close a short last row so the grid never ends with a gap. */
+  .optik-site .gng-gallery-item:last-child:nth-child(7n + 1),
+  .optik-site .gng-gallery-item:last-child:nth-child(7n + 3),
+  .optik-site .gng-gallery-item:last-child:nth-child(7n + 6) { grid-column: span 12; }
+  .optik-site .gng-gallery-item:last-child:nth-child(7n + 4) { grid-column: span 8; }
+}
+.optik-site .gng-gallery-button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #e9e9e9;
+  cursor: zoom-in;
+}
+.optik-site .gng-gallery-img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .7s cubic-bezier(.2, .7, .2, 1), filter .4s; }
+.optik-site .gng-gallery-button:hover .gng-gallery-img,
+.optik-site .gng-gallery-button:focus-visible .gng-gallery-img { transform: scale(1.04); filter: brightness(.92); }
+
+.gng-lightbox {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #000000eb;
+  color: #fff;
+}
+.gng-lightbox::backdrop { background: #000000b3; }
+.gng-lightbox[open] { display: grid; place-items: center; }
+.gng-lightbox-img { max-width: calc(100vw - 180px); max-height: calc(100vh - 140px); border-radius: 8px; object-fit: contain; }
+.gng-lightbox-count { position: absolute; top: 28px; left: 32px; font: 600 15px/1 var(--font-sans); letter-spacing: .06em; }
+.gng-lightbox-close,
+.gng-lightbox-arrow {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: 1px solid #ffffff59;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color .25s, color .25s;
+}
+.gng-lightbox-close { top: 16px; right: 24px; font-size: 30px; line-height: 1; }
+.gng-lightbox-arrow { top: 50%; right: 24px; transform: translateY(-50%); }
+.gng-lightbox-arrow.is-prev { right: auto; left: 24px; }
+.gng-lightbox-arrow.is-prev svg { transform: scaleX(-1); }
+.gng-lightbox-close:hover,
+.gng-lightbox-arrow:hover { background: #fff; color: #000; }
+
+@media (max-width: 991px) {
+  .optik-site .gng-gallery-grid { grid-auto-rows: 140px; }
+}
+@media (max-width: 767px) {
+  .optik-site .gng-gallery { padding-bottom: 60px; }
+  .optik-site .gng-gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 160px; gap: 10px; }
+  .optik-site .gng-gallery-item { grid-column: span 1; grid-row: span 1; }
+  .optik-site .gng-gallery-item:nth-child(3n + 1),
+  .optik-site .gng-gallery-item:last-child:nth-child(3n + 2) { grid-column: span 2; grid-row: span 2; }
+  .gng-lightbox-img { max-width: 100vw; border-radius: 0; }
+  .gng-lightbox-arrow { top: auto; bottom: 24px; transform: none; }
+}
+
+/* Project page heading above the gallery. */
+.optik-site .gng-project-title { padding: 100px 20px 20px; }
+.optik-site .gng-project-title .optik-inner-title { max-width: 900px; overflow-wrap: anywhere; text-wrap: balance; }
+@media (max-width: 767px) {
+  .optik-site .gng-project-title { padding-top: 60px; }
+}

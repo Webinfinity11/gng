@@ -1,0 +1,112 @@
+/* Page-specific composition; shared site typography, buttons and colors remain the baseline. */
+.optik-site .gng-about { color: var(--_colors---black); }
+.optik-site .gng-about :where(h1, h2, h3, p, figure, dl, dd) { margin: 0; }
+.optik-site .gng-about :is(h1, h2, h3) { font-family: var(--font-heading); overflow-wrap: anywhere; }
+.optik-site .gng-about p {
+  color: var(--_colors---text-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.optik-site .gng-about-section { padding: 100px 20px; }
+.optik-site .gng-about-heading {
+  font-size: clamp(30px, 3.5vw, 50px);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -.025em;
+}
+.optik-site .gng-about-intro { padding: 80px 20px; }
+.optik-site .gng-about-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  align-items: center;
+  gap: clamp(32px, 5vw, 80px);
+}
+.optik-site .gng-about-intro-copy { min-width: 0; }
+.optik-site .gng-about h1 {
+  font-size: clamp(42px, 5.3vw, 76px);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -.035em;
+  margin: 24px 0;
+}
+.optik-site .gng-about .gng-about-lead { font-size: clamp(18px, 1.65vw, 23px); line-height: 1.7; }
+.optik-site .gng-about .theme-button-wrap { width: fit-content; margin-top: 32px; }
+.optik-site .gng-about-photo { min-width: 0; }
+.optik-site .gng-about-photo img { display: block; width: 100%; object-fit: cover; border-radius: 8px; }
+.optik-site .gng-about-intro .gng-about-photo img { aspect-ratio: 1.08; height: auto; }
+.optik-site .gng-about-story {
+  display: grid;
+  grid-template-columns: minmax(160px, .55fr) minmax(0, 1.45fr);
+  align-items: center;
+  gap: 64px;
+  margin-top: 72px;
+  padding-top: 48px;
+  border-top: 1px solid var(--_colors---text-color-three);
+}
+.optik-site .gng-about-year { font-family: var(--font-heading); font-size: clamp(64px, 8vw, 112px); font-weight: 600; line-height: 1.2; letter-spacing: -.05em; }
+.optik-site .gng-about-strengths { background: var(--_colors---white); }
+.optik-site .gng-about-strengths > .container > h2 { max-width: 760px; }
+.optik-site .gng-about-strengths-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 56px; }
+.optik-site .gng-about-strength { padding: 0 56px 0 0; }
+.optik-site .gng-about-strength + .gng-about-strength { border-left: 1px solid var(--_colors---text-color-three); padding: 0 0 0 56px; }
+.optik-site .gng-about-strength h3 { font-size: clamp(24px, 2.15vw, 30px); font-weight: 600; line-height: 1.45; margin-bottom: 24px; }
+.optik-site .gng-about-materials { background: var(--_colors---patner-bg); color: var(--_colors---white); }
+.optik-site .gng-about-materials-heading { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: end; gap: 80px; }
+.optik-site .gng-about-materials :is(h2, dt) { color: var(--_colors---white); }
+.optik-site .gng-about-materials :is(p, dd) { color: #ffffffe6; }
+.optik-site .gng-about-materials-list { margin-top: 64px; }
+.optik-site .gng-about-material { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); align-items: baseline; gap: 40px; border-top: 1px solid #fff3; padding: 26px 0; }
+.optik-site .gng-about-material:last-child { border-bottom: 1px solid #fff3; }
+.optik-site .gng-about-material dt { display: flex; align-items: baseline; gap: 28px; min-width: 0; font-size: 22px; font-weight: 500; line-height: 1.5; }
+.optik-site .gng-about-material dd { font-size: 18px; font-weight: 400; line-height: 1.8; overflow-wrap: anywhere; }
+.optik-site .gng-about-material-number { flex-shrink: 0; font-size: 14px; font-weight: 400; color: #ffffffb3; }
+.optik-site .gng-about-quality-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); align-items: center; gap: 100px; }
+.optik-site .gng-about-quality .gng-about-photo img { aspect-ratio: .86; height: auto; }
+.optik-site .gng-about-quality-copy h2 { margin-bottom: 32px; }
+.optik-site .gng-about-quality-copy p + p { margin-top: 24px; }
+.optik-site .gng-about-audience { padding-top: 0; }
+.optik-site .gng-about-audience-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 80px; padding-top: 64px; border-top: 1px solid var(--_colors---text-color-three); }
+.optik-site .gng-about-audience-copy p + p { margin-top: 24px; }
+
+@media (max-width: 991px) {
+  .optik-site .gng-about-section { padding: 72px 20px; }
+  .optik-site .gng-about-intro { padding: 56px 20px 64px; }
+  .optik-site .gng-about-story { gap: 40px; margin-top: 56px; padding-top: 40px; }
+  .optik-site .gng-about-strength { padding-right: 28px; }
+  .optik-site .gng-about-strength + .gng-about-strength { padding-left: 28px; }
+  .optik-site .gng-about-materials-heading,
+  .optik-site .gng-about-quality-grid,
+  .optik-site .gng-about-audience-grid { gap: 40px; }
+  .optik-site .gng-about-material { gap: 24px; }
+  .optik-site .gng-about-material dt { font-size: 20px; gap: 16px; }
+  .optik-site .gng-about-audience { padding-top: 0; }
+}
+@media (max-width: 767px) {
+  .optik-site .gng-about p,
+  .optik-site .gng-about-material dd { font-size: 16px; line-height: 1.8; }
+  .optik-site .gng-about-section { padding: 56px 20px; }
+  .optik-site .gng-about-intro { padding: 48px 20px 56px; }
+  .optik-site .gng-about-intro-grid,
+  .optik-site .gng-about-story,
+  .optik-site .gng-about-strengths-grid,
+  .optik-site .gng-about-materials-heading,
+  .optik-site .gng-about-quality-grid,
+  .optik-site .gng-about-audience-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .optik-site .gng-about h1 { margin: 20px 0; }
+  .optik-site .gng-about .gng-about-lead { font-size: 18px; }
+  .optik-site .gng-about-story { margin-top: 40px; gap: 20px; padding-top: 32px; }
+  .optik-site .gng-about-strengths-grid { margin-top: 36px; }
+  .optik-site .gng-about-strength { padding: 0; }
+  .optik-site .gng-about-strength + .gng-about-strength { padding: 32px 0 0; border-left: 0; border-top: 1px solid var(--_colors---text-color-three); }
+  .optik-site .gng-about-strength h3 { margin-bottom: 18px; }
+  .optik-site .gng-about-materials-list { margin-top: 40px; }
+  .optik-site .gng-about-material { grid-template-columns: minmax(0, 1fr); gap: 12px; padding: 22px 0; }
+  .optik-site .gng-about-material dd { padding-left: 36px; }
+  .optik-site .gng-about-quality .gng-about-photo { max-width: 520px; }
+  .optik-site .gng-about-quality .gng-about-photo img { aspect-ratio: 1.15; }
+  .optik-site .gng-about-quality-copy h2 { margin-bottom: 24px; }
+  .optik-site .gng-about-audience { padding-top: 0; }
+  .optik-site .gng-about-audience-grid { padding-top: 40px; }
+}

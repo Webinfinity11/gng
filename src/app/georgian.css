@@ -1,0 +1,263 @@
+/* Georgian copy uses the existing local fonts. Brand font stacks live in globals.css. */
+.optik-site,
+.optik-site .managed-project {
+  --_typography---heading-font: var(--font-heading);
+  --_typography---body-font: var(--font-sans);
+  --_size---h2--font-size: clamp(30px, 4.4vw, 64px);
+  --_size---h2--line-height: 1.2;
+  --_size---h3--font-size: clamp(24px, 2.8vw, 38px);
+  --_size---h3--line-height: 1.3;
+  --_size---h4--font-size: clamp(22px, 2.2vw, 30px);
+  --_size---h4--line-height: 1.35;
+  --_size---h5--font-size: 22px;
+  --_size---h5--line-height: 1.4;
+  --_size---h6--line-height: 1.5;
+  font-family: var(--font-sans);
+}
+.optik-site :is(h1, h2, h3, h4, h5, h6) { text-transform: none; }
+.optik-site :is(.optik-inner-title, .about-section-title, .service-collection-item-left-title, .blog-title) { overflow-wrap: anywhere; }
+.optik-site .custom-hero .hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(40px, 4.4vw, 64px);
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: -.03em;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  background: none;
+  color: var(--_colors---black);
+  -webkit-text-fill-color: currentColor;
+  text-align: left;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.optik-site .hero-copy-block,
+.optik-site .hero-text { max-width: 320px; }
+.optik-site .hero-text { font-size: 18px; line-height: 1.6; }
+
+/* The PNG's visible mark is centered at (969, 416), not the file center.
+   Keep the whole mark inside its frame, with a small transparent margin. */
+.optik-site .gng-logo-mark {
+  position: relative;
+  display: block;
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 1;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.optik-site .gng-logo-mark > img {
+  position: absolute;
+  width: 134%;
+  max-width: none;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -51.3%);
+}
+.optik-site .header-item-left { width: auto; flex: 0 0 180px; }
+.optik-site .header-logo-wrap { padding: 0; }
+.optik-site .navbar { gap: 24px; }
+.optik-site .header-section .mobile-menu-btn:focus-visible { outline-color: var(--_colors---black); }
+.optik-site .header-item-right { width: auto; }
+.optik-site .header-call-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-shrink: 0;
+  min-height: 60px;
+  padding: 8px 20px;
+  border: 1px solid var(--_colors---black);
+  border-radius: 8px;
+  background-color: var(--_colors---black);
+  color: var(--_colors---white);
+  font-family: var(--font-sans);
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color .2s, box-shadow .2s, transform .2s;
+}
+.optik-site .header-call-button:not([aria-disabled="true"]):hover {
+  background-color: var(--_colors---text-color-five);
+  box-shadow: 0 4px 12px #0002;
+}
+.optik-site .header-call-button:focus-visible {
+  outline: 2px solid var(--_colors---black);
+  outline-offset: 4px;
+}
+.optik-site .header-call-button:not([aria-disabled="true"]):active { transform: translateY(1px); }
+.optik-site .header-call-button[aria-disabled="true"] { opacity: .5; cursor: not-allowed; }
+.optik-site .header-call-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--_colors---white);
+}
+.optik-site .header-call-label { font-size: 16px; font-weight: 600; line-height: 1.375; }
+.optik-site .navigation { white-space: nowrap; }
+.optik-site .gng-logo-mark.footer-logo { position: absolute; width: 84%; max-width: 1000px; bottom: 0; }
+.optik-site .footer-link-title { font-size: 20px; }
+.optik-site .footer-left { gap: 40px; }
+.optik-site .footer-link-wrap { min-width: 0; }
+.optik-site .footer-link-p { max-width: 220px; }
+.optik-site .coppy { font-size: 13px; }
+
+.optik-site .theme-button-wrap { max-width: 100%; overflow: visible; }
+.optik-site .btn-text-wrap-02 { height: 28px; align-items: flex-start; }
+.optik-site .btn-text-box:not(._02) { height: auto; overflow: visible; }
+.optik-site .button-text { line-height: 28px; white-space: nowrap; }
+.optik-site .btn-link-wrap:hover .btn-text-box._02,
+.optik-site .btn-link-wrap:focus-visible .btn-text-box._02 { transform: none; }
+.optik-site .counter-text { max-width: 150px; font-size: 14px; line-height: 1.6; overflow-wrap: normal; }
+.optik-site .counter-wrap._02 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; min-width: 0; }
+.optik-site .counter-item { min-width: 0; }
+.optik-site .awards-item-buttom-17 { display: grid; place-items: center; }
+.optik-site .awards-item-buttom-17-text { margin: 0; font-size: 32px; line-height: 1; }
+/* Logo ticker: each copy is exactly as wide as its logos (plus trailing space), so -100% loops seamlessly. */
+.optik-site .patner-section .ticket-wrap { gap: 0; flex: 1 1 auto; width: 100%; min-width: 0; max-width: 100%; }
+.optik-site .patner-section .client-wrap { width: max-content; min-width: max-content; max-width: none; justify-content: flex-start; animation-duration: 45s; }
+.optik-site .gng-partner-logo { flex-shrink: 0; max-width: none; margin-right: 72px; object-fit: contain; opacity: .82; transition: opacity .2s; }
+.optik-site .gng-partner-logo:hover { opacity: 1; }
+@media (max-width: 767px) { .optik-site .gng-partner-logo { margin-right: 48px; } }
+.optik-site .section-title-cirle { flex-shrink: 0; }
+.optik-site .contanct-form-input { font-size: 16px; }
+.optik-site .contanct-form-input-wrap { align-items: stretch; }
+.optik-site .optik-form-field { width: 100%; }
+.optik-site .managed-project .optik-inner-title { font-size: var(--_size---h2--font-size); line-height: 1.2; }
+
+/* Long Georgian copy must fit its own section, not disappear behind a clip. */
+.optik-site .cta-row { display: grid; grid-template-columns: minmax(0, 1fr) max-content; gap: 32px; }
+.optik-site .cta-title { min-width: 0; overflow-wrap: anywhere; }
+.optik-site .cta .theme-button-wrap { justify-self: start; }
+.optik-site .big-text-row > .big-title { min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
+.optik-site .optik-gallery-title-row { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 40px; padding-right: 36px; }
+.optik-site .optik-gallery-title-row > .big-img-wrap { position: relative; top: auto; right: auto; width: 100%; }
+.optik-site .patner-exar-wrap,
+.optik-site .letter-animation.text-wrapper { overflow: visible; }
+.optik-site .portfolio-title,
+.optik-site .awards-title { overflow: visible; }
+
+@media (max-width: 1199px) {
+  .optik-site .cta-row { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (min-width: 992px) {
+  .optik-site .nav-menu { flex: 1; justify-content: center; width: auto; gap: 28px; }
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+  .optik-site .nav-menu { gap: 18px; }
+  .optik-site .header-item-right { flex-shrink: 0; }
+}
+@media (max-width: 991px) {
+  .optik-site .header-item-left { flex-basis: 156px; }
+  .optik-site .gng-logo-mark.header-logo { width: 156px; }
+}
+@media (max-width: 767px) {
+  .optik-site .header-item-left { flex-basis: 144px; }
+  .optik-site .gng-logo-mark.header-logo { width: 144px; }
+  .optik-site .hero-text { font-size: 16px; }
+  .optik-site .footer-left { gap: 30px; }
+  .optik-site .optik-gallery-title-row { grid-template-columns: minmax(0, 1fr); padding-right: 0; }
+  .optik-site .optik-gallery-title-row > .big-img-wrap { justify-self: center; }
+}
+@media (max-width: 479px) {
+  .optik-site { --_size---h5--font-size: 20px; }
+  .optik-site .custom-hero .hero-title { font-size: clamp(32px, 8.7vw, 42px); }
+  .optik-site .portfolio-title-box { flex-wrap: wrap; gap: 8px; }
+  .optik-site .portfolio-title-box .section-title-wrap { width: 100%; }
+  .optik-site .portfolio-section-title { max-width: 100%; }
+  .optik-site .contanct-form-input-wrap { flex-direction: column; gap: 24px; }
+  .optik-site .optik-form-field { width: 100%; }
+}
+
+.optik-site .header-item-right { display: flex; align-items: center; gap: 12px; }
+.optik-site .gng-lang-switch {
+  display: inline-grid;
+  place-items: center;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 0 14px;
+  border: 1px solid var(--_colors---black);
+  border-radius: 8px;
+  color: var(--_colors---black);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-decoration: none;
+  transition: background-color .2s, color .2s;
+}
+.optik-site .gng-lang-switch:hover { background-color: var(--_colors---black); color: var(--_colors---white); }
+.optik-site .gng-lang-switch:focus-visible { outline: 2px solid var(--_colors---black); outline-offset: 4px; }
+/* Below the desktop nav the template hides the right column; keep only the language switch, beside the menu button. */
+@media (max-width: 991px) {
+  .optik-site .header-item-right { display: flex; order: 2; margin-left: auto; width: auto; }
+  .optik-site .header-section .mobile-menu-btn { order: 3; }
+  .optik-site .header-call-button { display: none; }
+  .optik-site .gng-lang-switch { min-width: 44px; min-height: 44px; padding: 0 10px; font-size: 14px; }
+}
+
+/* Phones: one 20px gutter everywhere. The template drops to 10px below 480px while the custom sections keep 20px. */
+@media (max-width: 479px) {
+  .optik-site .header-section { padding: 12px 20px 0; }
+  .optik-site .hero, .optik-site .about, .optik-site .portfolio, .optik-site .service, .optik-site .cta { padding-left: 20px; padding-right: 20px; }
+  .optik-site .footer { padding-left: 20px; padding-right: 20px; }
+}
+@media (max-width: 991px) {
+  /* Hero copy starts on the same gutter as the logo. */
+  .optik-site .custom-hero .hero-row { max-width: none; margin-inline: 0; }
+  /* About: the desktop collage squeezed into a column; show both photos side by side and the counters as a row. */
+  .optik-site .about .abou-right { flex-direction: column; align-items: stretch; gap: 24px; width: 100%; }
+  .optik-site .about .abou-img-wrap { display: grid; grid-template-columns: 1fr 1.4fr; gap: 16px; align-items: stretch; width: 100%; }
+  .optik-site .about .abou-img-wrap img { display: block; width: 100%; max-width: none; height: 320px; object-fit: cover; }
+  .optik-site .about .about-c { display: none; }
+}
+@media (max-width: 479px) {
+  .optik-site .about .abou-img-wrap { grid-template-columns: 1fr; }
+  .optik-site .about .abou-img-wrap .image { display: none; }
+  .optik-site .about .abou-img-wrap img { height: 300px; }
+}
+@media (max-width: 991px) {
+  /* Counters: three compact tiles in a row, each centred. */
+  .optik-site .about .counter-wrap { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; max-width: none; width: 100%; }
+  .optik-site .about .counter-item { justify-content: flex-start; align-items: center; gap: 6px; padding: 20px 6px; border-radius: 10px; background-color: var(--_colors---white); text-align: center; }
+  .optik-site .about .counter-item-text { font-size: 30px; line-height: 1.1; }
+  .optik-site .about .counter-text { max-width: none; font-size: 12px; line-height: 1.45; text-align: center; }
+}
+@media (max-width: 767px) {
+  /* Footer: the large decorative logo sat on top of the photo; the footer already shows the logo above. */
+  .optik-site .gng-logo-mark.footer-logo { display: none; }
+}
+@media (max-width: 359px) {
+  /* Very narrow phones: counters as rows, so long Georgian words never break. */
+  .optik-site .about .counter-wrap { grid-template-columns: 1fr; }
+  .optik-site .about .counter-item { flex-direction: row; justify-content: flex-start; gap: 16px; padding: 14px 18px; text-align: left; }
+  .optik-site .about .counter-item-text { min-width: 76px; }
+  .optik-site .about .counter-text { text-align: left; }
+}
+@media (max-width: 767px) {
+  /* Service items: number in its own column; title, text and tags share one left edge instead of each centring on its own width. */
+  .optik-site .service-collection-item-left,
+  .optik-site .service-collection-item-left._02 {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    grid-template-areas: "num text" ". tags";
+    align-items: start;
+    justify-content: stretch;
+    gap: 14px 12px;
+    padding: 24px 0;
+  }
+  /* The desktop list wraps number and text in one block; let its children take their own grid cells. */
+  .optik-site .service-collection-item-left-wrap { display: contents; }
+  .optik-site .service-collection-item-left-number-wrap { grid-area: num; justify-content: flex-start; align-items: flex-start; width: auto; }
+  .optik-site .service-collection-item-left-number { font-size: 22px; line-height: 1.35; text-align: left; }
+  .optik-site .service-collection-item-left-text-wrap { grid-area: text; align-items: flex-start; width: auto; max-width: none; }
+  .optik-site .service-collection-item-left-title, .optik-site .service-collection-item-left-text { text-align: left; max-width: none; }
+  .optik-site .service-collection-item-left-tag-wrap { grid-area: tags; justify-content: flex-start; flex-wrap: wrap; width: auto; }
+}
