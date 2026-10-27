@@ -22,5 +22,5 @@ export type ProjectCard = { slug: string; title: string; location?: string | nul
 /** Card data for the home carousel and the projects page. */
 export function projectCards(lang: Locale, projects: Project[], reference: boolean): ProjectCard[] {
   if (reference) return referenceProjects.map(project => ({ slug: project.slug, title: project.title[lang], location: project.location[lang], cover: project.image, href: localePath(lang, `/portfolio/${project.slug}`), categoryId: suggestCategoryId(project.title.en) }));
-  return projects.map(project => ({ slug: project.slug, title: project.title, location: project.location, cover: project.cover_url, href: localePath(lang, `/projects/${project.slug}`), categoryId: project.category_id }));
+  return projects.map(project => ({ slug: project.slug, title: project.title, location: project.location, cover: project.cover_url || project.images[0] || "", href: localePath(lang, `/projects/${project.slug}`), categoryId: project.category_id }));
 }

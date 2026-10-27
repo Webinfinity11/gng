@@ -8,14 +8,13 @@ import type { ProjectCard } from "@/lib/optik-content";
 export type PortfolioCardData = ProjectCard;
 type RotatorText = { label: string; title: string; controls: string; previous: string; next: string };
 
-const asset = (name: string) => `/optik/assets/${name}`;
 const pad = (value: number) => String(value).padStart(2, "0");
 
 /** One uniform card, sized like the reference layout's large card. The whole card links to the project. */
 export function PortfolioCard({ project, clone = false }: { project: PortfolioCardData; clone?: boolean }) {
   return <div className={`portfolio-collection-list-wrapper gng-portfolio-card w-dyn-list${clone ? " is-clone" : ""}`} aria-hidden={clone || undefined} inert={clone || undefined}>
     <div role="list" className="portfolio-collection-list w-dyn-items"><div role="listitem" className="portfolio-collection w-dyn-item"><Link href={project.href} className="portfolio-collection-wrap gng-card-link">
-      <div className="portfolio-collection-img-wrap"><img src={project.cover} loading="lazy" alt="" className="portfolio-collection-img" />{project.location && <div className="location-wrap"><img src={asset("8adb90a62f-69955392cf579f46357e268e_location.svg")} alt="" /><div className="location">{project.location}</div></div>}</div>
+      <div className="portfolio-collection-img-wrap">{project.cover && <img src={project.cover} loading="lazy" alt="" className="portfolio-collection-img" />}</div>
       <div className="portfolio-collection-text-wrap"><div className="portfolio-collection-text">{project.title}</div></div>
     </Link></div></div>
   </div>;

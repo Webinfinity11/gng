@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
   title: { default: "GNG - ავეჯი თქვენი სივრცისთვის", template: "%s · GNG" },
   description: "ავეჯის დიზაინი, დამზადება და ინდივიდუალური გადაწყვეტილებები კერძო და კომერციული სივრცეებისთვის. GNG - 2015 წლიდან.",
-  icons: { icon: "/icon.svg" },
+  icons: { icon: "/icon.svg", apple: "/apple-icon.png" },
   openGraph: { type: "website", locale: "ka_GE", siteName: "GNG" },
 };
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

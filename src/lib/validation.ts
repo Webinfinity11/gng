@@ -39,8 +39,6 @@ export const projectSchema = z.object({
   cover_url: link, images: z.array(link.refine(Boolean)).max(30), status: z.enum(["draft", "published"]),
   featured: z.boolean(), sort_order: z.number().int().min(0).max(100000), title_en: text(200),
   category_id: z.union([z.literal(""), z.uuid()]).nullable(),
-}).superRefine((data, ctx) => {
-  if (data.status === "published" && !data.cover_url) ctx.addIssue({ code: "custom", path: ["cover_url"], message: "აირჩიეთ მთავარი ფოტო." });
 });
 export const categorySchema = z.object({
   id: z.union([z.literal(""), z.uuid()]), name: text(80).min(2, "მიუთითეთ კატეგორიის სახელი."), name_en: text(80),

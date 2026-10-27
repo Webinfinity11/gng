@@ -122,6 +122,7 @@ const ka = {
     pageIntro: "სასტუმროები, ოფისები, მაღაზიები, რესტორნები და საცხოვრებელი სივრცეები - ავეჯით სრულად ან ნაწილობრივ აღჭურვილი ჩვენი გუნდის მიერ.",
     filterLabel: "პროექტების კატეგორიები",
     filterAll: "ყველა",
+    showMore: "მეტის ნახვა",
   },
   gallery: {
     label: "ფოტოგალერეა",
@@ -337,6 +338,7 @@ const en: Dictionary = {
     pageIntro: "Hotels, offices, shops, restaurants and homes - fully or partially furnished by our team.",
     filterLabel: "Project categories",
     filterAll: "All",
+    showMore: "Show more",
   },
   gallery: {
     label: "Photo gallery",

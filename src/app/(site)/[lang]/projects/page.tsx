@@ -37,7 +37,7 @@ export default async function ProjectsPage({ params }: LangParams) {
           </div>
           <p className="gng-projects-intro">{t.portfolio.pageIntro}</p>
         </div>
-        {cards.length ? <ProjectsGrid cards={cards} categories={categories} text={{ filterLabel: t.portfolio.filterLabel, filterAll: t.portfolio.filterAll }} />
+        {cards.length ? <ProjectsGrid cards={cards} categories={categories} text={{ filterLabel: t.portfolio.filterLabel, filterAll: t.portfolio.filterAll, showMore: t.portfolio.showMore }} />
           : <div className="optik-empty"><h3>{t.portfolio.emptyTitle}</h3><p>{t.portfolio.emptyText}</p><Link href={localePath(lang, "/contact")}>{t.portfolio.emptyLink}</Link></div>}
       </div>
     </section>

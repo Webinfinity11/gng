@@ -109,6 +109,8 @@
 .optik-site .gng-filter-chip:hover { border-color: var(--_colors---black); }
 .optik-site .gng-filter-chip:focus-visible { outline: 2px solid var(--_colors---black); outline-offset: 2px; }
 .optik-site .gng-filter-chip.is-active { border-color: var(--_colors---black); background-color: var(--_colors---black); color: var(--_colors---white); }
+.optik-site .gng-projects-more { display: flex; justify-content: center; margin-top: 56px; }
+.optik-site .gng-projects-more .gng-filter-chip { padding-inline: 32px; }
 @media (max-width: 991px) {
   .optik-site .gng-projects-page { padding-top: 70px; padding-bottom: 70px; }
   .optik-site .gng-projects-head { grid-template-columns: minmax(0, 1fr); gap: 20px; margin-bottom: 40px; }
