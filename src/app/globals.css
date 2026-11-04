@@ -10,6 +10,12 @@
   --muted: #696f65;
   --line: #d8dbd1;
 }
+/* English: Cormorant Garamond for headings, Montserrat for running text.
+   Neither covers Georgian, so Georgian glyphs fall back to Noto Sans Georgian. */
+html[lang="en"] {
+  --font-sans: "Montserrat Variable", "Noto Sans Georgian", sans-serif;
+  --font-heading: "Cormorant Garamond Variable", "Noto Sans Georgian", serif;
+}
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
