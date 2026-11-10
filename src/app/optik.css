@@ -150,3 +150,15 @@
 .optik-site .hero-title-rest { visibility: hidden; }
 .optik-site .hero-title-caret { display: inline-block; width: .06em; height: .9em; margin: 0 .02em; vertical-align: -.08em; background: var(--_colors---black); animation: hero-caret 1s steps(1) infinite; }
 @keyframes hero-caret { 50% { opacity: 0; } }
+
+/* Homepage rhythm: light hero, dark partners, warm about, white projects, dark services, photo CTA. */
+.optik-site .gng-home-about { background-color: #efe9e0; }
+.optik-site .gng-home-about .abou-left-text { color: #000000b3; }
+
+.optik-site .gng-home-services { --gng-dark: #161513; background-color: var(--gng-dark); color: var(--_colors---white); }
+.optik-site .gng-home-services .service-collection-item-left { background-color: var(--gng-dark); border-bottom-color: #ffffff24; }
+.optik-site .gng-home-services .service-collection-item-left-title { color: var(--_colors---white); }
+.optik-site .gng-home-services .service-collection-item-left-text { color: #ffffffa6; }
+.optik-site .gng-home-services .service-collection-item-left-number { -webkit-text-stroke-color: #ffffff4d; }
+.optik-site .gng-home-services .service-collection-item-left-tag { border: 1px solid #ffffff40; background-color: transparent; color: var(--_colors---white); }
+.optik-site .gng-home-services :is(.left-arrow, .right-arrow) { filter: invert(1); }

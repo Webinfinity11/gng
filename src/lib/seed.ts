@@ -80,4 +80,5 @@ export const seedProjects: Project[] = projectNames.map(([slug, title, location,
   sort_order: index,
   title_en,
   location_en,
+  description_en: "",
 }));

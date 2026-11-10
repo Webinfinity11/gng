@@ -18,10 +18,12 @@ export function ProjectForm({ project, categories }: { project?: Project; catego
     <div className="a-editor-grid">
       <div className="a-form-stack">
         <section className="a-panel">
-          <div className="a-panel-heading"><h2>სათაური</h2><p>გამოჩნდება პროექტის ბარათსა და გვერდზე.</p></div>
+          <div className="a-panel-heading"><h2>სათაური და აღწერა</h2><p>სათაური გამოჩნდება პროექტის ბარათსა და გვერდზე, აღწერა - პროექტის გვერდზე, სათაურის ქვემოთ.</p></div>
           <div className="a-form-stack">
             <Field name="title" label="პროექტის სათაური"><input id="title" name="title" defaultValue={project?.title} maxLength={200} required placeholder="მაგ. ხედი - სასტუმრო" /></Field>
             <Field name="title_en" label="სათაური ინგლისურად" hint="საიტის ინგლისური ვერსიისთვის. თუ ცარიელია, ქართული სათაური გამოჩნდება."><input id="title_en" name="title_en" defaultValue={project?.title_en} maxLength={200} lang="en" placeholder="e.g. Khedi - Hotel" aria-describedby="title_en-hint" /></Field>
+            <Field name="description" label="აღწერა" hint="არასავალდებულო. თუ ცარიელია, გვერდზე მხოლოდ სათაური გამოჩნდება. ახალი აბზაცისთვის დატოვეთ ცარიელი ხაზი."><textarea id="description" name="description" defaultValue={project?.description} maxLength={5000} rows={6} placeholder="მაგ. სასტუმროს ნომრების, ლობისა და რესტორნის ავეჯი..." aria-describedby="description-hint" /></Field>
+            <Field name="description_en" label="აღწერა ინგლისურად" hint="თუ ცარიელია, ინგლისურ ვერსიაზე ქართული აღწერა გამოჩნდება."><textarea id="description_en" name="description_en" defaultValue={project?.description_en} maxLength={5000} rows={6} lang="en" placeholder="e.g. Furniture for the hotel rooms, lobby and restaurant..." aria-describedby="description_en-hint" /></Field>
           </div>
         </section>
         <section className="a-panel">

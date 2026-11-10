@@ -35,7 +35,7 @@ export async function saveProject(_prev: ActionState, form: FormData): Promise<A
   let images: unknown;
   try { images = JSON.parse(String(form.get("images") || "[]")); }
   catch { return { success: false, message: "გალერეის მონაცემები არასწორია." }; }
-  const fieldValues = fields(form, ["id", "title", "cover_url", "title_en", "category_id"]);
+  const fieldValues = fields(form, ["id", "title", "cover_url", "title_en", "category_id", "description", "description_en"]);
   // The page address comes from the title (English title first, as it reads better in a URL).
   // It is set once when the project is created, so shared links keep working after renames.
   const base = slugify(fieldValues.title_en.trim() || fieldValues.title);
@@ -45,15 +45,15 @@ export async function saveProject(_prev: ActionState, form: FormData): Promise<A
   });
   if (!result.success) return validationError(result.error);
   const d = result.data;
-  const values = [d.title,d.title_en,d.cover_url,JSON.stringify(d.images),d.status,d.featured,d.category_id || null];
+  const values = [d.title,d.title_en,d.cover_url,JSON.stringify(d.images),d.status,d.featured,d.category_id || null,d.description,d.description_en];
   try {
     if (d.id) {
-      const rows = await query(`update projects set title=$1,title_en=$2,cover_url=$3,images=$4::jsonb,status=$5,featured=$6,category_id=$7 where id=$8 returning id`, [...values,d.id]);
+      const rows = await query(`update projects set title=$1,title_en=$2,cover_url=$3,images=$4::jsonb,status=$5,featured=$6,category_id=$7,description=$8,description_en=$9 where id=$10 returning id`, [...values,d.id]);
       if (!rows.length) return { success: false, message: "პროექტი ვერ მოიძებნა." };
     } else {
       const taken = await query<{ slug: string }>("select slug from projects where slug = $1 or slug like $1 || '-%'", [d.slug]);
       const slug = uniqueSlug(d.slug, taken.map(row => row.slug));
-      await query(`insert into projects (title,title_en,cover_url,images,status,featured,category_id,slug) values ($1,$2,$3,$4::jsonb,$5,$6,$7,$8)`, [...values, slug]);
+      await query(`insert into projects (title,title_en,cover_url,images,status,featured,category_id,description,description_en,slug) values ($1,$2,$3,$4::jsonb,$5,$6,$7,$8,$9,$10)`, [...values, slug]);
     }
   } catch (error) { return databaseError(error); }
   revalidatePath("/", "layout");

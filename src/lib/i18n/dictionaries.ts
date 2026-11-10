@@ -62,52 +62,6 @@ const ka = {
       { title: "დამზადებისა და მონტაჟის მენეჯმენტი", description: "ავეჯის დამზადების პროცესისა და მონტაჟის კოორდინაცია, ხარისხისა და ვადების კონტროლით.", tags: ["მართვა", "მონტაჟი"] },
     ],
   },
-  products: {
-    label: "პროდუქცია",
-    homeTitle: "ავეჯიდან კარებამდე - ერთი გუნდისგან",
-    homeText: "ვამზადებთ და ვაწვდით 9 კატეგორიის პროდუქციას სახლებისთვის, სასტუმროებისთვის, ოფისებისა და საზოგადოებრივი სივრცეებისთვის.",
-    allProducts: "ყველა პროდუქტი",
-    catalogTitle: "რას ვამზადებთ",
-    catalogIntro: "ავეჯი, პანელები და კარები - თითოეული პროექტის სტილზე, დანიშნულებასა და უსაფრთხოების მოთხოვნებზე მორგებით.",
-    order: "შეკვეთა",
-    imageAlts: {
-      furniture: "სასადილო მაგიდა და სკამები ხის პანელიან ინტერიერში.",
-      panels: "მისაღები ოთახი კედლისა და ჭერის მოპირკეთებით.",
-      doors: "მუქი კედლებიანი ინტერიერი გასასვლელებით.",
-    } as Record<string, string>,
-    groups: [
-      {
-        id: "furniture",
-        title: "ავეჯი",
-        summary: "ინდივიდუალური შეკვეთით დამზადებული ავეჯი საცხოვრებელი და კომერციული სივრცეებისთვის.",
-        products: [
-          { title: "ავეჯი", description: "სივრცეზე მორგებული ავეჯი ოფისებისთვის, მაღაზიებისთვის, რესტორნებისა და სახლებისთვის." },
-          { title: "რბილი ავეჯი", description: "დივნები, სავარძლები და რბილი ელემენტები შერჩეული ქსოვილით ან ტყავით." },
-          { title: "გარე ავეჯი", description: "ტერასების, აივნებისა და ღია სივრცეების ავეჯი გამძლე მასალებით." },
-          { title: "სასტუმროს ავეჯი", description: "ნომრების, ლობის, რესტორნებისა და საერთო ზონების აღჭურვა ერთიანი სტილით." },
-        ],
-      },
-      {
-        id: "panels",
-        title: "პანელები",
-        summary: "დეკორატიული და ფუნქციური პანელები ინტერიერის ერთიანი იერსახისთვის.",
-        products: [
-          { title: "კედლისა და ჭერის პანელი", description: "ხის, შპონისა და სხვა მასალის პანელები კედლისა და ჭერის მოსაპირკეთებლად." },
-        ],
-      },
-      {
-        id: "doors",
-        title: "კარები",
-        summary: "ინტერიერისა და სპეციალური დანიშნულების კარები - სტილისა და უსაფრთხოების მოთხოვნებზე მორგებით.",
-        products: [
-          { title: "ოთახშორისი კარი", description: "ინტერიერის სტილზე მორგებული კარები სხვადასხვა მასალითა და ფურნიტურით." },
-          { title: "ცეცხლმედეგი კარი (MDF)", description: "ცეცხლმედეგი MDF-ის კარი, რომელიც ინტერიერს ესთეტიკურად ერწყმის." },
-          { title: "ცეცხლმედეგი კარი (მეტალის)", description: "მეტალის ცეცხლმედეგი კარი ტექნიკური და საევაკუაციო სივრცეებისთვის." },
-          { title: "სპეციალიზებული კარი", description: "კარები სამედიცინო, სასწავლო და სხვა სპეციალური დაწესებულებებისთვის." },
-        ],
-      },
-    ],
-  },
   portfolio: {
     label: "პროექტები",
     title: "გაეცანით რჩეული პროექტების გალერეას",
@@ -276,52 +230,6 @@ const en: Dictionary = {
       { title: "Furniture manufacturing", description: "Bespoke furniture production, from choosing materials to the finishing details.", tags: ["Furniture", "Production"] },
       { title: "Furniture import", description: "Furniture import matched to the needs of the project and the purpose of the space.", tags: ["Sourcing", "Import"] },
       { title: "Production and installation management", description: "Coordination of manufacturing and installation, with quality and schedule control.", tags: ["Management", "Installation"] },
-    ],
-  },
-  products: {
-    label: "Products",
-    homeTitle: "From furniture to doors - one team",
-    homeText: "We make and supply 9 product categories for homes, hotels, offices and public spaces.",
-    allProducts: "All products",
-    catalogTitle: "What we make",
-    catalogIntro: "Furniture, panels and doors - tailored to each project's style, purpose and safety requirements.",
-    order: "order",
-    imageAlts: {
-      furniture: "Dining table and chairs in a wood-panelled interior.",
-      panels: "Living room with wall and ceiling panelling.",
-      doors: "Dark-walled interior with doorways.",
-    },
-    groups: [
-      {
-        id: "furniture",
-        title: "Furniture",
-        summary: "Bespoke furniture for residential and commercial spaces.",
-        products: [
-          { title: "Furniture", description: "Made-to-fit furniture for offices, shops, restaurants and homes." },
-          { title: "Upholstered furniture", description: "Sofas, armchairs and soft pieces in your choice of fabric or leather." },
-          { title: "Outdoor furniture", description: "Furniture for terraces, balconies and open spaces in durable materials." },
-          { title: "Hotel furniture", description: "Furnishing rooms, lobbies, restaurants and common areas in one consistent style." },
-        ],
-      },
-      {
-        id: "panels",
-        title: "Panels",
-        summary: "Decorative and functional panels for a cohesive interior.",
-        products: [
-          { title: "Wall and ceiling panels", description: "Wood, veneer and other panels for wall and ceiling finishes." },
-        ],
-      },
-      {
-        id: "doors",
-        title: "Doors",
-        summary: "Interior and special-purpose doors - matched to style and safety requirements.",
-        products: [
-          { title: "Interior doors", description: "Doors matched to your interior style, in a range of materials and hardware." },
-          { title: "Fire-rated door (MDF)", description: "Fire-rated MDF door that blends into the interior." },
-          { title: "Fire-rated door (metal)", description: "Metal fire-rated door for technical and evacuation areas." },
-          { title: "Specialised doors", description: "Doors for medical, educational and other specialised facilities." },
-        ],
-      },
     ],
   },
   portfolio: {

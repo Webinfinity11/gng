@@ -5,9 +5,9 @@ import { isDatabaseConfigured } from "@/lib/config";
 import { isLocale } from "@/lib/i18n/config";
 import { getDictionary, type LangParams } from "@/lib/i18n/dictionaries";
 import { projectCards } from "@/lib/optik-content";
+import { OptikConsultation } from "@/components/site/optik-consultation";
 import { OptikHero } from "@/components/site/optik-hero";
 import { OptikPortfolio } from "@/components/site/optik-portfolio";
-import { OptikProducts } from "@/components/site/optik-products";
 import { OptikPartners, OptikAbout, OptikServices } from "@/components/site/optik-sections";
 
 export async function generateMetadata({ params }: LangParams): Promise<Metadata> {
@@ -27,6 +27,6 @@ export default async function HomePage({ params }: LangParams) {
     <OptikAbout lang={lang} t={t.homeAbout} story={t.about.intro[1]} />
     <OptikPortfolio cards={cards} lang={lang} t={t.portfolio} carousel={t.carousel} />
     <OptikServices lang={lang} t={t.services} carousel={t.carousel} />
-    <OptikProducts lang={lang} t={t.products} />
+    <OptikConsultation lang={lang} t={t.cta} />
   </>;
 }

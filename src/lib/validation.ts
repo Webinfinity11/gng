@@ -38,6 +38,7 @@ export const projectSchema = z.object({
   slug: text(160).min(2).regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "გამოიყენეთ ლათინური ასოები, ციფრები და დეფისი."),
   cover_url: link, images: z.array(link.refine(Boolean)).max(30), status: z.enum(["draft", "published"]),
   featured: z.boolean(), sort_order: z.number().int().min(0).max(100000), title_en: text(200),
+  description: text(5000), description_en: text(5000),
   category_id: z.union([z.literal(""), z.uuid()]).nullable(),
 });
 export const categorySchema = z.object({

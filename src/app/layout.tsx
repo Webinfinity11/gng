@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import "@fontsource/noto-sans-georgian/400.css";
-import "@fontsource/noto-sans-georgian/500.css";
-import "@fontsource/noto-sans-georgian/600.css";
-import "@fontsource/noto-sans-georgian/700.css";
+import "@fontsource-variable/noto-serif-georgian/wght.css";
 import "@fontsource/manrope/400.css";
 import "@fontsource/manrope/600.css";
 import "@fontsource/manrope/800.css";

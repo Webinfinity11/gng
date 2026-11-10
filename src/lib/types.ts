@@ -8,7 +8,7 @@ export type Project = {
   category: string; location: string; year: number | null; cover_url: string;
   images: string[]; status: "draft" | "published"; featured: boolean;
   sort_order: number; created_at?: string; updated_at?: string;
-  title_en: string; location_en: string; category_id: string | null;
+  title_en: string; location_en: string; description_en: string; category_id: string | null;
 };
 export type ProjectCategory = { id: string; name: string; name_en: string; sort_order: number };
 export type ContactSettings = {

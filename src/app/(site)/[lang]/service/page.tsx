@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { OptikConsultation } from "@/components/site/optik-consultation";
-import { ProductCatalog } from "@/components/site/optik-products";
 import { SectionLabel } from "@/components/site/optik-sections";
 import { isLocale, localePath } from "@/lib/i18n/config";
 import { getDictionary, type LangParams } from "@/lib/i18n/dictionaries";
@@ -53,7 +52,6 @@ export default async function ServicesPage({ params }: LangParams) {
           </div>
         </div>
       </section>
-      <ProductCatalog lang={lang} t={t.products} />
       <OptikConsultation lang={lang} t={t.cta} />
     </>
   );

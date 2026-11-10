@@ -96,3 +96,11 @@
 @media (max-width: 767px) {
   .optik-site .gng-project-title { padding-top: 60px; }
 }
+
+/* Optional project description under the heading; absent when the admin leaves it empty. */
+.optik-site .gng-project-description { display: grid; gap: 16px; max-width: 760px; margin-top: 28px; }
+.optik-site .gng-project-description p { margin: 0; color: var(--_colors---text-color-four); font-size: 18px; line-height: 1.75; white-space: pre-line; }
+@media (max-width: 767px) {
+  .optik-site .gng-project-description { margin-top: 20px; }
+  .optik-site .gng-project-description p { font-size: 16px; line-height: 1.7; }
+}

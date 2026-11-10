@@ -17,7 +17,7 @@ function localizeHero(hero: Hero, lang: Locale): Hero {
 }
 function localizeProject(project: Project, lang: Locale): Project {
   const en = lang === "en";
-  return { ...project, title: pick(en, project.title_en, project.title), location: pick(en, project.location_en, project.location) };
+  return { ...project, title: pick(en, project.title_en, project.title), location: pick(en, project.location_en, project.location), description: pick(en, project.description_en, project.description) };
 }
 
 

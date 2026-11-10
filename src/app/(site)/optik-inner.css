@@ -20,3 +20,9 @@
 .optik-site .service-collection-item:focus-within .service-collection-item-img {
   opacity: 1;
 }
+
+/* Services page: room between the page heading and the first divider line. */
+.optik-site .optik-inner-services .gng-section-head { margin-bottom: 56px; }
+@media (max-width: 767px) {
+  .optik-site .optik-inner-services .gng-section-head { margin-bottom: 36px; }
+}

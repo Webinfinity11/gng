@@ -30,7 +30,7 @@ export function OptikPartners({ t }: { t: Dictionary["partners"] }) {
 
 export function OptikAbout({ lang, t, story }: { lang: Locale; t: Dictionary["homeAbout"]; story: string }) {
   return (
-    <section className="about">
+    <section className="about gng-home-about">
       <div className="w-layout-blockcontainer container w-container"><div className="about-row">
         <div className="abou-left">
           <SectionLabel>{t.label}</SectionLabel>
@@ -79,7 +79,7 @@ function ServiceItem({ item, index, href, lang, mobile = false }: { item: Servic
 export function OptikServices({ lang, t, carousel }: { lang: Locale; t: Dictionary["services"]; carousel: Dictionary["carousel"] }) {
   const href = localePath(lang, "/service");
   return (
-    <section className="service">
+    <section className="service gng-home-services">
       <div className="w-layout-blockcontainer container w-container"><div className="service-row">
         <div className="service-top gng-service-banner">
           <div className="service-top-left"><SectionLabel>{t.label}</SectionLabel><h2 className="service-section-title">{t.homeTitle}</h2></div>

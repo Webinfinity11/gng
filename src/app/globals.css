@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  /* Replace these two stacks when the final brand fonts are selected. */
-  --font-sans: "Noto Sans Georgian", "Manrope", sans-serif;
-  --font-heading: "Noto Sans Georgian", "Manrope", sans-serif;
+  /* Georgian: Noto Serif Georgian for headings and text. */
+  --font-sans: "Noto Serif Georgian Variable", "Manrope", serif;
+  --font-heading: "Noto Serif Georgian Variable", "Manrope", serif;
   --background: #f6f5f1;
   --foreground: #20251f;
   --accent: #b7c4a5;
@@ -11,10 +11,10 @@
   --line: #d8dbd1;
 }
 /* English: Cormorant Garamond for headings, Montserrat for running text.
-   Neither covers Georgian, so Georgian glyphs fall back to Noto Sans Georgian. */
+   Neither covers Georgian, so Georgian glyphs fall back to Noto Serif Georgian. */
 html[lang="en"] {
-  --font-sans: "Montserrat Variable", "Noto Sans Georgian", sans-serif;
-  --font-heading: "Cormorant Garamond Variable", "Noto Sans Georgian", serif;
+  --font-sans: "Montserrat Variable", "Noto Serif Georgian Variable", sans-serif;
+  --font-heading: "Cormorant Garamond Variable", "Noto Serif Georgian Variable", serif;
 }
 
 * { box-sizing: border-box; }
