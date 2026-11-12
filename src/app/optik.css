@@ -170,3 +170,10 @@
 @media (max-width: 991px) { .optik-site .gng-service-thumb { width: 260px; height: 200px; } }
 @media (max-width: 767px) { .optik-site .gng-service-thumb { grid-area: tags; width: 100%; height: auto; aspect-ratio: 4 / 3; } }
 .optik-site .gng-home-services :is(.left-arrow, .right-arrow) { filter: invert(1); }
+
+/* Social profile links (footer and contact page); hidden when none are set in the admin. */
+.optik-site .gng-social { display: flex; flex-wrap: wrap; gap: 10px; }
+.optik-site .gng-social-link { display: inline-grid; place-items: center; width: 40px; height: 40px; border: 1px solid currentColor; border-radius: 50%; color: inherit; opacity: .75; transition: opacity .2s, background-color .2s; }
+.optik-site .gng-social-link:hover, .optik-site .gng-social-link:focus-visible { opacity: 1; }
+.optik-site .gng-footer-social { margin: 18px 0 6px; }
+.optik-site .gng-contact-social { margin-top: 28px; }

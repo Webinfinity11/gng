@@ -6,6 +6,7 @@ import { isLocale } from "@/lib/i18n/config";
 import { getDictionary, type LangParams } from "@/lib/i18n/dictionaries";
 import { ContactForm } from "@/components/site/contact-form";
 import { BrandLogo } from "@/components/site/brand-logo";
+import { SocialLinks } from "@/components/site/social-links";
 import "./contact.css";
 
 export async function generateMetadata({ params }: LangParams): Promise<Metadata> {
@@ -59,6 +60,7 @@ export default async function ContactPage({ params }: LangParams) {
                 <span className="gng-contact-value gng-contact-address">{address}</span>
               </a>}
             </div>
+            <SocialLinks contact={contact} label={dictionary.footer.social} className="gng-contact-social" />
             <div className="gng-contact-brand"><BrandLogo decorative /></div>
           </div>
 
