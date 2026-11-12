@@ -6,7 +6,7 @@ import { isDatabaseConfigured } from "@/lib/config";
 import { requireAdmin } from "@/lib/auth";
 import { defaultContact, defaultHero } from "@/lib/seed";
 import { defaultCategories } from "@/lib/categories";
-import type { ContactSettings, Hero, Inquiry, Project, ProjectCategory } from "@/lib/types";
+import type { ContactSettings, Hero, Project, ProjectCategory } from "@/lib/types";
 import type { Locale } from "@/lib/i18n/config";
 import { sitePhotos, type SitePhoto } from "@/lib/site-media";
 import { sitePhotoSlots, type SitePhotoKey } from "@/lib/site-photo-slots";
@@ -98,8 +98,3 @@ export const getCategories = cache(async (): Promise<ProjectCategory[]> => {
   if (!isDatabaseConfigured()) return defaultCategories;
   return query<ProjectCategory>("select id, name, name_en, sort_order from project_categories order by sort_order asc, created_at asc");
 });
-export async function getInquiries(): Promise<Inquiry[]> {
-  await requireAdmin();
-  const rows = await query<Inquiry & { created_at: Date }>("select * from inquiries order by created_at desc limit 500");
-  return rows.map(row => ({ ...row, created_at: new Date(row.created_at).toISOString() }));
-}

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ArrowUpRight, FolderKanban, House, Images, Mail, MapPin, Tags } from "lucide-react";
+import { ArrowUpRight, FolderKanban, House, Images, MapPin, Tags } from "lucide-react";
 
 const items = [
   { href: "/admin", label: "მიმოხილვა", icon: House },
@@ -10,7 +10,6 @@ const items = [
   { href: "/admin/categories", label: "კატეგორიები", icon: Tags },
   { href: "/admin/photos", label: "საიტის ფოტოები", icon: Images },
   { href: "/admin/contact", label: "საკონტაქტო ინფორმაცია", icon: MapPin },
-  { href: "/admin/inquiries", label: "შეტყობინებები", icon: Mail },
 ];
 
 export function AdminNav() {

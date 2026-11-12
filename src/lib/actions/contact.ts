@@ -91,7 +91,7 @@ export async function submitInquiry(_prev: ActionState, form: FormData): Promise
     await client?.query("rollback").catch(() => {});
     return { success:false,message:text.error };
   } finally { client?.release(); }
-  // The message is already saved (admin → შეტყობინებები), so a mail failure is logged, not shown.
+  // The message is also kept in the inquiries table as a backup, so a mail failure is logged, not shown.
   if (isMailConfigured()) {
     try { await sendInquiryMail({ ...d, email: d.email.toLowerCase(), locale: form.get("locale") === "en" ? "en" : "ka" }); }
     catch (error) { console.error("Inquiry email could not be sent:", error instanceof Error ? error.message : error); }

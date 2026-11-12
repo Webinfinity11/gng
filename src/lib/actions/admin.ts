@@ -148,12 +148,3 @@ export async function deleteCategory(_prev: ActionState, form: FormData): Promis
   revalidatePath("/", "layout");
   return { success: true, message: "კატეგორია წაიშალა." };
 }
-export async function setInquiryStatus(_prev: ActionState, form: FormData): Promise<ActionState> {
-  await requireAdmin();
-  const result = z.object({ id:z.uuid(),status:z.enum(["new","read"]) }).safeParse(fields(form,["id","status"]));
-  if (!result.success) return validationError(result.error);
-  try { await query("update inquiries set status=$1 where id=$2",[result.data.status,result.data.id]); }
-  catch (error) { return databaseError(error); }
-  revalidatePath("/admin/inquiries"); revalidatePath("/admin");
-  return { success:true,message:"სტატუსი განახლდა." };
-}

@@ -17,10 +17,6 @@ export type ContactSettings = {
   instagram: string; facebook: string; linkedin: string;
   address_en: string;
 };
-export type Inquiry = {
-  id: string; name: string; email: string; phone: string; message: string;
-  status: "new" | "read"; created_at: string;
-};
 export type ActionState = {
   success: boolean; message: string; errors?: Record<string, string[]>;
 };

@@ -174,25 +174,10 @@
 .a-empty p { max-width: 480px; font-size: 12px; color: var(--a-muted); }
 .a-empty .a-button { margin-top: 5px; }
 .a-empty-compact { padding: 35px 12px; }
-.a-inquiry-toolbar { margin-bottom: 24px; }
 .a-tabs { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 5px; padding: 5px; border: 1px solid var(--a-line); border-radius: 7px; background: #efefef; }
 .a-tabs > button { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; padding: 8px 14px; border-radius: 4px; border: 1px solid transparent; background: transparent; color: var(--a-muted); }
 .a-tabs > button.active { background: #fff; border-color: #e0e0e0; color: #1e1e1e; box-shadow: 0 1px 3px #1b26140a; }
 .a-tabs > button > span { font-size: 10px; min-width: 18px; border-radius: 3px; background: #e7e7e7; color: #333333; }
-.a-inquiries-list { display: grid; gap: 20px; }
-.a-inquiry.is-new { border-left: 3px solid #a0a0a0; }
-.a-inquiry-header { display: flex; gap: 18px; justify-content: space-between; align-items: center; }
-.a-inquiry-sender { display: flex; align-items: center; gap: 12px; }
-.a-inquiry-avatar { width: 39px; height: 39px; background: #efefef; color: #7c7c7c; border-radius: 50%; display: grid; place-items: center; flex-shrink: 0; }
-.a-inquiry-sender h2 { font-size: 13px; }
-.a-inquiry-sender time { font-size: 10px; color: var(--a-muted); }
-.a-inquiry-contact { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; padding: 18px 0; font-size: 11px; color: var(--a-muted); }
-.a-inquiry-contact a { display: inline-flex; align-items: center; gap: 6px; overflow-wrap: anywhere; min-width: 0; }
-.a-inquiry-contact a:hover { color: var(--a-accent); text-decoration: underline; }
-.a-inquiry-contact svg { flex-shrink: 0; }
-.a-inquiry-message { font-size: 12px; line-height: 2.1; white-space: pre-wrap; overflow-wrap: anywhere; padding: 20px; border-radius: 6px; background: #f8f8f8; }
-.a-inquiry-action { margin-top: 18px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
-.a-inquiry-action .a-feedback { margin-bottom: 0; }
 .a-auth-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 48px 24px; background: #f1f1f1; }
 .a-auth-card { width: 100%; max-width: 460px; padding: 40px; background: #fff; border: 1px solid #e5e5e5; border-radius: 12px; box-shadow: 0 8px 36px #233c1205; }
 .a-auth-brand { justify-content: flex-start; gap: 0; width: fit-content; margin-bottom: 38px; }
@@ -296,13 +281,6 @@
   .a-recent-list a { gap: 8px; }
   .a-recent-list strong { font-size: 11px; }
   .a-recent-list .a-badge { font-size: 7px; }
-  .a-inquiry-header { align-items: flex-start; gap: 12px; }
-  .a-inquiry-sender { gap: 9px; }
-  .a-inquiry-sender h2 { font-size: 12px; }
-  .a-inquiry-sender time { font-size: 9px; }
-  .a-inquiry-avatar { width: 32px; height: 32px; }
-  .a-inquiry-contact { gap: 8px; align-items: flex-start; flex-direction: column; }
-  .a-inquiry-message { padding: 15px; font-size: 11px; }
   .a-tabs { gap: 2px; padding: 3px; }
   .a-tabs > button { font-size: 10px; gap: 5px; padding: 7px 9px; }
   .a-auth-wrap { padding: 24px 15px; }
