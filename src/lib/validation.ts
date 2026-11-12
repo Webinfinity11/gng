@@ -41,6 +41,11 @@ export const projectSchema = z.object({
   description: text(5000), description_en: text(5000),
   category_id: z.union([z.literal(""), z.uuid()]).nullable(),
 });
+export const sitePhotoUrlSchema = link;
+export const partnerLogosSchema = z.array(z.object({
+  name: text(120).min(1, "მიუთითეთ ბრენდის სახელი."), url: link.refine(Boolean, "ლოგოს ფოტო აუცილებელია."),
+  width: z.number().int().min(1).max(10000), height: z.number().int().min(1).max(10000),
+})).max(40);
 export const categorySchema = z.object({
   id: z.union([z.literal(""), z.uuid()]), name: text(80).min(2, "მიუთითეთ კატეგორიის სახელი."), name_en: text(80),
 });

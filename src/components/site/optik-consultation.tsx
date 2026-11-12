@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { localePath, type Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
-import { sitePhotos } from "@/lib/site-media";
+import { getSitePhotos } from "@/lib/data";
 
 const buttonArrow = "/optik/assets/18ced4326e-6998826d2628d84392340359_btn-arrow.svg";
 
-export function OptikConsultation({ lang, t }: { lang: Locale; t: Dictionary["cta"] }) {
+export async function OptikConsultation({ lang, t }: { lang: Locale; t: Dictionary["cta"] }) {
+  const photos = await getSitePhotos();
   return (
-    <section className="cta" style={{ backgroundImage: `url("${sitePhotos.consultation.src}")` }}>
+    <section className="cta" style={{ backgroundImage: `url("${photos.consultation.src}")` }}>
       <div className="w-layout-blockcontainer container w-container">
         <div className="cta-row">
           <h2 className="cta-title">{t.title}</h2>

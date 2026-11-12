@@ -134,5 +134,6 @@ export const sitePhotos = {
 
 /** Only valid image attributes are passed to the DOM; descriptions follow the page language. */
 export function sitePhotoProps(photo: SitePhoto, lang: string = "ka") {
-  return { src: photo.src, srcSet: photo.srcSet, width: photo.width, height: photo.height, alt: lang === "en" ? photo.altEn : photo.alt };
+  // Photos replaced from the admin panel have a single size and no known dimensions.
+  return { src: photo.src, srcSet: photo.srcSet || undefined, width: photo.width || undefined, height: photo.height || undefined, alt: lang === "en" ? photo.altEn : photo.alt };
 }

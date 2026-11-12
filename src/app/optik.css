@@ -160,5 +160,13 @@
 .optik-site .gng-home-services .service-collection-item-left-title { color: var(--_colors---white); }
 .optik-site .gng-home-services .service-collection-item-left-text { color: #ffffffa6; }
 .optik-site .gng-home-services .service-collection-item-left-number { -webkit-text-stroke-color: #ffffff4d; }
-.optik-site .gng-home-services .service-collection-item-left-tag { border: 1px solid #ffffff40; background-color: transparent; color: var(--_colors---white); }
+/* Service rows: a fixed photo on the right instead of tags + hover preview. */
+.optik-site .gng-service-thumb { flex: none; width: 340px; height: 260px; object-fit: cover; border-radius: 8px; }
+/* Same reveal as the old hover preview: hidden until the row is hovered/focused (pointer devices only). */
+@media (hover: hover) and (min-width: 768px) {
+  .optik-site .gng-service-thumb { opacity: 0; transition: opacity .25s ease; }
+  .optik-site .service-collection-item:is(:hover, :focus-within) .gng-service-thumb { opacity: 1; }
+}
+@media (max-width: 991px) { .optik-site .gng-service-thumb { width: 260px; height: 200px; } }
+@media (max-width: 767px) { .optik-site .gng-service-thumb { grid-area: tags; width: 100%; height: auto; aspect-ratio: 4 / 3; } }
 .optik-site .gng-home-services :is(.left-arrow, .right-arrow) { filter: invert(1); }

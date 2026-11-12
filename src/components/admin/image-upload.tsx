@@ -6,7 +6,7 @@ import { ArrowDown, ArrowUp, ImagePlus, LoaderCircle, Plus, Trash2, Upload } fro
 const acceptedTypes = ["image/jpeg", "image/png", "image/webp", "image/avif"];
 const accept = acceptedTypes.join(",");
 
-async function upload(file: File): Promise<string> {
+export async function upload(file: File): Promise<string> {
   if (!acceptedTypes.includes(file.type)) throw new Error("აირჩიეთ JPEG, PNG, WebP ან AVIF ფორმატის ფოტო.");
   if (file.size > 5 * 1024 * 1024) throw new Error("ფოტოს ზომა არ უნდა აღემატებოდეს 5 მბ-ს.");
   const body = new FormData();
@@ -19,7 +19,7 @@ async function upload(file: File): Promise<string> {
   return data.url;
 }
 
-function canPreview(url: string) {
+export function canPreview(url: string) {
   if (/[\u0000-\u001f\\]/.test(url)) return false;
   if (url.startsWith("/") && !url.startsWith("//")) return true;
   try {
@@ -28,8 +28,10 @@ function canPreview(url: string) {
   } catch { return false; }
 }
 
-export function ImageUpload({ name, label, value, onChange, onBusyChange }: {
+export function ImageUpload({ name, label, value, onChange, onBusyChange, fallbackSrc, hint }: {
   name: string; label: string; value: string; onChange: (url: string) => void; onBusyChange?: (busy: boolean) => void;
+  /** Shown when the field is empty: the photo the site uses without an upload. */
+  fallbackSrc?: string; hint?: string;
 }) {
   const id = useId();
   const input = useRef<HTMLInputElement>(null);
@@ -45,11 +47,11 @@ export function ImageUpload({ name, label, value, onChange, onBusyChange }: {
 
   return <div className="a-field a-image-field">
     <label htmlFor={id}>{label}</label>
-    <div className="a-image-preview">{canPreview(value) ? <img src={value} alt={label} /> : <div className="a-image-placeholder"><ImagePlus size={30} aria-hidden="true" /><span>აირჩიეთ ფოტო</span></div>}</div>
-    <div className="a-upload-actions"><button type="button" className="a-button secondary" disabled={busy} onClick={() => input.current?.click()}>{busy ? <LoaderCircle size={16} className="a-spin" aria-hidden="true" /> : <Upload size={16} aria-hidden="true" />}{busy ? "იტვირთება…" : "ფოტოს ატვირთვა"}</button>{value && <button type="button" className="a-icon-button danger" disabled={busy} onClick={() => onChange("")} aria-label={`${label}: წაშლა`}><Trash2 size={17} /></button>}</div>
+    <div className="a-image-preview">{canPreview(value) ? <img src={value} alt={label} /> : fallbackSrc ? <><img src={fallbackSrc} alt={label} /><span className="a-image-default">ნაგულისხმევი ფოტო</span></> : <div className="a-image-placeholder"><ImagePlus size={30} aria-hidden="true" /><span>აირჩიეთ ფოტო</span></div>}</div>
+    <div className="a-upload-actions"><button type="button" className="a-button secondary" disabled={busy} onClick={() => input.current?.click()}>{busy ? <LoaderCircle size={16} className="a-spin" aria-hidden="true" /> : <Upload size={16} aria-hidden="true" />}{busy ? "იტვირთება…" : "ფოტოს ატვირთვა"}</button>{value && <button type="button" className="a-icon-button danger" disabled={busy} onClick={() => onChange("")} aria-label={fallbackSrc ? `${label}: ნაგულისხმევ ფოტოზე დაბრუნება` : `${label}: წაშლა`} title={fallbackSrc ? "ნაგულისხმევ ფოტოზე დაბრუნება" : undefined}><Trash2 size={17} /></button>}</div>
     <input ref={input} type="file" accept={accept} hidden aria-label={`${label}: ფაილის არჩევა`} onChange={(event) => handleFile(event.target.files?.[0])} />
     <input id={id} name={name} type="text" value={value} onChange={(event) => onChange(event.target.value)} placeholder="ან ჩასვით ფოტოს ბმული" aria-describedby={`${id}-hint`} disabled={busy} />
-    <p id={`${id}-hint`} className="a-hint">JPEG, PNG, WebP ან AVIF · მაქსიმუმ 5 მბ</p>
+    <p id={`${id}-hint`} className="a-hint">{hint && <>{hint}<br /></>}JPEG, PNG, WebP ან AVIF · მაქსიმუმ 5 მბ</p>
     {error && <p className="a-inline-error" role="alert">{error}</p>}
   </div>;
 }

@@ -3,7 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isLocale, localePath } from "@/lib/i18n/config";
 import { getDictionary, type LangParams } from "@/lib/i18n/dictionaries";
-import { sitePhotos, sitePhotoProps } from "@/lib/site-media";
+import { sitePhotoProps } from "@/lib/site-media";
+import { getSitePhotos } from "@/lib/data";
 import "./about.css";
 
 export async function generateMetadata({ params }: LangParams): Promise<Metadata> {
@@ -31,6 +32,7 @@ export default async function AboutPage({ params }: LangParams) {
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
   const aboutContent = getDictionary(lang).about;
+  const photos = await getSitePhotos();
   const contactButton = <ContactButton href={localePath(lang, "/contact")} label={aboutContent.contactButton} />;
   return <div className="gng-about">
     <section className="gng-about-intro" aria-labelledby="about-title">
@@ -43,7 +45,7 @@ export default async function AboutPage({ params }: LangParams) {
             {contactButton}
           </div>
           <figure className="gng-about-photo">
-            <img {...sitePhotoProps(sitePhotos.aboutIntro, lang)} fetchPriority="high" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1400px) 46vw, 620px" />
+            <img {...sitePhotoProps(photos.aboutIntro, lang)} fetchPriority="high" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1400px) 46vw, 620px" />
           </figure>
         </div>
         <div className="gng-about-story">
@@ -84,7 +86,7 @@ export default async function AboutPage({ params }: LangParams) {
       <div className="w-layout-blockcontainer container w-container">
         <div className="gng-about-quality-grid">
           <figure className="gng-about-photo">
-            <img {...sitePhotoProps(sitePhotos.aboutQuality, lang)} loading="lazy" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1400px) 40vw, 520px" />
+            <img {...sitePhotoProps(photos.aboutQuality, lang)} loading="lazy" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1400px) 40vw, 520px" />
           </figure>
           <div className="gng-about-quality-copy">
             <h2 id="about-quality-title" className="gng-about-heading">{aboutContent.quality.title}</h2>

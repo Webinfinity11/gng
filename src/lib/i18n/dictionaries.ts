@@ -56,10 +56,10 @@ const ka = {
     carouselLabel: "მომსახურებები",
     bannerAlt: "თანამედროვე სახლი მრგვალი ფორმებით, ავეჯითა და აუზით კლდეზე.",
     items: [
-      { title: "ავეჯის პროექტირება და დიზაინი", description: "სივრცეზე მორგებული ავეჯის დაგეგმვა, დიზაინი და ტექნიკური ნახაზების მომზადება.", tags: ["პროექტირება", "დიზაინი"] },
-      { title: "ავეჯის დამზადება", description: "ინდივიდუალური შეკვეთით ავეჯის დამზადება, მასალების შერჩევიდან საბოლოო დეტალებამდე.", tags: ["ავეჯი", "წარმოება"] },
-      { title: "ავეჯის იმპორტი", description: "ავეჯის იმპორტი პროექტის საჭიროებებისა და სივრცის დანიშნულების გათვალისწინებით.", tags: ["შერჩევა", "იმპორტი"] },
-      { title: "დამზადებისა და მონტაჟის მენეჯმენტი", description: "ავეჯის დამზადების პროცესისა და მონტაჟის კოორდინაცია, ხარისხისა და ვადების კონტროლით.", tags: ["მართვა", "მონტაჟი"] },
+      { title: "ავეჯის პროექტირება და დიზაინი", description: "სივრცეზე მორგებული ავეჯის დაგეგმვა, დიზაინი და ტექნიკური ნახაზების მომზადება." },
+      { title: "ავეჯის დამზადება", description: "ინდივიდუალური შეკვეთით ავეჯის დამზადება, მასალების შერჩევიდან საბოლოო დეტალებამდე." },
+      { title: "ავეჯის იმპორტი", description: "ავეჯის იმპორტი პროექტის საჭიროებებისა და სივრცის დანიშნულების გათვალისწინებით." },
+      { title: "დამზადებისა და მონტაჟის მენეჯმენტი", description: "ავეჯის დამზადების პროცესისა და მონტაჟის კოორდინაცია, ხარისხისა და ვადების კონტროლით." },
     ],
   },
   portfolio: {
@@ -226,10 +226,10 @@ const en: Dictionary = {
     carouselLabel: "Services",
     bannerAlt: "Modern house with flowing forms, furniture and a pool on a cliff.",
     items: [
-      { title: "Furniture design and planning", description: "Planning, design and technical drawings for furniture made to fit your space.", tags: ["Planning", "Design"] },
-      { title: "Furniture manufacturing", description: "Bespoke furniture production, from choosing materials to the finishing details.", tags: ["Furniture", "Production"] },
-      { title: "Furniture import", description: "Furniture import matched to the needs of the project and the purpose of the space.", tags: ["Sourcing", "Import"] },
-      { title: "Production and installation management", description: "Coordination of manufacturing and installation, with quality and schedule control.", tags: ["Management", "Installation"] },
+      { title: "Furniture design and planning", description: "Planning, design and technical drawings for furniture made to fit your space." },
+      { title: "Furniture manufacturing", description: "Bespoke furniture production, from choosing materials to the finishing details." },
+      { title: "Furniture import", description: "Furniture import matched to the needs of the project and the purpose of the space." },
+      { title: "Production and installation management", description: "Coordination of manufacturing and installation, with quality and schedule control." },
     ],
   },
   portfolio: {

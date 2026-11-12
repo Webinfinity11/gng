@@ -1,19 +1,31 @@
 "use client";
 
 import { useActionState, useEffect, useState } from "react";
+import Script from "next/script";
 import { ArrowUpRight, CheckCircle2, LoaderCircle } from "lucide-react";
-import { submitInquiry } from "@/lib/actions/contact";
+import { getContactFormToken, submitInquiry } from "@/lib/actions/contact";
 import { initialActionState } from "@/lib/types";
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 
 const emptyFields = { name: "", email: "", phone: "", message: "" };
+/** Cloudflare Turnstile is shown only when its site key is configured. */
+const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+declare global { interface Window { turnstile?: { reset: () => void } } }
 
 export function ContactForm({ lang, t }: { lang: Locale; t: Dictionary["form"] }) {
   const [state, action, pending] = useActionState(submitInquiry, initialActionState);
   const [fields, setFields] = useState(emptyFields);
 
-  useEffect(() => { if (state.success) setFields(emptyFields); }, [state]);
+  const [formToken, setFormToken] = useState("");
+
+  // A fresh anti-spam token on load and after every sent message.
+  useEffect(() => {
+    let active = true;
+    getContactFormToken().then(({ token }) => { if (active) setFormToken(token); }).catch(() => {});
+    if (state.success) { setFields(emptyFields); window.turnstile?.reset(); }
+    return () => { active = false; };
+  }, [state]);
 
   const fieldProps = (name: keyof typeof emptyFields) => ({
     id: `contact-${name}`,
@@ -29,6 +41,7 @@ export function ContactForm({ lang, t }: { lang: Locale; t: Dictionary["form"] }
   return (
     <form action={action} className="contact-form contanct-form-wrap" aria-busy={pending}>
       <input type="hidden" name="locale" value={lang} />
+      <input type="hidden" name="form_token" value={formToken} />
       <div className="contanct-form-input-wrap gng-contact-fields">
         <div className="optik-form-field gng-contact-field">
           <label className="gng-contact-label" htmlFor="contact-name"><span id="contact-name-label">{t.name}</span> <span className="gng-contact-required" aria-hidden="true">*</span></label>
@@ -56,6 +69,7 @@ export function ContactForm({ lang, t }: { lang: Locale; t: Dictionary["form"] }
         </div>
       </div>
       <div className="optik-sr-only" aria-hidden="true"><label htmlFor="contact-website">{t.website}</label><input id="contact-website" name="website" type="text" tabIndex={-1} autoComplete="off" /></div>
+      {turnstileSiteKey && <><Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" strategy="afterInteractive" /><div className="cf-turnstile gng-contact-captcha" data-sitekey={turnstileSiteKey} data-language={lang} data-theme="light" /></>}
       {state.message && <div className={`form-feedback ${state.success ? "is-success" : "is-error"}`} role={state.success ? "status" : "alert"}>{state.success && <CheckCircle2 size={19} aria-hidden="true" />}<span>{state.message}</span></div>}
       <div className="contanct-form-btn-wrap gng-contact-actions">
         <div className="message-btn-wrap">

@@ -21,7 +21,7 @@ export const defaultContact: ContactSettings = {
   id: 1,
   phone: "+995 551 39 77 66",
   phones: ["+995 551 39 77 66"],
-  email: "gngteam.ge@gmail.com",
+  email: "info@gnginner.ge",
   address: "პეტრე იბერის ქუჩა 4, თბილისი",
   map_url: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("პეტრე იბერის ქუჩა 4, თბილისი")}`,
   instagram: "",

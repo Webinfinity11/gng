@@ -7,6 +7,8 @@ import { isDatabaseConfigured } from "@/lib/config";
 import { fields, inquirySchema } from "@/lib/validation";
 import type { ActionState } from "@/lib/types";
 import type { PoolClient } from "pg";
+import { isMailConfigured, sendInquiryMail } from "@/lib/mail";
+import { checkFormToken, createFormToken, isTurnstileEnabled, looksLikeSpam, verifyTurnstile } from "@/lib/spam";
 
 const messages = {
   ka: {
@@ -16,6 +18,9 @@ const messages = {
     limit: "ამ ეტაპზე შეტყობინებების ლიმიტი ამოიწურა. გთხოვთ, მოგვიანებით სცადოთ.",
     success: "თქვენი შეტყობინება მიღებულია. მადლობა, რომ დაგვიკავშირდით.",
     error: "შეტყობინების შენახვა ვერ მოხერხდა. გთხოვთ, ხელახლა სცადოთ.",
+    retry: "გთხოვთ, განაახლოთ გვერდი და ხელახლა სცადოთ.",
+    links: "შეტყობინებაში ბევრი ბმულია. გთხოვთ, დატოვოთ მაქსიმუმ ორი.",
+    captcha: "გთხოვთ, დაადასტუროთ, რომ რობოტი არ ხართ.",
     fields: null,
   },
   en: {
@@ -25,6 +30,9 @@ const messages = {
     limit: "The message limit has been reached for now. Please try again later.",
     success: "Your message has been received. Thank you for getting in touch.",
     error: "The message could not be saved. Please try again.",
+    retry: "Please refresh the page and try again.",
+    links: "The message contains too many links. Please keep it to two at most.",
+    captcha: "Please confirm you are not a robot.",
     // Zod speaks Georgian site-wide; English visitors get fixed per-field hints.
     fields: {
       name: "Please enter your name.",
@@ -35,6 +43,11 @@ const messages = {
     } as Record<string, string>,
   },
 };
+
+/** Issued after the page loads in a browser; submissions without a valid, aged token are rejected. */
+export async function getContactFormToken() {
+  return { token: createFormToken() };
+}
 
 export async function submitInquiry(_prev: ActionState, form: FormData): Promise<ActionState> {
   const text = form.get("locale") === "en" ? messages.en : messages.ka;
@@ -47,12 +60,18 @@ export async function submitInquiry(_prev: ActionState, form: FormData): Promise
     }
     return { success:false,message:text.invalid,errors:localized };
   }
-  if (result.data.website) return { success:false,message:text.failed };
+  // Honeypot: people never see this field. Bots get a normal-looking answer and nothing is saved or sent.
+  if (result.data.website) return { success:true,message:text.success };
   if (!isDatabaseConfigured()) return { success:false,message:text.inactive };
   const d = result.data;
+  const tokenCheck = checkFormToken(String(form.get("form_token") ?? ""));
+  if (tokenCheck === "fast") return { success:true,message:text.success };
+  if (tokenCheck !== "ok") return { success:false,message:text.retry };
+  if (looksLikeSpam(d.message, d.name)) return { success:false,message:text.links };
   const incomingHeaders = await headers();
   const trustedHeader = process.env.TRUSTED_IP_HEADER;
   const ip = trustedHeader ? incomingHeaders.get(trustedHeader)?.split(",")[0]?.trim() : null;
+  if (isTurnstileEnabled() && !await verifyTurnstile(String(form.get("cf-turnstile-response") ?? ""), ip)) return { success:false,message:text.captcha };
   const identity = createHash("sha256").update(ip || d.email.toLowerCase()).digest("hex");
   let client: PoolClient | undefined;
   try {
@@ -68,9 +87,14 @@ export async function submitInquiry(_prev: ActionState, form: FormData): Promise
     await client.query("insert into inquiries (name,email,phone,message) values ($1,$2,$3,$4)",[d.name,d.email.toLowerCase(),d.phone,d.message]);
     await client.query("delete from request_limits where window_start < now()-interval '2 days'");
     await client.query("commit");
-    return { success:true,message:text.success };
   } catch {
     await client?.query("rollback").catch(() => {});
     return { success:false,message:text.error };
   } finally { client?.release(); }
+  // The message is already saved (admin → შეტყობინებები), so a mail failure is logged, not shown.
+  if (isMailConfigured()) {
+    try { await sendInquiryMail({ ...d, email: d.email.toLowerCase(), locale: form.get("locale") === "en" ? "en" : "ka" }); }
+    catch (error) { console.error("Inquiry email could not be sent:", error instanceof Error ? error.message : error); }
+  }
+  return { success:true,message:text.success };
 }

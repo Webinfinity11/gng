@@ -9,18 +9,6 @@
   margin: 0;
 }
 
-/* Replace the reference's JavaScript-driven hover preview. */
-.optik-site .service-collection-item-img-wrap {
-  pointer-events: none;
-}
-.optik-site .service-collection-item-img {
-  transition: opacity .25s ease;
-}
-.optik-site .service-collection-item:hover .service-collection-item-img,
-.optik-site .service-collection-item:focus-within .service-collection-item-img {
-  opacity: 1;
-}
-
 /* Services page: room between the page heading and the first divider line. */
 .optik-site .optik-inner-services .gng-section-head { margin-bottom: 56px; }
 @media (max-width: 767px) {

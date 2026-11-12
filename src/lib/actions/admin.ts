@@ -4,7 +4,8 @@ import { redirect } from "next/navigation";
 import { z } from "zod";
 import { requireAdmin } from "@/lib/auth";
 import { query } from "@/lib/db";
-import { categorySchema, contactSettingsSchema, fields, projectSchema } from "@/lib/validation";
+import { categorySchema, contactSettingsSchema, fields, partnerLogosSchema, projectSchema, sitePhotoUrlSchema } from "@/lib/validation";
+import { sitePhotoSlots } from "@/lib/site-photo-slots";
 import type { ActionState } from "@/lib/types";
 import { slugify, uniqueSlug } from "@/lib/slug";
 
@@ -29,6 +30,44 @@ export async function saveContactSettings(_prev: ActionState, form: FormData): P
   } catch (error) { return databaseError(error); }
   revalidatePath("/", "layout");
   return { success: true, message: "საკონტაქტო მონაცემები განახლდა." };
+}
+export async function saveSitePhotos(_prev: ActionState, form: FormData): Promise<ActionState> {
+  await requireAdmin();
+  const set: { key: string; url: string }[] = [];
+  const errors: Record<string, string[]> = {};
+  for (const slot of sitePhotoSlots) {
+    const result = sitePhotoUrlSchema.safeParse(String(form.get(slot.key) ?? ""));
+    if (!result.success) errors[slot.key] = [`${slot.label}: ${result.error.issues[0]?.message ?? "ბმული არასწორია."}`];
+    else if (result.data) set.push({ key: slot.key, url: result.data });
+  }
+  if (Object.keys(errors).length) return { success: false, message: "შეამოწმეთ მონიშნული ველები.", errors };
+  // An empty field brings back the built-in photo, so its row is removed.
+  try {
+    await query(`with saved as (
+        insert into site_photos (key,url) select * from unnest($1::text[],$2::text[])
+        on conflict (key) do update set url=excluded.url, updated_at=now() where site_photos.url is distinct from excluded.url
+      ) delete from site_photos where not (key = any($1::text[]))`, [set.map(row => row.key), set.map(row => row.url)]);
+  } catch (error) { return databaseError(error); }
+  revalidatePath("/", "layout");
+  return { success: true, message: "საიტის ფოტოები განახლდა." };
+}
+export async function savePartnerLogos(_prev: ActionState, form: FormData): Promise<ActionState> {
+  await requireAdmin();
+  let logos: unknown;
+  try { logos = JSON.parse(String(form.get("logos") || "[]")); }
+  catch { return { success: false, message: "ლოგოების მონაცემები არასწორია." }; }
+  const result = partnerLogosSchema.safeParse(logos);
+  if (!result.success) return validationError(result.error);
+  const d = result.data;
+  // The list is saved whole: its order is the carousel order.
+  try {
+    await query(`with cleared as (delete from partner_logos)
+      insert into partner_logos (name,url,width,height,sort_order)
+      select name,url,width,height,ord-1 from unnest($1::text[],$2::text[],$3::int[],$4::int[]) with ordinality as l(name,url,width,height,ord)`,
+      [d.map(l => l.name), d.map(l => l.url), d.map(l => l.width), d.map(l => l.height)]);
+  } catch (error) { return databaseError(error); }
+  revalidatePath("/", "layout");
+  return { success: true, message: "ბრენდების კარუსელი განახლდა." };
 }
 export async function saveProject(_prev: ActionState, form: FormData): Promise<ActionState> {
   await requireAdmin();
@@ -58,6 +97,20 @@ export async function saveProject(_prev: ActionState, form: FormData): Promise<A
   } catch (error) { return databaseError(error); }
   revalidatePath("/", "layout");
   redirect("/admin/projects?success=saved");
+}
+export async function reorderProjects(_prev: ActionState, form: FormData): Promise<ActionState> {
+  await requireAdmin();
+  let ids: unknown;
+  try { ids = JSON.parse(String(form.get("ids") || "[]")); }
+  catch { return { success: false, message: "რიგითობის მონაცემები არასწორია." }; }
+  const result = z.array(z.uuid()).min(1).max(5000).safeParse(ids);
+  if (!result.success) return { success: false, message: "რიგითობის მონაცემები არასწორია." };
+  // Position in the list becomes sort_order; the site shows projects in ascending order.
+  try {
+    await query(`update projects p set sort_order = o.ord - 1 from unnest($1::uuid[]) with ordinality as o(id, ord) where p.id = o.id`, [result.data]);
+  } catch (error) { return databaseError(error); }
+  revalidatePath("/", "layout");
+  return { success: true, message: "პროექტების რიგითობა შეინახა." };
 }
 export async function deleteProject(_prev: ActionState, form: FormData): Promise<ActionState> {
   await requireAdmin();
